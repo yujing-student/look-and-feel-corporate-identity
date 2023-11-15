@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Link to CSS -->
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+
+    <!-- Link to boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Link to JavaScript script -->
+    <script  src="./scripts/script.js" defer></script><!--geen defer vanwege error in w3c validator-->
+
+    <title>homepagina</title>
+    <!--    hier werkt de rode knp weer niet oorzaak niet bekend-->
+</head>
+<body><!--https://dequeuniversity.com/screenreaders/-->
+<nav class="sidebar close" tabindex="0">
+    <!--https://www.w3.org/WAI/tutorials/menus/structure/-->
+    <header>
+        <div class="image-text">
+            <div class="image">
+                <a href="index.html"> <img alt="Gebruiker-foto" src="image/AmberFoto.jpeg"></a>
+            </div>
+
+            <div class="text logo-text">
+                <p class="name">Amber van de Reijden</p>
+                <p class="profession" tabindex="0">5 jaar lid</p>
+            </div>
+        </div>
+
+        <i aria-label="uitklappen navigatiemenu" class='bx bx-chevron-right toggle' role="button" tabindex="0"></i>
+    </header>
+
+    <div class="menu-bar" tabindex="0">
+        <div class="menu">
+            <ul class="">
+                <li class="search-box">
+                    <i class='bx bx-search icon' tabindex="0"></i>
+                    <label>
+                        <input name="search" placeholder="Zoek..." type="search">
+                        <!--                        <button type="submit"></button>-->
+                    </label>
+                </li>
+            </ul>
+
+
+            <ul class="menu-links">
+                <li class="nav-link">
+                    <a href="index.html">
+                        <i class='bx bx-home icon'></i>
+                        <span class="text nav-text">Welkom</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="https://pommelienn.github.io/the-client-website/">
+                        <i class='bx bx-user icon'></i>
+                        <span class="text nav-text">Overzicht abonnement</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-home icon'></i>
+                        <span class="text nav-text">Leeslijst</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="https://wingsvn.github.io/all-human-accessible-website/uitleningen.html">
+                        <i class='bx bx-bar-chart-alt-2 icon'></i>
+                        <span class="text-long nav-text">Uitleningen en verlengen</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="https://annevd.github.io/all-human-accessible-website/">
+                        <i class='bx bx-bell icon'></i>
+                        <span class="text nav-text">Uitleengeschiedenis</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="https://lisagjh.github.io/all-human-accessible-website/">
+                        <i class='bx bx-bookmark icon'></i> <span class="text nav-text">Diensten en Producten</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-pie-chart-alt icon'></i>
+                        <span class="text nav-text">Betaalgeschiedenis</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-heart icon'></i>
+                        <span class="text nav-text">Reserveringen</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-wallet icon'></i>
+                        <span class="text nav-text">Desposito's</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-wallet icon'></i>
+                        <span class="text nav-text">Tellerstand abonnement</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bottom-content">
+            <ul>
+                <li class="">
+                    <a href="https://pommelienn.github.io/the-client-website/">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Uitloggen</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+
+</nav>
+<!--https://www.jetbrains.com/help/webstorm/mastering-keyboard-shortcuts.html#choose-keymap-->
+<main class="home">
+    <section tabindex="0"><!--tabindex word gebruikt zodat dit element gevonden kan worden door de tab toets-->
+        <div class="text"><img alt="logo" height="44" src="image/oba_20.png" width="84"></div>
+        <div class="grid-container" tabindex="0">
+            <div class="grid-item" tabindex="0">
+<!--                <h1 tabindex="0">Homepagina</h1>-->
+                <h2 tabindex="0">Welkom Amber</h2>
+                <p class="text-info">Welkom op uw persoonlijke pagina van de website van de OBA.</p>
+                <p class="text-info"> Op deze pagina kunt u: uw materialen verlengen,
+                    zoals een boek of dvd. Verder kunt u uw reserveringen bekijken en uw uitlengeschiedenis zien</p>
+
+
+            </div>
+
+            <div class="grid-item" tabindex="0">
+
+                <div class="margin-divs-question" tabindex="0"><!--https://www.oba.nl/service.html dit is het mooist-->
+                    <h3>Meer info</h3>
+                    <details>
+                        <summary>Waar vind ik openstaande bedragen?</summary>
+                        openstaande bedragen zijn via ideal te zien
+                    </details>
+
+
+                </div>
+                <div class="margin-divs-question" tabindex="0">
+                    <details>
+                        <summary>Wat kan ik op de deposito's pagina?</summary>
+                        een tegoed op uw pas zetten via ideal waarmee u toekomstige boetes, leengeld, etc. kunt afrekenen.
+                    </details>
+
+                </div>
+                <div class="margin-divs-question" tabindex="0">
+                    <details>
+                        <summary>Waar kan ik mijn presoonlijke gegevens wijzigen</summary>
+                        dat kunt u bij mijn profiel kunt u dat zien
+                    </details>
+
+                </div>
+            </div>
+
+            <div class="grid-item" tabindex="0">
+                <p class="to-long-text" tabindex="0">Ga naar geleende boeken overzicht voor een overzicht met de geleende boeken</p>
+                <button aria-pressed="false" class="" onclick="boeken()" tabindex="0"
+                        type="button"> boeken overzicht
+                </button>
+            </div>
+
+
+            <div class="grid-item" tabindex="0">
+                <h3 class="" tabindex="0">Hier kunt u zoeken naar:</h3>
+                <ul>
+                    <li>
+                        boeken
+                    </li>
+                </ul>
+<!--                <p>klik op zoek om-->
+<!--                    resulten te zien</p>-->
+                <div class="searchbar-div" tabindex="0">
+                    <!--                <label for="myInput"></label>-->
+                    <input aria-label="zoeken naar boeken" id="searchfunciton" onkeyup="searchfunction()"
+                           placeholder="typ hier uw boek in"
+                           type="search">
+
+
+                    <button aria-pressed="false" class="searchbooks-button" onclick="showdivresults()"
+                            tabindex="0" title="druk op de button om resultaat te zien" type="button">
+                        zoeken
+                    </button>
+                </div>
+                <button class="reset" title="resetbutton" type="button">reset toon alle resultaten</button>
+            </div>
+            <div class="grid-item" tabindex="0">
+                <!--                <div class="grid-filters-functions" tabindex="0">-->
+                <div class="item-filter">
+                    <button aria-pressed="false" class="collapsible-boeken" onclick="filtershow()"
+                            tabindex="0"
+                            type="button">boeken filter onderwerpen
+                        klik om
+                        uit te
+                        klappen
+                    </button>
+                    <!--        <button>filterfunctie</button>-->
+                    <!--    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox-->
+
+                    <!--        https://www.w3schools.com/css/css_boxmodel.asp
+                    hier naar kijken met chekboxes of als sorteerfunctie activitetien dvd boeken-->
+                    <form aria-label="dit is het form met daarin de filter funcites die je kan selecteren"
+                          class="collaps-open-funtion-boeken">
+                        <p>onderwerpen</p>
+                        <!-- de section class filter moet pas weergegeven worden nadat op de button geklikt is           -->
+                        <input class="checkboxes" id="onderwerp-sport" name="onderwerp-sport" type="checkbox"
+                               value="sport" data-filter="sport">
+                        <label class="lable-checkbox" for="onderwerp-sport"> sport</label><br>
+                        <input class="checkboxes" id="onderwerp-cultuur" name="onderwerp-cultuur" type="checkbox"
+                               value="cultuur" data-filter="cultuur">
+                        <label for="onderwerp-cultuur">cultuur</label><br>
+                        <input class="checkboxes" id="onderwerp-kunst" name="onderwerp-kunst" type="checkbox"
+                               value="kunst" data-filter="kunst">
+                        <label for="onderwerp-kunst">kunst</label><br>
+                        <input class="checkboxes" id="onderwerp-mode" name="onderwerp-mode" type="checkbox"
+                               value="fashion" data-filter="fashion">
+                        <label for="onderwerp-mode">fashion</label><br>
+<!--                        <input class="reset-button" type="reset" value="reset!">-->
+                        <input class="filterbutton" type="button" value="filter!">
+                    </form>
+                </div><div class="item-filter">
+                    <button aria-pressed="false" class="collapsible-boeken" onclick="filtershow()"
+                            tabindex="0"
+                            type="button">boeken filter onderwerpen
+                        klik om
+                        uit te
+                        klappen
+                    </button>
+                    <!--        <button>filterfunctie</button>-->
+                    <!--    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox-->
+
+                    <!--        https://www.w3schools.com/css/css_boxmodel.asp
+                    hier naar kijken met chekboxes of als sorteerfunctie activitetien dvd boeken-->
+                    <form aria-label="dit is het form met daarin de filter funcites die je kan selecteren"
+                          class="collaps-open-funtion-boeken">
+                        <p>genre</p>
+                        <!-- de section class filter moet pas weergegeven worden nadat op de button geklikt is           -->
+                        <input class="checkboxes" id="onderwerp-sport" name="onderwerp-sport" type="checkbox"
+                               value="sport" data-filter="sport">
+                        <label class="lable-checkbox" for="onderwerp-sport"> thriller</label><br>
+                        <input class="checkboxes" id="onderwerp-cultuur" name="onderwerp-cultuur" type="checkbox"
+                               value="cultuur" data-filter="cultuur">
+                        <label for="onderwerp-cultuur">roman</label><br>
+                        <input class="checkboxes" id="onderwerp-kunst" name="onderwerp-kunst" type="checkbox"
+                               value="kunst" data-filter="kunst">
+                        <label for="onderwerp-kunst">misdaad</label><br>
+                        <input class="checkboxes" id="onderwerp-mode" name="onderwerp-mode" type="checkbox"
+                               value="fashion" data-filter="fashion">
+                        <label for="onderwerp-mode">meer</label><br>
+<!--                        <input class="reset-button" type="reset" value="reset!">-->
+                        <input class="filterbutton" type="button" value="filter!">
+                    </form>
+                </div>
+
+            </div>
+
+
+            <div class="grid-item">
+                <div class="showresults" content="dit is een carousel waar de zoekresultaten in staan" tabindex="0">
+
+                        <!--                            <p class="start-book-items">resulaten boeken </p>-->
+                        <div class="position-margin-from-filter">
+                            <!--            <p>dit zijn de gevonden resultaten</p>-->
+                            <ul class=" grid-books-blocks myUL" tabindex="0">
+                                <li class="hide-li-sign">
+                                    <div class="book">
+                                        <div class="div-container-image" data-filter="sport">
+                                            <img alt="dit is boek1" class="books-image"
+                                                 src="image/backup/aangepast/book-1.png">
+                                            <p class="booktitle" tabindex="0"><a href="#">ajax jaarboek</a></p>
+                                            <!--                                                <a href="#" class="info">Info </a>-->
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="hide-li-sign">
+                                    <div class="book">
+                                        <div class="div-container-image" data-filter="sport">
+                                            <img alt="dit is boek2" class="books-image"
+                                                 src="image/backup/aangepast/book-2.png">
+                                            <p class="booktitle" tabindex="0"><a href="#">psv jaarboek</a></p>
+                                            <!--                                                <a href="#" class="info">Info </a>-->
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="hide-li-sign">
+                                    <div class="book">
+                                        <div class="div-container-image"  data-filter="fashion">
+                                            <img alt="dit is boek3" class="books-image"
+                                                 src="image/backup/aangepast/book-3.png">
+                                            <p class="booktitle" tabindex="0"><a href="#">karl lagerfield</a></p>
+                                            <!--                                                <a href="#" class="info">Info </a>-->
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="hide-li-sign">
+                                    <div class="book">
+                                        <div class="div-container-image"  data-filter="fashion">
+                                            <img alt="dit is boek3" class="books-image"
+                                                 src="image/backup/aangepast/book-4.png">
+                                            <p class="booktitle" tabindex="0"><a href="#">Little Book of Dior: The
+                                                Story of the Iconic Fashion House</a></p>
+                                            <!--             <a href="#" class="info">Info </a>-->
+                                            <!--   dit is met flexbox en dat moet grid worden en bij javascript is het display grid in plaats van block-->
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="hide-li-sign">
+                                    <div class="book">
+                                        <div class="div-container-image" data-filter="kunst">
+                                            <img alt="dit is boek3" class="books-image"
+                                                 src="image/backup/aangepast/book-5.png">
+                                            <p class="booktitle" tabindex="0"><a href="#">Breitner: meisje in kimono</a>
+                                            </p>
+                                            <!--                                                <a href="#" class="info">Info </a>-->
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="hide-li-sign">
+                                    <div class="book">
+                                        <div class="div-container-image" data-filter="kunst">
+                                            <img alt="dit is boek3" class="books-image"
+                                                 src="image/backup/aangepast/book-6.png">
+                                            <p class="booktitle" tabindex="0"><a href="#">dear theo</a></p>
+                                            <!--                                                <a href="#" class="info">Info </a>-->
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="hide-li-sign">
+                                    <div class="book">
+                                        <div class="div-container-image"  data-filter="cultuur">
+                                            <img alt="dit is boek3" class="books-image"
+                                                 src="image/backup/aangepast/book-7.png">
+                                            <p class="booktitle" tabindex="0"><a href="#">memoirs of a geisha</a></p>
+                                            <!--                                                <a href="#" class="info">Info </a>-->
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="hide-li-sign">
+                                    <div class="book">
+                                        <div class="div-container-image"  data-filter="cultuur">
+                                            <img alt="dit is boek3" class="books-image"
+                                                 src="image/backup/aangepast/book-8.png">
+                                            <p class="booktitle" tabindex="0"><a href="#">the darkening age</a></p>
+                                            <!--                                                <a href="#" class="info">Info </a>-->
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="hide-li-sign">
+                                    <div class="book">
+                                        <div class="div-container-image"  data-filter="overg">
+                                            <img alt="dit is boek3" class="books-image"
+                                                 src="image/backup/aangepast/book-9.png">
+                                            <p class="booktitle" tabindex="0"><a href="#">9</a></p>
+                                            <!--                                                <a href="#" class="info">Info </a>-->
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="hide-li-sign">
+                                    <div class="book">
+                                        <div class="div-container-image"  data-filter="overg">
+                                            <img alt="dit is boek3" class="books-image"
+                                                 src="image/backup/aangepast/book-10.png">
+                                            <p class="booktitle" tabindex="0"><a href="#">10</a></p>
+                                            <!--                                                <a href="#" class="info">Info </a>-->
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="hide-li-sign">
+                                    <div class="book">
+                                        <div class="div-container-image" data-filter="overg">
+                                            <img alt="dit is boek3" class="books-image"
+                                                 src="image/backup/aangepast/book-10.png">
+                                            <p class="booktitle" tabindex="0"><a href="#">11</a></p>
+                                            <!--                                                <a href="#" class="info">Info </a>-->
+
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+
+                            <!--                <p class="content-book-under-name-book"> ajax is een voetbalclub uit amsterdam</p>-->
+                            <!--                <button>voeg toe aan leeslijst</button>-->
+                        </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+</main>
+</body>
+</html>
