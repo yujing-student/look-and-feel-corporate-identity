@@ -744,7 +744,7 @@ a:hover {
         /*    dit kan niet vanwege uitklapbare summery */
 
     }
-
+    /*todo hier niet meer inwerken vanwege email die naar mark gestuurd is een testrepository aanmaken met meerdere filters*/
     .grid-item:nth-child(3) {
         grid-area: item3;
 
