@@ -779,6 +779,7 @@ a:hover {
         margin-bottom: 1em;
     }
 
+
     .grid-books-blocks {
 
         display: grid;
@@ -859,6 +860,9 @@ a:hover {
     .text-info {
         width: 35em;
         margin-bottom: 1em;
+    }
+    .position-margin-from-filter {
+        margin-top: 5em
     }
 
     .grid-books-blocks {
