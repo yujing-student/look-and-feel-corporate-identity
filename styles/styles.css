@@ -566,7 +566,7 @@ a:hover {
     }
 
     .grid-item:nth-child(1){
-        margin-right: 5em;
+        margin-right: 1em;
     }
     .grid-item-filter:nth-child(1) { /*meer info*/
         grid-area: item1;
@@ -644,7 +644,7 @@ a:hover {
 
 }
 
-@media (min-width: 80em) {
+@media (min-width: 80em)and (max-width: 100em) {
     /*mini ipad*/
     .grid-container {
         display: grid;
@@ -685,9 +685,52 @@ a:hover {
 
     .grid-books-blocks {
         display: grid;
-        grid-template-areas: "item1 item2 item3 item4";
+        grid-template-areas: "item1 item2 item3";
         gap: 2em;
     }
 
 
+}
+@media (min-width: 100em) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:   "item1 item2"
+                                "item3 item2";
+        grid-template-columns: repeat(2, minmax(0, 10fr));
+    }
+
+    p:nth-child(3),.text-boeken-overzicht { /*dit is Welkom op uw persoonlijke pagina van de website van de OBA. p */
+        max-width: 35em;
+    }
+
+    .grid-container-filter {
+        display: grid;
+        grid-template-areas:   "item1 item2"
+                                "item3 item2";
+        grid-template-columns: repeat(2, minmax(0, 10fr));
+        margin-top: 5em;
+    }
+
+    .grid-item-filter:nth-child(1) { /*meer info*/
+        grid-area: item1;
+    }
+
+    .grid-item-filter, .grid-item-filter:nth-child(2) { /*meer info*/
+        grid-area: item2;
+        margin-bottom: 1em;
+
+
+    }
+
+    .grid-item-filter, .grid-item-filter:nth-child(3) { /*meer info*/
+        grid-area: item3;
+        /*margin-bottom: 1em;*/
+        /*justify-self: center;*/
+
+    }
+    .grid-books-blocks {
+        display: grid;
+        grid-template-areas: "item1 item2 item3 item4";
+        gap: 2em;
+    }
 }
