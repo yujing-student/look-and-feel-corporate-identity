@@ -1,7 +1,7 @@
 /* Fonts being used by the oba */
 @font-face {
     font-family: AvenirRoman;
-    /*src: url(../font/Avenir-Roman.ttf);*/
+    src: url(../font/Avenir-Roman.ttf);
     /*value: auto;*/
     /*initial:auto;*/
 }
@@ -13,7 +13,7 @@
 
 @font-face {
     font-family: AvenirBlack;
-    /*src: url(../font/Avenir-Black.ttf);*/
+    src: url(../font/Avenir-Black.ttf);
 }
 
 /* Custom properties */
@@ -63,7 +63,8 @@
     --with-15em: 15em;
 
     /*gridtemplate*/
-    --grid-template-indeling: "item1 item2" "item3 item2" "item4 item5" "item6 item6";
+    --grid-template-indeling: "item1 item1" "item3 item2";
+
 
 }
 
@@ -425,14 +426,47 @@ td {
     font-size: 1em;
     line-height: 1.5;
     margin: var(--margin-1em);
-
-
 }
 
 /*algemeen*/
-details { /*dit is het pijltje*/
-    /*font-size: 1.5em;*/
-    width: 25em;
+
+
+    .grid-container, .grid-container-filter {
+        display: grid; /*1 grote container met daarin 4 kinderen*/
+        /*grid-gap: 1em;*/
+        grid-template-areas:
+            "item1 "/*regel1*/
+            "item2"
+            "item3";
+        /*grid-template-columns: 1fr;*/
+    }
+
+    .grid-item, .grid-item-filter { /*dit zijn de 3 kinderen met daarin de inhoud ide steeds meebeweegt*/
+        padding: 1em;
+    }
+
+    .grid-item:nth-child(1) { /*inleiding*/
+        grid-area: item1;
+        margin-bottom: 1em;
+    }
+
+
+    .grid-item:nth-child(2) { /*meer info*/
+        grid-area: item2;
+
+
+    }
+
+    .grid-item:nth-child(3) { /*boete*/
+        grid-area: item3;
+    }
+
+p:nth-child(2) { /*dit is Welkom op uw persoonlijke pagina van de website van de OBA. p */
+    margin-bottom: 1em;
+}
+
+details:nth-child(n+1):nth-child(-n+7) { /*nummer 1 tot en met 5*/
+    margin-bottom: 1em;
 }
 
 button, .reset-button, .filterbutton {
@@ -447,115 +481,45 @@ button, .reset-button, .filterbutton {
     padding: 0.5rem;
     margin-left: 0.2em;
     margin-top: var(--margin-1em);
-    /*color: white;*/
 }
 
-h3 {
-    /*background-color: white;*/
-    /*margin: 1em;*/
-    /*width: 15em;*/
-    width: var(--with-15em);
+button:hover {
+    color: red;
 }
 
-
-form {
-    margin-top: var(--margin-1em);
-}
-
-.checkboxes {
-    /*display: flex;*/
-    width: 1.5em;
-    height: 1.5em;
-    vertical-align: middle;
-    margin: 0.5em;
-}
-
-.lable-checkbox {
-    vertical-align: middle;
-}
-
-/*mobiel*/
-.grid-container {
-    display: grid; /*1 grote container met daarin 4 kinderen*/
-    /*grid-gap: 1em;*/
-    grid-template-areas:
-            "item1 "/*regel1*/
-            "item2"
-            "item3"
-            "item4"
-            "item5"
-            "item6";
-    grid-template-columns: 1fr;
-}
-
-.grid-item { /*dit zijn de 4 kinderen met daarin de inhoud ide steeds meebeweegt*/
-    /*border: 0.1em solid black;*/
-    padding: 1em;
-    /*width: 20em;*/
-}
-
-.grid-item:nth-child(1) {
-    grid-area: item1;
-
-}
-
-
-.grid-item:nth-child(2) {
-    grid-area: item2;
-    margin-bottom: 1em;
-
-}
-
-.grid-item:nth-child(3) {
-    grid-area: item3;
-}
-
-
-.grid-item:nth-child(4) {
-    grid-area: item4;
-
-}
-
-.grid-item:nth-child(5) {
-    grid-area: item5;
-    height: 12em;
-
-}
-
-.grid-item:nth-child(6) {
-    grid-area: item6;
-    /*margin-top: 10em;*/
-}
-.grid-item:nth-child(7) {
-    grid-area: item7;
-
-}
-
-
-.margin-divs-question {
+.grid-item-filter:nth-child(1), .grid-item-filter:nth-child(2), .grid-item-filter:nth-child(3) {
     margin-bottom: 2em;
-}
-
-.collaps-open-funtion-boeken { /*dit zijn de buttons in de lijst en op deze pagina voor meer info*/
-    display: none;
-}
-
-
-#searchfunciton {
-    font-size: 1em;
-}
-
-.item-filter { /*dit is de afstand tussen de butten dne de volgende tekst*/
-    /*display: grid;*/
-    /*grid-template-rows: 13em 14em;*/
-    /*position: relative;*/
-    margin-bottom: 1em;
-    font-family: AvenirMedium;
 
 }
 
-.position-margin-from-filter {
-    margin-top: var(--margin-top-2em)
+form label {
+    /*margin-right: 1rem;*/
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.i-search {
+    margin-right: 1rem;
+    font-size: 2em;
+}
+
+.input-searchbar-form {
+    display: flex;
+    align-items: center;
+    width: 20rem; /* verander zoals gewenst */
+}
+
+#input_searchfunciton {
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.75rem;
+    border: none;
+    outline: 0;
+    font-family: AvenirMedium, 'sans serif';
+    font-size: 1rem;
+    height: 1.5rem;
+}
+
+.item-filter {
+    margin-bottom: 2em;
 }
 
 .showresults {
@@ -563,44 +527,23 @@ form {
     color: var(--text-color);
 }
 
-.searchbooks-button {
-    /*background-color: #f7f4f4;*/
-
-    color: var(--text-color);
+.collaps-open-funtion-boeken, .collaps-open-funtion-boeken_second, .collaps-open-funtion-boeken_third { /*dit zijn de buttons in de lijst en op deze pagina voor meer info*/
+    display: none;
 }
 
-
-.collapsible-boeken {
-    width: var(--with-15em);
-    /*background: #000000;*/
-    /*color: #FFFFFFFF;*/
+.input_checkboxes {
+    width: 1.4em;
+    height: 1.5em;
+    vertical-align: middle;
+    margin: 0.5em;
 }
-
-
-/*.button-right{*/
-/*    position: relative;*/
-/*    left: 15em;*/
-/*}*/
-.booktitle {
-    margin: var(--margin-1em);
-}
-
-.div-container-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: var(--margin-1em);
-}
-
 
 .hide-li-sign {
     list-style-type: none;
-    gap: 1em;
+    margin-bottom: 1em;
 }
 
-a {
-    /*kleur linkjes*/
+a:nth-child(1) {
     color: var(--text-color);
     text-decoration: none;
 }
@@ -609,277 +552,142 @@ a:hover {
     text-decoration: underline;
 }
 
-.info {
-    padding: 0.5rem 2rem;
-    /*background: white;*/
-    background-color: var(--background-color-buttons-white);
-    border-radius: 1rem;
-    color: var(--text-color);
-    box-shadow: 3px 3px 2px rgb(187, 187, 187);
-    transition: var(--tran-03);
-}
-
-.info .dark {
-    background-color: var(--text-color);
-
-    color: var(--background-color-buttons-white);
-}
-
-
-@media (min-width: 52em)  and (max-width: 80em) {
-    .grid-container {
-        /*grid-template-areas:*/
-        /*      "item1 item2"*/
-        /*"item3 item2"*/
-        /*"item4 item5"*/
-        /*"item6 item6";*/
-        grid-template-areas: var(--grid-template-indeling);
-        /*grid-template-columns: 1fr 1fr;*/
-        gap: 2em;
+@media (min-width: 44em)  and (max-width: 60em) {
+    /*mini ipad*/
+    .grid-container, .grid-container-filter {
         display: grid;
-
+        grid-template-areas:   "item1 item2"
+                                "item3 item2";
         grid-template-columns: repeat(2, minmax(0, 10fr));
-
-        /*background-color: red;*/
-
     }
 
-    .grid-item:nth-child(1) {
-        grid-area: item1;
-
-
+    .grid-container-filter {
+        margin-top: 5em;
     }
 
-
-    .grid-item:nth-child(2) {
-        grid-area: item2;
-
-        /*position: relative;*/
-        /*top: -5em;*/
-        /*    dit kan niet vanwege uitklapbare summery */
-
-    }
-
-    .grid-item:nth-child(3) {
-        grid-area: item3;
-
-        /*margin-bottom: 1em;*/
-        /*position: relative;*/
-        /*left: 5em;*/
-
-    }
-
-
-    .grid-item:nth-child(4) {
-        grid-area: item4;
-        /*background-color: #55f3b6;*/
-
-    }
-
-    .grid-item:nth-child(5) {
-        grid-area: item5;
-
-
-    }
-    .grid-item:nth-child(6) {
-        grid-area: item6;
-        margin-top: 10em;
-
-
-    }
-
-    .text-info {
-        /*width: 35em;*/
-        margin-bottom: 1em;
-    }
-
-    .grid-books-blocks {
-
-        display: grid;
-        grid-template-areas: "item1 item2 item3 ";
-    }
-
-    .div-container-image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        /*width: 15em;*/
-        width: var(--with-15em);
-    }
-
-}
-
-@media (min-width: 80em)  and (max-width: 100em) {
-    .grid-container {
-        /*grid-template-areas:*/
-        /*      "item1 item2"*/
-        /*"item3 item2"*/
-        /*"item4 item5"*/
-        /*"item6 item6";*/
-        grid-template-areas: var(--grid-template-indeling);
-        /*grid-template-columns: 1fr 1fr;*/
-        gap: 2em;
-        display: grid;
-
-        grid-template-columns: repeat(2, minmax(0, 10fr));
-        /*margin-left: calc((100% - 76em) / 2);*/
-        /*margin-right: calc((100% - 95em) / 2);*/
-        /*background-color: red;*/
-
-    }
-
-    .grid-item:nth-child(1) {
-        grid-area: item1;
-
-
-    }
-
-
-    .grid-item:nth-child(2) {
-        grid-area: item2;
-
-        /*position: relative;*/
-        /*top: -5em;*/
-        /*    dit kan niet vanwege uitklapbare summery */
-
-    }
-    /*todo hier niet meer inwerken vanwege email die naar mark gestuurd is een testrepository aanmaken met meerdere filters*/
-    .grid-item:nth-child(3) {
-        grid-area: item3;
-
-        /*margin-bottom: 1em;*/
-        /*position: relative;*/
-        /*left: 5em;*/
-
-    }
-
-
-    .grid-item:nth-child(4) {
-        grid-area: item4;
-        /*background-color: #55f3b6;*/
-
-    }
-
-    .grid-item:nth-child(5) {
-        grid-area: item5;
-
-
-    }
-
-    .grid-item:nth-child(6) {
-        grid-area: item6;
-        margin-top: 10em;
-
-
-    }
-
-    .text-info {
-        width: 35em;
-        margin-bottom: 1em;
-    }
-
-
-    .grid-books-blocks {
-
-        display: grid;
-        grid-template-areas: "item1 item2 item3 item4 ";
-    }
-
-    .div-container-image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: var(--with-15em);
-    }
-
-}
-
-@media (min-width: 100em) {
-    .grid-container {
-        /*grid-template-areas:*/
-        /*      "item1 item2"*/
-        /*"item3 item2"*/
-        /*"item4 item5"*/
-        /*"item6 item6";*/
-
-        grid-template-areas: var(--grid-template-indeling);
-        /*grid-template-columns: 1fr 1fr;*/
-        gap: 2em;
-        display: grid;
-
-        grid-template-columns: repeat(2, minmax(0, 10fr));
-        /*margin-left: calc((100% - 76em) / 2);*/
-        /*margin-right: calc((100% - 95em) / 2);*/
-        /*background-color: red;*/
-
-    }
-
-    .grid-item:nth-child(1) {
-        grid-area: item1;
-
-
-    }
-
-
-    .grid-item:nth-child(2) {
-        grid-area: item2;
-        position: relative;
+    .grid-item:nth-child(1){
         margin-right: 5em;
+    }
+    .grid-item-filter:nth-child(1) { /*meer info*/
+        grid-area: item1;
 
-        /*    dit kan niet vanwege uitklapbare summery */
 
     }
 
-    .grid-item:nth-child(3) {
+    .grid-item-filter, .grid-item-filter:nth-child(2) { /*meer info*/
+        grid-area: item2;
+        margin-bottom: 1em;
+
+
+    }
+    .grid-item:nth-child(3){
+        margin-right: 5em;
+    }
+
+    .grid-item-filter, .grid-item-filter:nth-child(3) { /*meer info*/
         grid-area: item3;
 
-        /*margin-bottom: 1em;*/
-        /*position: relative;*/
-        /*left: 5em;*/
+    }
+
+    .grid-item-filter:nth-child(2) {
+        justify-self: center;
+    }
+}
+
+
+@media (min-width: 60em)  and (max-width: 80em) {
+    /*mini ipad*/
+    .grid-container {
+        display: grid;
+        grid-template-areas:   "item1 item2"
+                                "item3 item2";
+        grid-template-columns: repeat(2, minmax(0, 10fr));
+    }
+
+    p:nth-child(3),.text-boeken-overzicht { /*dit is Welkom op uw persoonlijke pagina van de website van de OBA. p */
+        max-width: 30em;
+    }
+
+    .grid-container-filter {
+        display: grid;
+        grid-template-areas:   "item1 item2"
+                                "item3 item2";
+        grid-template-columns: repeat(2, minmax(0, 10fr));
+        margin-top: 5em;
+    }
+
+    .grid-item-filter:nth-child(1) { /*meer info*/
+        grid-area: item1;
+
 
     }
 
-
-    .grid-item:nth-child(4) {
-        grid-area: item4;
-        /*background-color: #55f3b6;*/
-        /*margin-top: 3em;*/
-        margin-top: var(--margin-top-3em);
-
-    }
-
-    .grid-item:nth-child(5) {
-        grid-area: item5;
-
-        margin-top: var(--margin-top-3em);
-
-    }
-
-    .text-info {
-        width: 35em;
+    .grid-item-filter, .grid-item-filter:nth-child(2) { /*meer info*/
+        grid-area: item2;
         margin-bottom: 1em;
+
+
     }
-    .position-margin-from-filter {
-        margin-top: 5em
+
+    .grid-item-filter, .grid-item-filter:nth-child(3) { /*meer info*/
+        grid-area: item3;
+        /*margin-bottom: 1em;*/
+        /*justify-self: center;*/
+
     }
 
     .grid-books-blocks {
-
         display: grid;
-        grid-template-areas: "item1 item2 item3 item4 item5";
+        grid-template-areas: "boek1 boek2";
     }
 
-    .div-container-image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        /*width: 15em;*/
-        width: var(--with-15em);
-    }
 
 }
-/*todo funcatie maken dat als ik op de knop boekenfilter druk dat de filters worden weergegeven en dat de andere code naar beneden geduwd word*/
-/*todo meer filters maken en dit naar de zijkant uitlijnen met ook een soort naavbar */
+
+@media (min-width: 80em) {
+    /*mini ipad*/
+    .grid-container {
+        display: grid;
+        grid-template-areas:   "item1 item2"
+                                "item3 item2";
+        grid-template-columns: repeat(2, minmax(0, 10fr));
+    }
+
+    p:nth-child(3),.text-boeken-overzicht { /*dit is Welkom op uw persoonlijke pagina van de website van de OBA. p */
+        max-width: 35em;
+    }
+
+    .grid-container-filter {
+        display: grid;
+        grid-template-areas:   "item1 item2"
+                                "item3 item2";
+        grid-template-columns: repeat(2, minmax(0, 10fr));
+        margin-top: 5em;
+    }
+
+    .grid-item-filter:nth-child(1) { /*meer info*/
+        grid-area: item1;
+    }
+
+    .grid-item-filter, .grid-item-filter:nth-child(2) { /*meer info*/
+        grid-area: item2;
+        margin-bottom: 1em;
+
+
+    }
+
+    .grid-item-filter, .grid-item-filter:nth-child(3) { /*meer info*/
+        grid-area: item3;
+        /*margin-bottom: 1em;*/
+        /*justify-self: center;*/
+
+    }
+
+    .grid-books-blocks {
+        display: grid;
+        grid-template-areas: "item1 item2 item3 item4";
+        gap: 2em;
+    }
+
+
+}
