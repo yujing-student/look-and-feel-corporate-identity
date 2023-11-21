@@ -68,12 +68,36 @@ function filtershow() {
     }
 }
 
+function filtershow_secod() {
+    let formresults = document.querySelector(".collaps-open-funtion-boeken_second");
 
+    let button = document.querySelector(".collapsible-boeken_second"); // selecteer de button
+    button.onclick = function () { // klik je op de button dat komt deze if else
+        if (formresults.style.display === "none") {
+            formresults.style.display = "block"; // laat het formulier zien of verbeg het
+        } else {
+            formresults.style.display = "none";
+        }
+    }
+}
+
+function filtershow_third() {
+    let formresults = document.querySelector(".collaps-open-funtion-boeken_third");
+
+    let button = document.querySelector(".collapsible-boeken_third"); // selecteer de button
+    button.onclick = function () { // klik je op de button dat komt deze if else
+        if (formresults.style.display === "none") {
+            formresults.style.display = "block"; // laat het formulier zien of verbeg het
+        } else {
+            formresults.style.display = "none";
+        }
+    }
+}
 
 
 function searchfunction() {
     let input, filter, ul, li = [], booktitle, txtValue;
-    input = document.getElementById("searchfunciton");
+    input = document.getElementById("input_searchfunciton");
     filter = input.value.toUpperCase();/*hoofdlettergevoeligheid*/
     ul = document.getElementsByClassName("myUL");
 

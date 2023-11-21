@@ -12,7 +12,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Link to JavaScript script -->
-    <script  src="./scripts/script.js" defer></script><!--geen defer vanwege error in w3c validator-->
+    <script defer src="./scripts/script.js"></script><!--geen defer vanwege error in w3c validator-->
 
     <title>homepagina</title>
     <!--    hier werkt de rode knp weer niet oorzaak niet bekend-->
@@ -166,14 +166,12 @@
                 </details>
 
 
-
                 <details>
                     <summary>Wat kan ik op de deposito's pagina?</summary>
                     een tegoed op uw pas zetten via ideal waarmee u toekomstige boetes, leengeld, etc. kunt afrekenen.
                 </details>
 
 
-
                 <details>
                     <summary>Waar kan ik mijn presoonlijke gegevens wijzigen</summary>
                     dat kunt u bij mijn profiel kunt u dat zien
@@ -183,25 +181,26 @@
                 <details>
                     <summary>Waar kan ik mijn presoonlijke gegevens wijzigen</summary>
                     dat kunt u bij mijn profiel kunt u dat zien
-                </details> <details>
-                <summary>Waar kan ik mijn presoonlijke gegevens wijzigen</summary>
-                dat kunt u bij mijn profiel kunt u dat zien
-            </details> <details>
-                <summary>Waar kan ik mijn presoonlijke gegevens wijzigen</summary>
-                dat kunt u bij mijn profiel kunt u dat zien
-            </details> <details>
-                <summary>Waar kan ik mijn presoonlijke gegevens wijzigen</summary>
-                dat kunt u bij mijn profiel kunt u dat zien
-            </details>
-
-
-
+                </details>
+                <details>
+                    <summary>Waar kan ik mijn presoonlijke gegevens wijzigen</summary>
+                    dat kunt u bij mijn profiel kunt u dat zien
+                </details>
+                <details>
+                    <summary>Waar kan ik mijn presoonlijke gegevens wijzigen</summary>
+                    dat kunt u bij mijn profiel kunt u dat zien
+                </details>
+                <details>
+                    <summary>Waar kan ik mijn presoonlijke gegevens wijzigen</summary>
+                    dat kunt u bij mijn profiel kunt u dat zien
+                </details>
 
 
             </div>
 
             <div class="grid-item" tabindex="0">
-                <p class="text-boeken-overzicht" tabindex="0">Ga naar boeken overzicht voor een overzicht met de geleende boeken zodat u ziet <strong>welke boeken u moet inleveren</strong></p>
+                <p class="text-boeken-overzicht" tabindex="0">Ga naar boeken overzicht voor een overzicht met de
+                    geleende boeken zodat u ziet <strong>welke boeken u moet inleveren</strong></p>
                 <button aria-pressed="false" class="button-boeken" onclick="boeken()" tabindex="0"
                         type="button"> boeken overzicht
                 </button>
@@ -222,7 +221,6 @@
                     </form>
 
 
-
                     <!--                    <button aria-pressed="false" class="searchbooks-button" onclick="showdivresults()"-->
                     <!--                            tabindex="0" title="druk op de button om resultaat te zien" type="button">-->
                     <!--                        zoeken-->
@@ -238,7 +236,7 @@
                     <!--                    <box-icon name='filter-alt' ></box-icon>-->
                     <button aria-pressed="false" class="collapsible-boeken" onclick="filtershow()"
                             tabindex="0"
-                            type="button">  <i class='bx bx-filter-alt' ></i>boeken filter onderwerpen
+                            type="button"><i class='bx bx-filter-alt'></i>boeken filter onderwerpen
                     </button>
                     <!--        <button>filterfunctie</button>-->
                     <!--    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox-->
@@ -249,17 +247,25 @@
                           class="collaps-open-funtion-boeken">
                         <p>onderwerpen</p>
                         <!-- de section class filter moet pas weergegeven worden nadat op de button geklikt is           -->
-                        <label for="onderwerp-sport-genre"></label><input class="input_checkboxes" id="onderwerp-sport-genre" name="onderwerp-sport" type="checkbox"
-                                                                          value="sport" data-filter="sport">
+                        <label for="onderwerp-sport-genre"></label><input class="input_checkboxes"
+                                                                          data-filter="sport"
+                                                                          id="onderwerp-sport-genre" name="onderwerp-sport"
+                                                                          type="checkbox" value="sport">
                         <label class="lable-checkbox" for="onderwerp-sport"> sport</label><br>
-                        <label for="onderwerp-cultuur-genre"></label><input class="input_checkboxes" id="onderwerp-cultuur-genre" name="onderwerp-cultuur" type="checkbox"
-                                                                            value="cultuur" data-filter="cultuur">
+                        <label for="onderwerp-cultuur-genre"></label><input class="input_checkboxes"
+                                                                            data-filter="cultuur"
+                                                                            id="onderwerp-cultuur-genre" name="onderwerp-cultuur"
+                                                                            type="checkbox" value="cultuur">
                         <label for="onderwerp-cultuur">cultuur</label><br>
-                        <label for="onderwerp-kunst-genre"></label><input class="input_checkboxes" id="onderwerp-kunst-genre" name="onderwerp-kunst" type="checkbox"
-                                                                          value="kunst" data-filter="kunst">
+                        <label for="onderwerp-kunst-genre"></label><input class="input_checkboxes"
+                                                                          data-filter="kunst"
+                                                                          id="onderwerp-kunst-genre" name="onderwerp-kunst"
+                                                                          type="checkbox" value="kunst">
                         <label for="onderwerp-kunst">kunst</label><br>
-                        <label for="onderwerp-mode-genre"></label><input class="input_checkboxes" id="onderwerp-mode-genre" name="onderwerp-mode" type="checkbox"
-                                                                         value="fashion" data-filter="fashion">
+                        <label for="onderwerp-mode-genre"></label><input class="input_checkboxes"
+                                                                         data-filter="fashion" id="onderwerp-mode-genre"
+                                                                         name="onderwerp-mode"
+                                                                         type="checkbox" value="fashion">
                         <label for="onderwerp-mode">fashion</label><br>
                         <!--                        <input class="reset-button" type="reset" value="reset!">-->
                         <input class="filterbutton" type="button" value="filter!">
@@ -268,23 +274,23 @@
                 <div class="item-filter">
                     <button aria-pressed="false" class="collapsible-boeken_second" onclick="filtershow_secod()"
                             tabindex="0"
-                            type="button">  <i class='bx bx-filter-alt' ></i> genre filter onderwerpen
+                            type="button"><i class='bx bx-filter-alt'></i> genre filter onderwerpen
                     </button>
                     <form aria-label="dit is het form met daarin de filter funcites die je kan selecteren"
                           class="collaps-open-funtion-boeken_second">
                         <p>genre</p>
                         <!-- de section class filter moet pas weergegeven worden nadat op de button geklikt is           -->
-                        <input class="input_checkboxes" id="onderwerp-sport" name="onderwerp-sport" type="checkbox"
-                               value="sport" data-filter="sport">
+                        <input class="input_checkboxes" data-filter="sport" id="onderwerp-sport" name="onderwerp-sport"
+                               type="checkbox" value="sport">
                         <label class="lable-checkbox" for="onderwerp-sport"> thriller</label><br>
-                        <input class="input_checkboxes" id="onderwerp-cultuur" name="onderwerp-cultuur" type="checkbox"
-                               value="cultuur" data-filter="cultuur">
+                        <input class="input_checkboxes" data-filter="cultuur" id="onderwerp-cultuur" name="onderwerp-cultuur"
+                               type="checkbox" value="cultuur">
                         <label for="onderwerp-cultuur">roman</label><br>
-                        <input class="input_checkboxes" id="onderwerp-kunst" name="onderwerp-kunst" type="checkbox"
-                               value="kunst" data-filter="kunst">
+                        <input class="input_checkboxes" data-filter="kunst" id="onderwerp-kunst" name="onderwerp-kunst"
+                               type="checkbox" value="kunst">
                         <label for="onderwerp-kunst">misdaad</label><br>
-                        <input class="input_checkboxes" id="onderwerp-mode" name="onderwerp-mode" type="checkbox"
-                               value="fashion" data-filter="fashion">
+                        <input class="input_checkboxes" data-filter="fashion" id="onderwerp-mode" name="onderwerp-mode"
+                               type="checkbox" value="fashion">
                         <label for="onderwerp-mode">voetbal</label><br>
                         <!--                        <input class="reset-button" type="reset" value="reset!">-->
                         <input class="filterbutton" type="button" value="filter!">
@@ -293,7 +299,7 @@
                 <div class="item-filter">
                     <button aria-pressed="false" class="collapsible-boeken_third" onclick="filtershow_third()"
                             tabindex="0"
-                            type="button">  <i class='bx bx-filter-alt' ></i> auteur filteren
+                            type="button"><i class='bx bx-filter-alt'></i> auteur filteren
 
                     </button>
                     <!--        <button>filterfunctie</button>-->
@@ -305,17 +311,22 @@
                           class="collaps-open-funtion-boeken_third">
                         <p>auteur</p>
                         <!-- de section class filter moet pas weergegeven worden nadat op de button geklikt is           -->
-                        <label for="Evert-meer"></label><input class="input_checkboxes" id="Evert-meer" name="onderwerp-sport" type="checkbox"
-                                                               value="Evert meer" data-filter="Evert-meer">
+                        <label for="Evert-meer"></label><input class="input_checkboxes" data-filter="Evert-meer"
+                                                               id="Evert-meer" name="onderwerp-sport"
+                                                               type="checkbox" value="Evert meer">
                         <label class="lable-checkbox" for="onderwerp-sport"> Evert meer</label><br>
-                        <label for="Menno-Pot"></label><input class="input_checkboxes" id="Menno-Pot" name="onderwerp-cultuur" type="checkbox"
-                                                              value="Menno Pot" data-filter="Menno-Pot">
+                        <label for="Menno-Pot"></label><input class="input_checkboxes" data-filter="Menno-Pot"
+                                                              id="Menno-Pot" name="onderwerp-cultuur"
+                                                              type="checkbox" value="Menno Pot">
                         <label for="onderwerp-cultuur">Menno Pot</label><br>
-                        <label for="Jaap-visser"></label><input class="input_checkboxes" id="Jaap-visser" name="onderwerp-kunst" type="checkbox"
-                                                                value="Jaap visser" data-filter="Jaap-visser">
+                        <label for="Jaap-visser"></label><input class="input_checkboxes" data-filter="Jaap-visser"
+                                                                id="Jaap-visser" name="onderwerp-kunst"
+                                                                type="checkbox" value="Jaap visser">
                         <label for="Jaap-visser">Jaap visser</label><br>
-                        <label for="Michel-van-egmond"></label><input class="input_checkboxes" id="Michel-van-egmond" name="onderwerp-mode" type="checkbox"
-                                                                      value="Michel van egmond" data-filter="Michel-van-egmond">
+                        <label for="Michel-van-egmond"></label><input class="input_checkboxes" data-filter="Michel-van-egmond"
+                                                                      id="Michel-van-egmond" name="onderwerp-mode"
+                                                                      type="checkbox"
+                                                                      value="Michel van egmond">
                         <label for="onderwerp-mode">Michel van egmond</label><br>
                         <!--                        <input class="reset-button" type="reset" value="reset!">-->
                         <input class="filterbutton" type="button" value="filter!">
@@ -325,7 +336,7 @@
                 </div>
                 <div class="item-filter">
                     <label for="start">filter datum tussen 2001 en 2022:</label>
-                    <input type="date" id="start" name="trip-start" value="" min="2000-01-01" max="2023-11-23" />
+                    <input id="start" max="2023-11-23" min="2000-01-01" name="trip-start" type="date" value=""/>
                 </div>
 
 
@@ -342,7 +353,7 @@
                             <div class="div-container-image" data-filter="sport">
                                 <img alt="dit is boek1" class="books-image"
                                      src="image/backup/aangepast/book-1.png">
-                                <p class="booktitle" tabindex="0"><a href="#">ajax jaarboek</a></p>
+                                <p class="booktitle" tabindex="0"><a href="#" class="title-book-link">ajax jaarboek</a></p>
                                 <!--                                                <a href="#" class="info">Info </a>-->
 
 
@@ -361,7 +372,7 @@
                         </li>
                         <li class="hide-li-sign">
 
-                            <div class="div-container-image"  data-filter="fashion">
+                            <div class="div-container-image" data-filter="fashion">
                                 <img alt="dit is boek3" class="books-image"
                                      src="image/backup/aangepast/book-3.png">
                                 <p class="booktitle" tabindex="0"><a href="#">karl lagerfield</a></p>
@@ -372,7 +383,7 @@
                         </li>
                         <li class="hide-li-sign">
 
-                            <div class="div-container-image"  data-filter="fashion">
+                            <div class="div-container-image" data-filter="fashion">
                                 <img alt="dit is boek3" class="books-image"
                                      src="image/backup/aangepast/book-4.png">
                                 <p class="booktitle" tabindex="0"><a href="#">Little Book of Dior: The
@@ -408,7 +419,7 @@
                         </li>
                         <li class="hide-li-sign">
 
-                            <div class="div-container-image"  data-filter="cultuur">
+                            <div class="div-container-image" data-filter="cultuur">
                                 <img alt="dit is boek3" class="books-image"
                                      src="image/backup/aangepast/book-7.png">
                                 <p class="booktitle" tabindex="0"><a href="#">memoirs of a geisha</a></p>
@@ -419,7 +430,7 @@
                         </li>
                         <li class="hide-li-sign">
 
-                            <div class="div-container-image"  data-filter="cultuur">
+                            <div class="div-container-image" data-filter="cultuur">
                                 <img alt="dit is boek3" class="books-image"
                                      src="image/backup/aangepast/book-8.png">
                                 <p class="booktitle" tabindex="0"><a href="#">the darkening age</a></p>
@@ -430,7 +441,7 @@
                         </li>
                         <li class="hide-li-sign">
 
-                            <div class="div-container-image"  data-filter="overg">
+                            <div class="div-container-image" data-filter="overg">
                                 <img alt="dit is boek3" class="books-image"
                                      src="image/backup/aangepast/book-9.png">
                                 <p class="booktitle" tabindex="0"><a href="#">9</a></p>
@@ -441,7 +452,7 @@
                         </li>
                         <li class="hide-li-sign">
 
-                            <div class="div-container-image"  data-filter="overg">
+                            <div class="div-container-image" data-filter="overg">
                                 <img alt="dit is boek3" class="books-image"
                                      src="image/backup/aangepast/book-10.png">
                                 <p class="booktitle" tabindex="0"><a href="#">10</a></p>

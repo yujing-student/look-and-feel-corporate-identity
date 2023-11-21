@@ -16,16 +16,6 @@
     src: url(../font/Avenir-Black.ttf);
 }
 
-/* Custom properties */
-/* :root {
-    --red:#FF0000;
-    --dark-color:#ce0000;
-    --black:#000000;
-    --gray:#666;
-    /* --border: .1rem solid rgba(0,0,0,.1);
-    --border-hover: .1rem solid var(--black);
-    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-} */
 
 * {
     margin: 0;
@@ -37,12 +27,12 @@
 :root {
     /* ===== Colors ===== */
     --body-color: #E4E9F7; /*achtergrondkleur*/
-    --sidebar-color: #FFFFFF;
+    --sidebar-color-white: #FFFFFF;
     --background-color-buttons-white: #FFFFFF; /*dit teogeovoegd  kleur van de oba*/
-    --primary-color: #E61C24; /*kleur van de oba*/
-    --primary-color-light: #F6F5FF;
-    --toggle-color: #D9D9D9; /*kleur van de oba*/
-    --text-color: #000000; /*kleur van de oba*/
+    --primary-color-red: #E61C24; /*kleur van de oba*/
+    --primary-color-light-licht-blauwe-achtergrondkleur: #F6F5FF;
+    --toggle-color-licht-grijs: #D9D9D9; /*kleur van de oba*/
+    --text-color-zwart: #000000; /*kleur van de oba**/
     /*#000000*/
     /*oude kleur  --text-color: #707070;*/
 
@@ -52,18 +42,22 @@
     --tran-04: all 0.3s ease;
     --tran-05: all 0.3s ease;
 
+
+    /*eigen custom proporties*/
     /*    border*/
     --border-color-line: 0.2em solid #000000;
     /*afstand margin*/
     --margin-1em: 1em;
     --margin-top-3em: 3em;
     --margin-top-2em: 2em;
+    --margin-bottom-1em: 1em;
 
     /*    widt*/
     --with-15em: 15em;
 
     /*gridtemplate*/
-    --grid-template-indeling: "item1 item1" "item3 item2";
+    --grid-template-areas-indeling: "inleiding_zoekvak meer_info_filters" "boeken-overzicht-boeken meer_info_filters";
+    --grid-template-columns-indeling: repeat(2, minmax(0, 10fr));
 
 
 }
@@ -93,17 +87,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 ::selection {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-red);
     color: #fff;
 }
 
 body.dark {
     --body-color: #18191a;
-    --sidebar-color: #242526;
+    --sidebar-color-white: #242526;
     /*--primary-color: #3a3b3c;*/
-    --primary-color-light: #3a3b3c;
-    --toggle-color: #fff;
-    --text-color: #fff; /*dit doet niks #ccc*/
+    --primary-color-light-licht-blauwe-achtergrondkleur: #3a3b3c;
+    --toggle-color-licht-grijs: #fff;
+    --text-color-zwart: #fff; /*dit doet niks #ccc*/
     /*color: white;*/
 }
 
@@ -115,7 +109,7 @@ body.dark {
     height: 100%;
     width: 250px;
     padding: 10px 14px;
-    background: var(--sidebar-color);
+    background: var(--sidebar-color-white);
     transition: var(--tran-05);
     z-index: 100;
 }
@@ -151,7 +145,7 @@ body.dark {
 
 .sidebar .text,
 .sidebar .icon {
-    color: var(--text-color);
+    color: var(--text-color-zwart);
     transition: var(--tran-03);
 }
 
@@ -168,7 +162,7 @@ body.dark {
 
 .sidebar .text-long,
 .sidebar .icon {
-    color: var(--text-color);
+    color: var(--text-color-zwart);
     transition: var(--tran-03);
 }
 
@@ -231,8 +225,8 @@ header .image-text .profession {
     transform: translateY(-50%) rotate(180deg);
     height: 25px;
     width: 25px;
-    background-color: var(--primary-color);
-    color: var(--sidebar-color);
+    background-color: var(--primary-color-red);
+    color: var(--sidebar-color-white);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -243,7 +237,7 @@ header .image-text .profession {
 }
 
 body.dark .sidebar header .toggle {
-    color: var(--text-color);
+    color: var(--text-color-zwart);
 }
 
 .sidebar.close .toggle {
@@ -256,7 +250,7 @@ body.dark .sidebar header .toggle {
 
 .sidebar li.search-box {
     border-radius: 6px;
-    background-color: var(--primary-color-light);
+    background-color: var(--primary-color-light-licht-blauwe-achtergrondkleur);
     cursor: pointer;
     transition: var(--tran-05);
 }
@@ -266,8 +260,8 @@ body.dark .sidebar header .toggle {
     width: 100%;
     outline: none;
     border: none;
-    background-color: var(--primary-color-light);
-    color: var(--text-color);
+    background-color: var(--primary-color-light-licht-blauwe-achtergrondkleur);
+    color: var(--text-color-zwart);
     border-radius: 6px;
     font-size: 17px;
     font-weight: 500;
@@ -287,17 +281,17 @@ body.dark .sidebar header .toggle {
 }
 
 .sidebar li a:hover {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-red);
 }
 
 .sidebar li a:hover .icon,
 .sidebar li a:hover .text {
-    color: var(--sidebar-color);
+    color: var(--sidebar-color-white);
 }
 
 body.dark .sidebar li a:hover .icon,
 body.dark .sidebar li a:hover .text {
-    color: var(--text-color);
+    color: var(--text-color-zwart);
 }
 
 .sidebar .menu-bar {
@@ -315,7 +309,7 @@ body.dark .sidebar li a:hover .text {
 
 .sidebar .menu-bar .mode {
     border-radius: 6px;
-    background-color: var(--primary-color-light);
+    background-color: var(--primary-color-light-licht-blauwe-achtergrondkleur);
     position: relative;
     transition: var(--tran-05);
 }
@@ -358,7 +352,7 @@ body.dark .mode .sun-moon i.moon {
     height: 22px;
     width: 40px;
     border-radius: 25px;
-    background-color: var(--toggle-color);
+    background-color: var(--toggle-color-licht-grijs);
     transition: var(--tran-05);
 }
 
@@ -371,7 +365,7 @@ body.dark .mode .sun-moon i.moon {
     top: 50%;
     left: 5px;
     transform: translateY(-50%);
-    background-color: var(--sidebar-color);
+    background-color: var(--sidebar-color-white);
     transition: var(--tran-04);
 }
 
@@ -391,7 +385,7 @@ body.dark .switch::before {
 .home .text {
     font-size: 30px;
     font-weight: 500;
-    color: var(--text-color);
+    color: var(--text-color-zwart);
     padding: 12px 60px;
 }
 
@@ -399,18 +393,18 @@ body.dark .switch::before {
     left: 126px;
     height: 100vh;
     width: calc(100% - 78px);
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 body.dark .home .text {
-    color: var(--text-color);
+    color: var(--text-color-zwart);
 }
 
 /*boetetabel*/
 /*dit is de naam boek en datum inleveren*/
 th {
     /*color: #FFFFFF;*/
-    background-color: #ffffff;
+    background-color: var(--sidebar-color-white);
     border: var(--border-color-line);
     /*border: 1px solid #dddddd; !*  hier word een randje meegegeven aan de th  *!*/
     font-size: 1.5em;
@@ -421,7 +415,7 @@ th {
 
 /*dit zijn de celblockej*/
 td {
-    background-color: #ffffff;
+    background-color: var(--sidebar-color-white);
     border: var(--border-color-line);
     font-size: 1em;
     line-height: 1.5;
@@ -431,47 +425,47 @@ td {
 /*algemeen*/
 
 
-    .grid-container, .grid-container-filter {
-        display: grid; /*1 grote container met daarin 4 kinderen*/
-        /*grid-gap: 1em;*/
-        grid-template-areas:
-            "item1 "/*regel1*/
-            "item2"
-            "item3";
-        /*grid-template-columns: 1fr;*/
-    }
+.grid-container, .grid-container-filter {
+    display: grid; /*1 grote container met daarin 4 kinderen*/
+    /*grid-gap: 1em;*/
+    grid-template-areas:
+            "inleiding_zoekvak "/*regel1*/
+            "meer_info_filters"
+            "boeken-overzicht-boeken";
+    /*grid-template-columns: 1fr;*/
+}
 
-    .grid-item, .grid-item-filter { /*dit zijn de 3 kinderen met daarin de inhoud ide steeds meebeweegt*/
-        padding: 1em;
-    }
+.grid-item, .grid-item-filter { /*dit zijn de 3 kinderen met daarin de inhoud ide steeds meebeweegt*/
+    padding: 1em;
+}
 
-    .grid-item:nth-child(1) { /*inleiding*/
-        grid-area: item1;
-        margin-bottom: 1em;
-    }
-
-
-    .grid-item:nth-child(2) { /*meer info*/
-        grid-area: item2;
+.grid-item:nth-child(1) { /*inleiding_zoekvak*/
+    grid-area: inleiding_zoekvak;
+    margin-bottom: var(--margin-bottom-1em);
+}
 
 
-    }
+.grid-item:nth-child(2) { /*meer info*/
+    grid-area: meer_info_filters;
 
-    .grid-item:nth-child(3) { /*boete*/
-        grid-area: item3;
-    }
+
+}
+
+.grid-item:nth-child(3) { /*boete*/
+    grid-area: boeken-overzicht-boeken;
+}
 
 p:nth-child(2) { /*dit is Welkom op uw persoonlijke pagina van de website van de OBA. p */
-    margin-bottom: 1em;
+    margin-bottom: var(--margin-bottom-1em);
 }
 
 details:nth-child(n+1):nth-child(-n+7) { /*nummer 1 tot en met 5*/
-    margin-bottom: 1em;
+    margin-bottom: var(--margin-bottom-1em);
 }
 
 button, .reset-button, .filterbutton {
     border: none;
-    box-shadow: 10px 5px 5px var(--toggle-color);
+    box-shadow: 10px 5px 5px var(--toggle-color-licht-grijs);
     background-color: var(--background-color-buttons-white);
     /*color: #202121;*/
     /*background-color: #DDFF00;*/
@@ -494,7 +488,7 @@ button:hover {
 
 form label {
     /*margin-right: 1rem;*/
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: AvenirMedium,Verdana, Arial, Helvetica, sans-serif;
 }
 
 .i-search {
@@ -524,7 +518,7 @@ form label {
 
 .showresults {
     display: none;
-    color: var(--text-color);
+    color: var(--text-color-zwart);
 }
 
 .collaps-open-funtion-boeken, .collaps-open-funtion-boeken_second, .collaps-open-funtion-boeken_third { /*dit zijn de buttons in de lijst en op deze pagina voor meer info*/
@@ -540,57 +534,71 @@ form label {
 
 .hide-li-sign {
     list-style-type: none;
-    margin-bottom: 1em;
+    margin-bottom: var(--margin-bottom-1em);
 }
 
 a:nth-child(1) {
-    color: var(--text-color);
+    color: var(--text-color-zwart);
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
 }
+.div-container-image{
+    display: grid;
+}
+.title-book-link{
+    display: grid;
+    align-self: center;
+}
 
 @media (min-width: 44em)  and (max-width: 60em) {
     /*mini ipad*/
     .grid-container, .grid-container-filter {
         display: grid;
-        grid-template-areas:   "item1 item2"
-                                "item3 item2";
-        grid-template-columns: repeat(2, minmax(0, 10fr));
+        grid-template-areas:   var(--grid-template-areas-indeling);
+        grid-template-columns: var(--grid-template-columns-indeling);
     }
 
     .grid-container-filter {
         margin-top: 5em;
     }
 
-    .grid-item:nth-child(1){
+    .grid-item:nth-child(1) {
         margin-right: 1em;
     }
+
     .grid-item-filter:nth-child(1) { /*meer info*/
-        grid-area: item1;
+        grid-area: inleiding_zoekvak;
 
 
     }
 
     .grid-item-filter, .grid-item-filter:nth-child(2) { /*meer info*/
-        grid-area: item2;
-        margin-bottom: 1em;
+        grid-area: meer_info_filters;
+        margin-bottom: var(--margin-bottom-1em);
 
 
     }
-    .grid-item:nth-child(3){
+
+    .grid-item:nth-child(3) {
         margin-right: 5em;
     }
 
     .grid-item-filter, .grid-item-filter:nth-child(3) { /*meer info*/
-        grid-area: item3;
+        grid-area: boeken-overzicht-boeken;
 
     }
 
     .grid-item-filter:nth-child(2) {
         justify-self: center;
+    }
+
+/*    algemneen*/
+    .title-book-link{
+        display: grid;
+        align-self: center;
     }
 }
 
@@ -599,41 +607,39 @@ a:hover {
     /*mini ipad*/
     .grid-container {
         display: grid;
-        grid-template-areas:   "item1 item2"
-                                "item3 item2";
-        grid-template-columns: repeat(2, minmax(0, 10fr));
+        grid-template-areas:   var(--grid-template-areas-indeling);
+        grid-template-columns: var(--grid-template-columns-indeling);
     }
 
-    p:nth-child(3),.text-boeken-overzicht { /*dit is Welkom op uw persoonlijke pagina van de website van de OBA. p */
-        max-width: 30em;
-    }
 
     .grid-container-filter {
         display: grid;
-        grid-template-areas:   "item1 item2"
-                                "item3 item2";
-        grid-template-columns: repeat(2, minmax(0, 10fr));
+        grid-template-areas:   var(--grid-template-areas-indeling);
+        grid-template-columns: var(--grid-template-columns-indeling);
         margin-top: 5em;
     }
 
     .grid-item-filter:nth-child(1) { /*meer info*/
-        grid-area: item1;
+        grid-area: inleiding_zoekvak;
 
 
     }
 
     .grid-item-filter, .grid-item-filter:nth-child(2) { /*meer info*/
-        grid-area: item2;
-        margin-bottom: 1em;
+        grid-area: meer_info_filters;
+        margin-bottom: var(--margin-bottom-1em);
 
 
     }
 
     .grid-item-filter, .grid-item-filter:nth-child(3) { /*meer info*/
-        grid-area: item3;
-        /*margin-bottom: 1em;*/
-        /*justify-self: center;*/
+        grid-area: boeken-overzicht-boeken;
 
+
+    }
+
+    p:nth-child(3), .text-boeken-overzicht { /*dit is Welkom op uw persoonlijke pagina van de website van de OBA. p */
+        max-width: 30em;
     }
 
     .grid-books-blocks {
@@ -644,93 +650,94 @@ a:hover {
 
 }
 
+/* hier is grid blockcs het verschil en de rest is hetzelfde*/
 @media (min-width: 80em)and (max-width: 100em) {
     /*mini ipad*/
     .grid-container {
         display: grid;
-        grid-template-areas:   "item1 item2"
-                                "item3 item2";
-        grid-template-columns: repeat(2, minmax(0, 10fr));
+        grid-template-areas:   var(--grid-template-areas-indeling);
+        grid-template-columns: var(--grid-template-columns-indeling);
     }
 
-    p:nth-child(3),.text-boeken-overzicht { /*dit is Welkom op uw persoonlijke pagina van de website van de OBA. p */
-        max-width: 35em;
-    }
 
     .grid-container-filter {
         display: grid;
-        grid-template-areas:   "item1 item2"
-                                "item3 item2";
-        grid-template-columns: repeat(2, minmax(0, 10fr));
+        grid-template-areas:   var(--grid-template-areas-indeling);
+        grid-template-columns: var(--grid-template-columns-indeling);
         margin-top: 5em;
     }
 
     .grid-item-filter:nth-child(1) { /*meer info*/
-        grid-area: item1;
+        grid-area: inleiding_zoekvak;
     }
 
     .grid-item-filter, .grid-item-filter:nth-child(2) { /*meer info*/
-        grid-area: item2;
-        margin-bottom: 1em;
+        grid-area: meer_info_filters;
+        margin-bottom: var(--margin-bottom-1em);
 
 
     }
 
     .grid-item-filter, .grid-item-filter:nth-child(3) { /*meer info*/
-        grid-area: item3;
-        /*margin-bottom: 1em;*/
-        /*justify-self: center;*/
+        grid-area: boeken-overzicht-boeken;
 
+
+    }
+
+    p:nth-child(3), .text-boeken-overzicht { /*dit is Welkom op uw persoonlijke pagina van de website van de OBA. p */
+        max-width: 35em;
     }
 
     .grid-books-blocks {
         display: grid;
-        grid-template-areas: "item1 item2 item3";
+        grid-template-areas: "boek1 boek2 boek3";
         gap: 2em;
     }
 
 
 }
+
 @media (min-width: 100em) {
     .grid-container {
         display: grid;
-        grid-template-areas:   "item1 item2"
-                                "item3 item2";
-        grid-template-columns: repeat(2, minmax(0, 10fr));
+        grid-template-areas:   var(--grid-template-areas-indeling);
+        grid-template-columns: var(--grid-template-columns-indeling);
     }
 
-    p:nth-child(3),.text-boeken-overzicht { /*dit is Welkom op uw persoonlijke pagina van de website van de OBA. p */
+    p:nth-child(3), .text-boeken-overzicht { /*dit is Welkom op uw persoonlijke pagina van de website van de OBA. p */
         max-width: 35em;
     }
 
     .grid-container-filter {
         display: grid;
-        grid-template-areas:   "item1 item2"
-                                "item3 item2";
-        grid-template-columns: repeat(2, minmax(0, 10fr));
+        grid-template-areas:   var(--grid-template-areas-indeling);
+        grid-template-columns: var(--grid-template-columns-indeling);
         margin-top: 5em;
     }
 
     .grid-item-filter:nth-child(1) { /*meer info*/
-        grid-area: item1;
+        grid-area: inleiding_zoekvak;
     }
 
     .grid-item-filter, .grid-item-filter:nth-child(2) { /*meer info*/
-        grid-area: item2;
-        margin-bottom: 1em;
+        grid-area: meer_info_filters;
+        margin-bottom: var(--margin-bottom-1em);
 
 
     }
 
     .grid-item-filter, .grid-item-filter:nth-child(3) { /*meer info*/
-        grid-area: item3;
+        grid-area: boeken-overzicht-boeken;
         /*margin-bottom: 1em;*/
         /*justify-self: center;*/
 
     }
+
     .grid-books-blocks {
         display: grid;
-        grid-template-areas: "item1 item2 item3 item4";
+        grid-template-areas: "boek1 boek2 boek3 boek4";
         gap: 2em;
     }
 }
+
+/*todo bij javascript de 2de en 3de fitlerfuncite toegevoen*/
