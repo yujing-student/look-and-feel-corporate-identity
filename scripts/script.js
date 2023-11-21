@@ -96,25 +96,27 @@ function filtershow_third() {
 
 
 function searchfunction() {
-    let input, filter, ul, li = [], booktitle, txtValue;
-    input = document.getElementById("input_searchfunciton");
-    filter = input.value.toUpperCase();/*hoofdlettergevoeligheid*/
-    ul = document.getElementsByClassName("myUL");
+    // https://www.w3schools.com/howto/howto_js_filter_lists.asp bron waar ik code gekopieerd heb
+    let input, filter, ul, li,booktitle,list_books, a, i, txtValue;
+    input = document.getElementById('input_searchfunciton');
+    // ul = document.getElementsByClassName("myUL");
+    list_books = document.querySelectorAll('.hide-li-sign')
+    filter = input.value.toUpperCase();//controleren hoofdletters
 
-    for (let i = 0; i < ul.length; i++) {
-        let all_ul = ul[i];/*verzamleing door de 2 ul lijsten */
-        let alle_li = all_ul.getElementsByTagName("li");/*alle li itemsn*/
 
-        for (let j = 0; j < alle_li.length; j++) {/*loop door de li items*/
-            booktitle = alle_li[j].getElementsByClassName("booktitle")[0];/*haal eerste element op van de li items*/
-            txtValue = booktitle.textContent || booktitle.innerText;/*txt is de booktitle met de check op de naam of de andere tekst*/
-            // https://developer.mozilla.org/en-US/docs/web/api/node/textcontent https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                alle_li[j].style.display = "";
-            } else {
-                alle_li[j].style.display = "none";
-            }
-            li.push(alle_li[j]); // Voeg het li-element toe aan de li-array
+    booktitle = document.querySelectorAll('.title-book-link')
+
+
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < list_books.length; i++) {
+        a = list_books[i].getElementsByTagName("a")[0];
+
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            list_books[i].style.display = "";
+        } else {
+            list_books[i].style.display = "none";
         }
     }
 
@@ -122,9 +124,11 @@ function searchfunction() {
 
     rest.addEventListener('click', function () {
         // Selecteer alle li-elementen
-        for (let i = 0; i < li.length; i++) {
-            li[i].style.display = "grid"; //laat de resultaten weer zien
+        for (let i = 0; i < list_books.length; i++) {
+            list_books[i].style.display = "grid"; //laat de resultaten weer zien
         }
     });
 }
+
+
 
