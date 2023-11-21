@@ -545,13 +545,13 @@ a:nth-child(1) {
 a:hover {
     text-decoration: underline;
 }
-.div-container-image{
+.title-book-link,.books-image{
     display: grid;
+    justify-content: left;
 }
-.title-book-link{
-    display: grid;
-    align-self: center;
-}
+
+
+
 
 @media (min-width: 44em)  and (max-width: 60em) {
     /*mini ipad*/
