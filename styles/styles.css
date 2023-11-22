@@ -494,7 +494,7 @@ form label {
     font-family: AvenirMedium, Verdana, Arial, Helvetica, sans-serif;
 }
 
-.i-search {
+.i--search {
     margin-right: 1rem;
     font-size: 2em;
 }
@@ -505,7 +505,7 @@ form label {
     width: 20rem;
 }
 
-#input-searchfunciton {
+#input--searchfunciton {
     padding: 0.5rem 0.5rem;
     border-radius: 0.75rem;
     border: none;

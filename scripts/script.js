@@ -97,11 +97,13 @@ function filtershowthird() {
     }
 }
 filtershowthird();
+// deze 3 functies moeten 1 functie worden
+
 
 function searchfunction() {
     // https://www.w3schools.com/howto/howtojsfilterlists.asp bron waar ik code gekopieerd heb
     let input, filter, ul, li,booktitle,listbooks, a, i, txtValue;
-    input = document.getElementById('input-searchfunciton');
+    input = document.getElementById('input--searchfunciton');
     // ul = document.getElementsByClassName("myUL");
     listbooks = document.querySelectorAll('.hide-li-sign')
     filter = input.value.toUpperCase();//controleren hoofdletters
