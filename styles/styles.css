@@ -509,11 +509,14 @@ form label {
     outline: 0;
     font-family: AvenirMedium, 'sans serif';
     font-size: 1rem;
-    height: 1.5rem;
+    height: 2.5rem;
 }
 
 .item-filter {
     margin-bottom: 2em;
+}
+.input-calender{
+    font-size: 1.2em;
 }
 
 .showresults {
@@ -548,6 +551,12 @@ a:hover {
 .title-book-link,.books-image{
     display: grid;
     justify-content: left;
+}
+.div-container-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 
@@ -600,6 +609,12 @@ a:hover {
         display: grid;
         align-self: center;
     }
+    .div-container-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 
@@ -645,6 +660,12 @@ a:hover {
     .grid-books-blocks {
         display: grid;
         grid-template-areas: "boek1 boek2";
+    }
+    .div-container-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
 
@@ -693,6 +714,12 @@ a:hover {
         grid-template-areas: "boek1 boek2 boek3";
         gap: 2em;
     }
+    .div-container-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
 
 }
@@ -733,10 +760,17 @@ a:hover {
 
     }
 
+
     .grid-books-blocks {
         display: grid;
         grid-template-areas: "boek1 boek2 boek3 boek4";
         gap: 2em;
+    }
+    .div-container-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }
 
