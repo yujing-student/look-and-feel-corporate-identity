@@ -55,10 +55,10 @@ function showdivresults() {/*carousel laten zien*/
 }
 
 function filtershow() {
-    let formresults = document.querySelector(".collaps-open-funtion-boeken");
+    let formresults = document.querySelector(".filter__collaps-open-function-boeken");
     formresults.style.transition = "opacity 0.1s ease-out";
     // formresults.style.display = "none"; // verbeg formulier
-    let button = document.querySelector(".collapsible-boeken"); // select the button
+    let button = document.querySelector(".filter__collapsible-boeken"); // select the button
     button.addEventListener('click',function(){
         if (formresults.style.display === "none") {
             formresults.style.display = "block"; // show the form
@@ -72,9 +72,9 @@ function filtershow() {
 }
 filtershow();
 function filtershowsecond() {
-    let formresults = document.querySelector(".collaps-open-funtion-boeken-second");
+    let formresults = document.querySelector(".filter__collaps-open-funtion-boeken-second");
     formresults.style.transition = "opacity 0.1s ease-out";
-    let button = document.querySelector(".collapsible-boeken-second"); // selecteer de button
+    let button = document.querySelector(".filter__collapsible-boeken-second"); // selecteer de button
     button.addEventListener('click',function (){
         if (formresults.style.display === "none") {
             formresults.style.display = "block"; // show the form
@@ -85,9 +85,9 @@ function filtershowsecond() {
 }
 filtershowsecond();
 function filtershowthird() {
-    let formresults = document.querySelector(".collaps-open-funtion-boeken-third");
+    let formresults = document.querySelector(".filter__collaps-open-funtion-boeken-third");
     formresults.style.transition = "opacity 0.1s ease-out";
-    let button = document.querySelector(".collapsible-boeken-third"); // selecteer de button
+    let button = document.querySelector(".filter__collapsible-boeken-third"); // selecteer de button
     button.onclick = function () { // klik je op de button dat komt deze if else
         if (formresults.style.display === "none") {
             formresults.style.display = "block"; // laat het formulier zien of verbeg het

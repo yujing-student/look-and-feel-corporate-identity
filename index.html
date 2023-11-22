@@ -154,8 +154,8 @@
             <div class="grid-item" tabindex="0">
                 <!--                <h1 tabindex="0">Homepagina</h1>-->
                 <h2 tabindex="0">Welkom Amber</h2>
-                <p class="">Welkom op uw persoonlijke pagina van de website van de OBA.</p>
-                <p class=""> Op deze pagina kunt u: uw materialen verlengen,
+                <p>Welkom op uw persoonlijke pagina van de website van de OBA.</p>
+                <p> Op deze pagina kunt u: uw materialen verlengen,
                     zoals een boek of dvd. Verder kunt u uw reserveringen bekijken en uw uitlengeschiedenis zien</p>
             </div>
             <div class="grid-item">
@@ -186,9 +186,10 @@
             </div>
 
             <div class="grid-item" tabindex="0">
+
                 <p class="inleiding-text-boeken-overzicht" tabindex="0">Ga naar boeken overzicht voor een overzicht met de
                     geleende boeken zodat u ziet <strong>welke boeken u moet inleveren</strong></p>
-                <button aria-pressed="false" class="button-boeken" onclick="boeken()" tabindex="0"
+                <button aria-pressed="false" class="inleiding-text-boeken-overzicht__button-boeken" onclick="boeken()" tabindex="0"
                         type="button"><strong>overzicht geleende boeken</strong>
                 </button>
             </div>
@@ -198,11 +199,11 @@
         <div class="grid-container-filter">
             <div class="grid-item-filter" tabindex="0">
                 <h3  tabindex="0">Hier kunt u zoeken naar boeken</h3>
-                <div tabindex="0">
+
                     <!--                <label for="myInput"></label>-->
                     <form class="input-searchbar-form">
                         <i class="bx bx-search icon i--search" onclick="showdivresults()" tabindex="0"></i>
-                        <input aria-label="zoeken naar boeken" id="input--searchfunciton" onkeyup="searchfunction()"
+                        <input aria-label="zoeken naar boeken" id="input-searchbar-form__input-searchfunciton" onkeyup="searchfunction()"
                                placeholder="typ hier uw boek in"
                                type="search">
                     </form>
@@ -212,16 +213,16 @@
                     <!--                            tabindex="0" title="druk op de button om resultaat te zien" type="button">-->
                     <!--                        zoeken-->
                     <!--                    </button>-->
-                </div>
+
                 <button class="reset" title="resetbutton" type="button">reset toon alle resultaten</button>
             </div>
             <div class="grid-item-filter" tabindex="0">
                 <!--                <div class="grid-filters-functions" tabindex="0">-->
                 <p>filters</p>
-                <div class="item-filter">
+                <div class="item-filter filter">
 
                     <!--                    <box-icon name='filter-alt' ></box-icon>-->
-                    <button aria-pressed="false" class="collapsible-boeken"
+                    <button aria-pressed="false" class="filter__collapsible-boeken"
                             tabindex="0"
                             type="button"><i class='bx bx-filter-alt'></i>boeken filter onderwerpen
                     </button>
@@ -231,60 +232,60 @@
                     <!--        https://www.w3schools.com/css/css-boxmodel.asp
                     hier naar kijken met chekboxes of als sorteerfunctie activitetien dvd boeken-->
                     <form aria-label="dit is het form met daarin de filter funcites die je kan selecteren"
-                          class="collaps-open-funtion-boeken">
+                          class="filter__collaps-open-function-boeken">
                         <p>onderwerpen</p>
                         <!-- de section class filter moet pas weergegeven worden nadat op de button geklikt is           -->
-                        <label for="onderwerp-sport-genre"></label><input class="input-checkboxes"
+                        <label for="onderwerp-sport-genre"></label><input class="filter__input-checkboxes"
                                                                           data-filter="sport"
                                                                           id="onderwerp-sport-genre" name="onderwerp-sport"
                                                                           type="checkbox" value="sport">
                         <label class="lable-checkbox" for="onderwerp-sport"> sport</label><br>
-                        <label for="onderwerp-cultuur-genre"></label><input class="input-checkboxes"
+                        <label for="onderwerp-cultuur-genre"></label><input class="filter__input-checkboxes"
                                                                             data-filter="cultuur"
                                                                             id="onderwerp-cultuur-genre" name="onderwerp-cultuur"
                                                                             type="checkbox" value="cultuur">
                         <label for="onderwerp-cultuur">cultuur</label><br>
-                        <label for="onderwerp-kunst-genre"></label><input class="input-checkboxes"
+                        <label for="onderwerp-kunst-genre"></label><input class="filter__input-checkboxes"
                                                                           data-filter="kunst"
                                                                           id="onderwerp-kunst-genre" name="onderwerp-kunst"
                                                                           type="checkbox" value="kunst">
                         <label for="onderwerp-kunst">kunst</label><br>
-                        <label for="onderwerp-mode-genre"></label><input class="input-checkboxes"
+                        <label for="onderwerp-mode-genre"></label><input class="filter__input-checkboxes"
                                                                          data-filter="fashion" id="onderwerp-mode-genre"
                                                                          name="onderwerp-mode"
                                                                          type="checkbox" value="fashion">
                         <label for="onderwerp-mode">fashion</label><br>
                         <!--                        <input class="reset-button" type="reset" value="reset!">-->
-                        <input class="filterbutton" type="button" value="filter!">
+                        <input class="filter__filterbutton" type="button" value="filter!">
                     </form>
                 </div>
-                <div class="item-filter">
-                    <button aria-pressed="false" class="collapsible-boeken-second"
+                <div class="item-filter filter">
+                    <button aria-pressed="false" class="filter__collapsible-boeken-second"
                             tabindex="0"
                             type="button"><i class='bx bx-filter-alt'></i> genre filter onderwerpen
                     </button>
                     <form aria-label="dit is het form met daarin de filter funcites die je kan selecteren"
-                          class="collaps-open-funtion-boeken-second">
+                          class="filter__collaps-open-funtion-boeken-second">
                         <p>genre</p>
                         <!-- de section class filter moet pas weergegeven worden nadat op de button geklikt is           -->
-                        <input class="input-checkboxes" data-filter="sport" id="onderwerp-sport" name="onderwerp-sport"
+                        <input class="filter__input-checkboxes" data-filter="sport" id="onderwerp-sport" name="onderwerp-sport"
                                type="checkbox" value="sport">
                         <label class="lable-checkbox" for="onderwerp-sport"> thriller</label><br>
-                        <input class="input-checkboxes" data-filter="cultuur" id="onderwerp-cultuur" name="onderwerp-cultuur"
+                        <input class="filter__input-checkboxes" data-filter="cultuur" id="onderwerp-cultuur" name="onderwerp-cultuur"
                                type="checkbox" value="cultuur">
                         <label for="onderwerp-cultuur">roman</label><br>
-                        <input class="input-checkboxes" data-filter="kunst" id="onderwerp-kunst" name="onderwerp-kunst"
+                        <input class="filter__input-checkboxes" data-filter="kunst" id="onderwerp-kunst" name="onderwerp-kunst"
                                type="checkbox" value="kunst">
                         <label for="onderwerp-kunst">misdaad</label><br>
-                        <input class="input-checkboxes" data-filter="fashion" id="onderwerp-mode" name="onderwerp-mode"
+                        <input class="filter__input-checkboxes" data-filter="fashion" id="onderwerp-mode" name="onderwerp-mode"
                                type="checkbox" value="fashion">
                         <label for="onderwerp-mode">voetbal</label><br>
                         <!--                        <input class="reset-button" type="reset" value="reset!">-->
-                        <input class="filterbutton" type="button" value="filter!">
+                        <input class="filter__filterbutton" type="button" value="filter!">
                     </form>
                 </div>
-                <div class="item-filter">
-                    <button aria-pressed="false" class="collapsible-boeken-third"
+                <div class="item-filter filter">
+                    <button aria-pressed="false" class="filter__collapsible-boeken-third"
                             tabindex="0"
                             type="button"><i class='bx bx-filter-alt'></i> auteur filteren
 
@@ -295,28 +296,28 @@
                     <!--        https://www.w3schools.com/css/css-boxmodel.asp
                     hier naar kijken met chekboxes of als sorteerfunctie activitetien dvd boeken-->
                     <form aria-label="dit is het form met daarin de filter funcites die je kan selecteren"
-                          class="collaps-open-funtion-boeken-third">
+                          class="filter__collaps-open-funtion-boeken-third">
                         <p>auteur</p>
                         <!-- de section class filter moet pas weergegeven worden nadat op de button geklikt is           -->
-                        <label for="Evert-meer"></label><input class="input-checkboxes" data-filter="Evert-meer"
+                        <label for="Evert-meer"></label><input class="filter__input-checkboxes" data-filter="Evert-meer"
                                                                id="Evert-meer" name="onderwerp-sport"
                                                                type="checkbox" value="Evert meer">
                         <label class="lable-checkbox" for="onderwerp-sport"> Evert meer</label><br>
-                        <label for="Menno-Pot"></label><input class="input-checkboxes" data-filter="Menno-Pot"
+                        <label for="Menno-Pot"></label><input class="filter__input-checkboxes" data-filter="Menno-Pot"
                                                               id="Menno-Pot" name="onderwerp-cultuur"
                                                               type="checkbox" value="Menno Pot">
                         <label for="onderwerp-cultuur">Menno Pot</label><br>
-                        <label for="Jaap-visser"></label><input class="input-checkboxes" data-filter="Jaap-visser"
+                        <label for="Jaap-visser"></label><input class="filter__input-checkboxes" data-filter="Jaap-visser"
                                                                 id="Jaap-visser" name="onderwerp-kunst"
                                                                 type="checkbox" value="Jaap visser">
                         <label for="Jaap-visser">Jaap visser</label><br>
-                        <label for="Michel-van-egmond"></label><input class="input-checkboxes" data-filter="Michel-van-egmond"
+                        <label for="Michel-van-egmond"></label><input class="filter__input-checkboxes" data-filter="Michel-van-egmond"
                                                                       id="Michel-van-egmond" name="onderwerp-mode"
                                                                       type="checkbox"
                                                                       value="Michel van egmond">
                         <label for="onderwerp-mode">Michel van egmond</label><br>
                         <!--                        <input class="reset-button" type="reset" value="reset!">-->
-                        <input class="filterbutton" type="button" value="filter!">
+                        <input class="filter__filterbutton" type="button" value="filter!">
                     </form>
 
 
