@@ -149,7 +149,7 @@
 <!--https://www.jetbrains.com/help/webstorm/mastering-keyboard-shortcuts.html#choose-keymap-->
 <main class="home">
     <section tabindex="0"><!--tabindex word gebruikt zodat dit element gevonden kan worden door de tab toets-->
-        <div class="text"><img alt="logo" height="44" src="image/oba_20.png" width="84"></div>
+        <div class="text"><img alt="logo" height="44" src="image/oba-20.png" width="84"></div>
         <div class="grid-container" tabindex="0">
             <div class="grid-item" tabindex="0">
                 <!--                <h1 tabindex="0">Homepagina</h1>-->
@@ -186,7 +186,7 @@
             </div>
 
             <div class="grid-item" tabindex="0">
-                <p class="text-boeken-overzicht" tabindex="0">Ga naar boeken overzicht voor een overzicht met de
+                <p class="inleiding-text-boeken-overzicht" tabindex="0">Ga naar boeken overzicht voor een overzicht met de
                     geleende boeken zodat u ziet <strong>welke boeken u moet inleveren</strong></p>
                 <button aria-pressed="false" class="button-boeken" onclick="boeken()" tabindex="0"
                         type="button"><strong>overzicht geleende boeken</strong>
@@ -202,7 +202,7 @@
                     <!--                <label for="myInput"></label>-->
                     <form class="input-searchbar-form">
                         <i class="bx bx-search icon i-search" onclick="showdivresults()" tabindex="0"></i>
-                        <input aria-label="zoeken naar boeken" id="input_searchfunciton" onkeyup="searchfunction()"
+                        <input aria-label="zoeken naar boeken" id="input-searchfunciton" onkeyup="searchfunction()"
                                placeholder="typ hier uw boek in"
                                type="search">
                     </form>
@@ -221,35 +221,35 @@
                 <div class="item-filter">
 
                     <!--                    <box-icon name='filter-alt' ></box-icon>-->
-                    <button aria-pressed="false" class="collapsible-boeken" onclick="filtershow()"
+                    <button aria-pressed="false" class="collapsible-boeken"
                             tabindex="0"
                             type="button"><i class='bx bx-filter-alt'></i>boeken filter onderwerpen
                     </button>
                     <!--        <button>filterfunctie</button>-->
                     <!--    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox-->
 
-                    <!--        https://www.w3schools.com/css/css_boxmodel.asp
+                    <!--        https://www.w3schools.com/css/css-boxmodel.asp
                     hier naar kijken met chekboxes of als sorteerfunctie activitetien dvd boeken-->
                     <form aria-label="dit is het form met daarin de filter funcites die je kan selecteren"
                           class="collaps-open-funtion-boeken">
                         <p>onderwerpen</p>
                         <!-- de section class filter moet pas weergegeven worden nadat op de button geklikt is           -->
-                        <label for="onderwerp-sport-genre"></label><input class="input_checkboxes"
+                        <label for="onderwerp-sport-genre"></label><input class="input-checkboxes"
                                                                           data-filter="sport"
                                                                           id="onderwerp-sport-genre" name="onderwerp-sport"
                                                                           type="checkbox" value="sport">
                         <label class="lable-checkbox" for="onderwerp-sport"> sport</label><br>
-                        <label for="onderwerp-cultuur-genre"></label><input class="input_checkboxes"
+                        <label for="onderwerp-cultuur-genre"></label><input class="input-checkboxes"
                                                                             data-filter="cultuur"
                                                                             id="onderwerp-cultuur-genre" name="onderwerp-cultuur"
                                                                             type="checkbox" value="cultuur">
                         <label for="onderwerp-cultuur">cultuur</label><br>
-                        <label for="onderwerp-kunst-genre"></label><input class="input_checkboxes"
+                        <label for="onderwerp-kunst-genre"></label><input class="input-checkboxes"
                                                                           data-filter="kunst"
                                                                           id="onderwerp-kunst-genre" name="onderwerp-kunst"
                                                                           type="checkbox" value="kunst">
                         <label for="onderwerp-kunst">kunst</label><br>
-                        <label for="onderwerp-mode-genre"></label><input class="input_checkboxes"
+                        <label for="onderwerp-mode-genre"></label><input class="input-checkboxes"
                                                                          data-filter="fashion" id="onderwerp-mode-genre"
                                                                          name="onderwerp-mode"
                                                                          type="checkbox" value="fashion">
@@ -259,24 +259,24 @@
                     </form>
                 </div>
                 <div class="item-filter">
-                    <button aria-pressed="false" class="collapsible-boeken_second" onclick="filtershow_secod()"
+                    <button aria-pressed="false" class="collapsible-boeken-second"
                             tabindex="0"
                             type="button"><i class='bx bx-filter-alt'></i> genre filter onderwerpen
                     </button>
                     <form aria-label="dit is het form met daarin de filter funcites die je kan selecteren"
-                          class="collaps-open-funtion-boeken_second">
+                          class="collaps-open-funtion-boeken-second">
                         <p>genre</p>
                         <!-- de section class filter moet pas weergegeven worden nadat op de button geklikt is           -->
-                        <input class="input_checkboxes" data-filter="sport" id="onderwerp-sport" name="onderwerp-sport"
+                        <input class="input-checkboxes" data-filter="sport" id="onderwerp-sport" name="onderwerp-sport"
                                type="checkbox" value="sport">
                         <label class="lable-checkbox" for="onderwerp-sport"> thriller</label><br>
-                        <input class="input_checkboxes" data-filter="cultuur" id="onderwerp-cultuur" name="onderwerp-cultuur"
+                        <input class="input-checkboxes" data-filter="cultuur" id="onderwerp-cultuur" name="onderwerp-cultuur"
                                type="checkbox" value="cultuur">
                         <label for="onderwerp-cultuur">roman</label><br>
-                        <input class="input_checkboxes" data-filter="kunst" id="onderwerp-kunst" name="onderwerp-kunst"
+                        <input class="input-checkboxes" data-filter="kunst" id="onderwerp-kunst" name="onderwerp-kunst"
                                type="checkbox" value="kunst">
                         <label for="onderwerp-kunst">misdaad</label><br>
-                        <input class="input_checkboxes" data-filter="fashion" id="onderwerp-mode" name="onderwerp-mode"
+                        <input class="input-checkboxes" data-filter="fashion" id="onderwerp-mode" name="onderwerp-mode"
                                type="checkbox" value="fashion">
                         <label for="onderwerp-mode">voetbal</label><br>
                         <!--                        <input class="reset-button" type="reset" value="reset!">-->
@@ -284,7 +284,7 @@
                     </form>
                 </div>
                 <div class="item-filter">
-                    <button aria-pressed="false" class="collapsible-boeken_third" onclick="filtershow_third()"
+                    <button aria-pressed="false" class="collapsible-boeken-third"
                             tabindex="0"
                             type="button"><i class='bx bx-filter-alt'></i> auteur filteren
 
@@ -292,25 +292,25 @@
                     <!--        <button>filterfunctie</button>-->
                     <!--    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox-->
 
-                    <!--        https://www.w3schools.com/css/css_boxmodel.asp
+                    <!--        https://www.w3schools.com/css/css-boxmodel.asp
                     hier naar kijken met chekboxes of als sorteerfunctie activitetien dvd boeken-->
                     <form aria-label="dit is het form met daarin de filter funcites die je kan selecteren"
-                          class="collaps-open-funtion-boeken_third">
+                          class="collaps-open-funtion-boeken-third">
                         <p>auteur</p>
                         <!-- de section class filter moet pas weergegeven worden nadat op de button geklikt is           -->
-                        <label for="Evert-meer"></label><input class="input_checkboxes" data-filter="Evert-meer"
+                        <label for="Evert-meer"></label><input class="input-checkboxes" data-filter="Evert-meer"
                                                                id="Evert-meer" name="onderwerp-sport"
                                                                type="checkbox" value="Evert meer">
                         <label class="lable-checkbox" for="onderwerp-sport"> Evert meer</label><br>
-                        <label for="Menno-Pot"></label><input class="input_checkboxes" data-filter="Menno-Pot"
+                        <label for="Menno-Pot"></label><input class="input-checkboxes" data-filter="Menno-Pot"
                                                               id="Menno-Pot" name="onderwerp-cultuur"
                                                               type="checkbox" value="Menno Pot">
                         <label for="onderwerp-cultuur">Menno Pot</label><br>
-                        <label for="Jaap-visser"></label><input class="input_checkboxes" data-filter="Jaap-visser"
+                        <label for="Jaap-visser"></label><input class="input-checkboxes" data-filter="Jaap-visser"
                                                                 id="Jaap-visser" name="onderwerp-kunst"
                                                                 type="checkbox" value="Jaap visser">
                         <label for="Jaap-visser">Jaap visser</label><br>
-                        <label for="Michel-van-egmond"></label><input class="input_checkboxes" data-filter="Michel-van-egmond"
+                        <label for="Michel-van-egmond"></label><input class="input-checkboxes" data-filter="Michel-van-egmond"
                                                                       id="Michel-van-egmond" name="onderwerp-mode"
                                                                       type="checkbox"
                                                                       value="Michel van egmond">

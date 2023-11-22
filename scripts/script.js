@@ -30,7 +30,7 @@ function boeken() {
     // alert("druk op oké om naar de tabel te gaan emt daarin het boeteoverzicht.");
     document.querySelector(".button-boeken").onclick = function openlink() {
         location.href = "boete.index.html";
-        // https://www.w3schools.com/jsref/met_win_alert.asp
+        // https://www.w3schools.com/jsref/metwinalert.asp
     }
 }
 
@@ -41,7 +41,7 @@ function showdivresults() {/*carousel laten zien*/
 
     let displaydivresults = window.getComputedStyle(divresults).display;
     //     https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle
-    //     https://www.w3schools.com/jsref/jsref_getcomputedstyle.asp
+    //     https://www.w3schools.com/jsref/jsrefgetcomputedstyle.asp
     //met deze code wordt alle css proporties of een element en de inhoud ervan weergegeven
 
     //
@@ -56,9 +56,38 @@ function showdivresults() {/*carousel laten zien*/
 
 function filtershow() {
     let formresults = document.querySelector(".collaps-open-funtion-boeken");
+    formresults.style.transition = "opacity 0.1s ease-out";
     // formresults.style.display = "none"; // verbeg formulier
+    let button = document.querySelector(".collapsible-boeken"); // select the button
+    button.addEventListener('click',function(){
+        if (formresults.style.display === "none") {
+            formresults.style.display = "block"; // show the form
+        } else {
+            formresults.style.display = "none"; // hide the form
+        }
+    });
 
-    let button = document.querySelector(".collapsible-boeken"); // selecteer de button
+
+
+}
+filtershow();
+function filtershowsecond() {
+    let formresults = document.querySelector(".collaps-open-funtion-boeken-second");
+    formresults.style.transition = "opacity 0.1s ease-out";
+    let button = document.querySelector(".collapsible-boeken-second"); // selecteer de button
+    button.addEventListener('click',function (){
+        if (formresults.style.display === "none") {
+            formresults.style.display = "block"; // show the form
+        } else {
+            formresults.style.display = "none"; // hide the form
+        }
+    });
+}
+filtershowsecond();
+function filtershowthird() {
+    let formresults = document.querySelector(".collaps-open-funtion-boeken-third");
+    formresults.style.transition = "opacity 0.1s ease-out";
+    let button = document.querySelector(".collapsible-boeken-third"); // selecteer de button
     button.onclick = function () { // klik je op de button dat komt deze if else
         if (formresults.style.display === "none") {
             formresults.style.display = "block"; // laat het formulier zien of verbeg het
@@ -67,40 +96,14 @@ function filtershow() {
         }
     }
 }
-
-function filtershow_secod() {
-    let formresults = document.querySelector(".collaps-open-funtion-boeken_second");
-
-    let button = document.querySelector(".collapsible-boeken_second"); // selecteer de button
-    button.onclick = function () { // klik je op de button dat komt deze if else
-        if (formresults.style.display === "none") {
-            formresults.style.display = "block"; // laat het formulier zien of verbeg het
-        } else {
-            formresults.style.display = "none";
-        }
-    }
-}
-
-function filtershow_third() {
-    let formresults = document.querySelector(".collaps-open-funtion-boeken_third");
-
-    let button = document.querySelector(".collapsible-boeken_third"); // selecteer de button
-    button.onclick = function () { // klik je op de button dat komt deze if else
-        if (formresults.style.display === "none") {
-            formresults.style.display = "block"; // laat het formulier zien of verbeg het
-        } else {
-            formresults.style.display = "none";
-        }
-    }
-}
-
+filtershowthird();
 
 function searchfunction() {
-    // https://www.w3schools.com/howto/howto_js_filter_lists.asp bron waar ik code gekopieerd heb
-    let input, filter, ul, li,booktitle,list_books, a, i, txtValue;
-    input = document.getElementById('input_searchfunciton');
+    // https://www.w3schools.com/howto/howtojsfilterlists.asp bron waar ik code gekopieerd heb
+    let input, filter, ul, li,booktitle,listbooks, a, i, txtValue;
+    input = document.getElementById('input-searchfunciton');
     // ul = document.getElementsByClassName("myUL");
-    list_books = document.querySelectorAll('.hide-li-sign')
+    listbooks = document.querySelectorAll('.hide-li-sign')
     filter = input.value.toUpperCase();//controleren hoofdletters
 
 
@@ -109,14 +112,14 @@ function searchfunction() {
 
 
     // Loop through all list items, and hide those who don't match the search query
-    for (i = 0; i < list_books.length; i++) {
-        a = list_books[i].getElementsByTagName("a")[0];
+    for (i = 0; i < listbooks.length; i++) {
+        a = listbooks[i].getElementsByTagName("a")[0];
 
         txtValue = a.textContent || a.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            list_books[i].style.display = "";
+            listbooks[i].style.display = "";
         } else {
-            list_books[i].style.display = "none";
+            listbooks[i].style.display = "none";
         }
     }
 
@@ -124,8 +127,8 @@ function searchfunction() {
 
     rest.addEventListener('click', function () {
         // Selecteer alle li-elementen
-        for (let i = 0; i < list_books.length; i++) {
-            list_books[i].style.display = "grid"; //laat de resultaten weer zien
+        for (let i = 0; i < listbooks.length; i++) {
+            listbooks[i].style.display = "grid"; //laat de resultaten weer zien
         }
     });
 }
