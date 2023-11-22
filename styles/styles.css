@@ -424,7 +424,7 @@ td {
 
 /*algemeen*/
 
-
+/*volgorde is van boven naar beneden net als met de html*/
 .grid-container, .grid-container-filter {
     display: grid; /*1 grote container met daarin 4 kinderen*/
     /*grid-gap: 1em;*/
@@ -441,7 +441,9 @@ td {
 
 .grid-item:nth-child(1) { /*inleiding_zoekvak*/
     grid-area: inleiding_zoekvak;
-    margin-bottom: var(--margin-bottom-1em);
+    /*margin-bottom: var(--margin-bottom-1em);*/
+    margin: 0 1em 0 0;
+
 }
 
 
@@ -462,7 +464,7 @@ p:nth-child(2) { /*dit is Welkom op uw persoonlijke pagina van de website van de
 details:nth-child(n+1):nth-child(-n+7) { /*nummer 1 tot en met 5*/
     margin-bottom: var(--margin-bottom-1em);
 }
-
+/*dit zijn de buttons*/
 button, .reset-button, .filterbutton {
     border: none;
     box-shadow: 10px 5px 5px var(--toggle-color-licht-grijs);
@@ -473,8 +475,8 @@ button, .reset-button, .filterbutton {
     font-family: AvenirMedium;
     border-radius: 6px;
     padding: 0.5rem;
-    margin-left: 0.2em;
-    margin-top: var(--margin-1em);
+    margin: var(--margin-1em) 0 0 0.2em;
+
 }
 
 button:hover {
@@ -507,7 +509,7 @@ form label {
     border-radius: 0.75rem;
     border: none;
     outline: 0;
-    font-family: AvenirMedium, 'sans serif';
+    font-family: AvenirMedium, Arial;
     font-size: 1rem;
     height: 2.5rem;
 }
@@ -524,6 +526,7 @@ form label {
     color: var(--text-color-zwart);
 }
 
+/*forms*/
 .collaps-open-funtion-boeken, .collaps-open-funtion-boeken_second, .collaps-open-funtion-boeken_third { /*dit zijn de buttons in de lijst en op deze pagina voor meer info*/
     display: none;
 }
@@ -575,13 +578,11 @@ a:hover {
     }
 
     .grid-item:nth-child(1) {
-        margin-right: 1em;
+        margin: 0 1em 0 0;
     }
 
     .grid-item-filter:nth-child(1) { /*meer info*/
         grid-area: inleiding_zoekvak;
-
-
     }
 
     .grid-item-filter, .grid-item-filter:nth-child(2) { /*meer info*/
@@ -625,7 +626,9 @@ a:hover {
         grid-template-areas:   var(--grid-template-areas-indeling);
         grid-template-columns: var(--grid-template-columns-indeling);
     }
-
+    .grid-item:nth-child(1) {
+        margin: 0 1em 0 0;
+    }
 
     .grid-container-filter {
         display: grid;
@@ -679,7 +682,9 @@ a:hover {
         grid-template-areas:   var(--grid-template-areas-indeling);
         grid-template-columns: var(--grid-template-columns-indeling);
     }
-
+    .grid-item:nth-child(1) {
+        margin: 0 1em 0 0;
+    }
 
     .grid-container-filter {
         display: grid;
@@ -738,7 +743,7 @@ a:hover {
     .grid-container-filter {
         display: grid;
         grid-template-areas:   var(--grid-template-areas-indeling);
-        grid-template-columns: var(--grid-template-columns-indeling);
+        grid-template-columns:  repeat(2, minmax(50em, 10fr));;
         margin-top: 5em;
     }
 
