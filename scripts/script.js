@@ -100,23 +100,27 @@ filtershow();
 function searchfunction() {
     // https://www.w3schools.com/howto/howto_js_filter_lists.asp bron waar ik code gekopieerd heb
     let input, filter, listbooks, a, i, txtValue;
-    input = document.getElementById('input--searchfunciton');
+    input = document.getElementById('form__input-searchfunciton');
     listbooks = document.querySelectorAll('.hide-li-sign')
     filter = input.value.toUpperCase();//controleren hoofdletters
-
+    let button = document.querySelector('.i--search');
 
 
     // forloop waar i het boeknummer is en alle boeken nagelopen worden
-    for (i = 0; i < listbooks.length; i++) {
-        a = listbooks[i].document.querySelector("a")[0];/*begin bij de1ste a href*/
+    button.addEventListener('click', function (){
+        for (i = 0; i < listbooks.length; i++) {
+            a = listbooks[i].getElementsByTagName("a")[0];/*begin bij de1ste a href*/
 
-        txtValue = a.textContent || a.innerText;/*checken of een letter of woord erin zit*/
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            listbooks[i].style.display = "";/*indien gevonden laat het resultaat zien*/
-        } else {
-            listbooks[i].style.display = "none";
+            txtValue = a.textContent || a.innerText;/*checken of een letter of woord erin zit*/
+
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                listbooks[i].style.display = "";/*indien gevonden laat het resultaat zien*/
+            } else {
+                listbooks[i].style.display = "none";
+            }
         }
-    }
+    });
+
 
     let rest = document.querySelector('.reset');
 
