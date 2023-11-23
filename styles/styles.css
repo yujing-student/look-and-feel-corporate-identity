@@ -67,7 +67,7 @@ body {
     min-height: 100vh;
     background-color: var(--body-color);
     transition: var(--tran-05);
-    font-family: AvenirMedium;
+    font-family: AvenirMedium,Arial;
 }
 
 /* SCROLLBAR */
@@ -466,14 +466,14 @@ details:nth-child(n+1):nth-child(-n+7) { /*nummer 1 tot en met 5*/
 }
 
 /*dit zijn de buttons*/
-button, .reset-button, .filter__filterbutton {
+button, .reset-button, .filter__filterbutton {/*filterbutton staat lager*/
     border: none;
     box-shadow: 10px 5px 5px var(--toggle-color-licht-grijs);
     background-color: var(--background-color-buttons-white);
     /*color: #202121;*/
     /*background-color: #DDFF00;*/
     font-size: 1em;
-    font-family: AvenirMedium;
+    font-family: AvenirMedium,Arial;
     border-radius: 6px;
     padding: 0.5rem;
     margin: var(--margin-1em) 0 0 0.2em;
@@ -485,10 +485,10 @@ button:hover {
 }
 
 .grid-item-filter:nth-child(1), .grid-item-filter:nth-child(2), .grid-item-filter:nth-child(3) {
-    margin-bottom: 2em;
+    margin-bottom: 2em;/*dit is de onderkant*/
 
 }
-
+/*zoekvak*/
 form label {
     /*margin-right: 1rem;*/
     font-family: AvenirMedium, Verdana, Arial, Helvetica, sans-serif;
@@ -498,7 +498,7 @@ form label {
     margin-right: 1rem;
     font-size: 2em;
 }
-
+/*toepasen bem*/
 .input-searchbar-form {
     display: flex;
     align-items: center;
@@ -558,7 +558,7 @@ a:hover {
     text-decoration: underline;
 }
 
-.title-book-link, .books-image {
+.div-container-image__title-book-link, .books-image {
     display: grid;
     justify-content: left;
 }
@@ -607,11 +607,9 @@ a:hover {
 
     }
 
-    .grid-item-filter:nth-child(2) {
-    }
 
     /*    algemneen*/
-    .title-book-link {
+    .div-container-image__title-book-link {
         display: grid;
         align-self: center;
     }
@@ -635,6 +633,10 @@ a:hover {
 
     .grid-item:nth-child(1) {
         margin: 0 1em 0 0;
+    }
+
+    p:nth-child(3), .inleiding-text-boeken-overzicht { /*dit is Welkom op uw persoonlijke pagina van de website van de OBA. p */
+        max-width: 30em;
     }
 
     .grid-container-filter {
@@ -663,11 +665,7 @@ a:hover {
 
     }
 
-    p:nth-child(3), .inleiding-text-boeken-overzicht { /*dit is Welkom op uw persoonlijke pagina van de website van de OBA. p */
-        max-width: 30em;
-    }
-
-    .grid-books-blocks {
+    .grid-books-blocks {/*dit zijn de boeken die getoond worden*/
         display: grid;
         grid-template-areas: "boek1 boek2";
     }
@@ -699,7 +697,7 @@ a:hover {
     }
 
     p:nth-child(3), .inleiding-text-boeken-overzicht { /*dit is Welkom op uw persoonlijke pagina van de website van de OBA. tekst */
-        max-width: 35em;
+        max-width: 35em;/*dit staat ook in de volgende maar niet in de vorige*/
     }
 
     /*contianer filter de onderste cotnaienr*/

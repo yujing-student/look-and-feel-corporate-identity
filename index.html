@@ -199,20 +199,13 @@
         <div class="grid-container-filter">
             <div class="grid-item-filter" tabindex="0">
                 <h3  tabindex="0">Hier kunt u zoeken naar boeken</h3>
-
-                    <!--                <label for="myInput"></label>-->
-                    <form class="input-searchbar-form">
+                    <form class="input-searchbar-form"><!--bem toegepast-->
                         <i class="bx bx-search icon i--search" onclick="showdivresults()" tabindex="0"></i>
                         <input aria-label="zoeken naar boeken" id="input-searchbar-form__input-searchfunciton" onkeyup="searchfunction()"
                                placeholder="typ hier uw boek in"
                                type="search">
                     </form>
 
-
-                    <!--                    <button aria-pressed="false" class="searchbooks-button" onclick="showdivresults()"-->
-                    <!--                            tabindex="0" title="druk op de button om resultaat te zien" type="button">-->
-                    <!--                        zoeken-->
-                    <!--                    </button>-->
 
                 <button class="reset" title="resetbutton" type="button">reset toon alle resultaten</button>
             </div>
@@ -226,10 +219,7 @@
                             tabindex="0"
                             type="button"><i class='bx bx-filter-alt'></i>boeken filter onderwerpen
                     </button>
-                    <!--        <button>filterfunctie</button>-->
-                    <!--    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox-->
 
-                    <!--        https://www.w3schools.com/css/css-boxmodel.asp
                     hier naar kijken met chekboxes of als sorteerfunctie activitetien dvd boeken-->
                     <form aria-label="dit is het form met daarin de filter funcites die je kan selecteren"
                           class="filter__collaps-open-function-boeken">
@@ -340,10 +330,11 @@
                     <!--            <p>dit zijn de gevonden resultaten</p>-->
                     <ul class=" grid-books-blocks myUL" tabindex="0">
                         <li class="hide-li-sign">
-                            <div class="div-container-image" data-filter="sport">
+                            <div class="div-container-image" data-filter="sport"><!--bem toegepast-->
                                 <img alt="dit is boek1" class="books-image"
                                      src="image/backup/aangepast/book-1.png">
-                                <p class="booktitle" tabindex="0"><a href="#" class="title-book-link">ajax jaarboek</a></p>
+                                <p class="div-container-image__booktitle" tabindex="0">
+                                    <a href="#" class="div-container-image__title-book-link">ajax jaarboek</a></p>
                                 <!--                                                <a href="#" class="info">Info </a>-->
 
 
@@ -354,7 +345,7 @@
                             <div class="div-container-image" data-filter="sport">
                                 <img alt="dit is boek2" class="books-image"
                                      src="image/backup/aangepast/book-2.png">
-                                <p class="booktitle" tabindex="0"><a href="#" class="title-book-link">psv jaarboek</a></p>
+                                <p class="booktitle" tabindex="0"><a href="#" class="div-container-image__title-book-link">psv jaarboek</a></p>
                                 <!--                                                <a href="#" class="info">Info </a>-->
 
                             </div>
@@ -365,7 +356,7 @@
                             <div class="div-container-image" data-filter="fashion">
                                 <img alt="dit is boek3" class="books-image"
                                      src="image/backup/aangepast/book-3.png">
-                                <p class="booktitle" tabindex="0"><a href="#" class="title-book-link">karl lagerfield</a></p>
+                                <p class="booktitle" tabindex="0"><a href="#" class="div-container-image__title-book-link">karl lagerfield</a></p>
                                 <!--                                                <a href="#" class="info">Info </a>-->
 
                             </div>
@@ -376,7 +367,7 @@
                             <div class="div-container-image" data-filter="fashion">
                                 <img alt="dit is boek3" class="books-image"
                                      src="image/backup/aangepast/book-4.png">
-                                <p class="booktitle" tabindex="0"><a href="#" class="title-book-link">Little Book of Dior: The
+                                <p class="booktitle" tabindex="0"><a href="#" class="div-container-image__title-book-link">Little Book of Dior: The
                                     Story of the Iconic Fashion House</a></p>
                                 <!--             <a href="#" class="info">Info </a>-->
                                 <!--   dit is met flexbox en dat moet grid worden en bij javascript is het display grid in plaats van block-->
@@ -389,7 +380,7 @@
                             <div class="div-container-image" data-filter="kunst">
                                 <img alt="dit is boek3" class="books-image"
                                      src="image/backup/aangepast/book-5.png">
-                                <p class="booktitle" tabindex="0"><a href="#" class="title-book-link">Breitner: meisje in kimono</a>
+                                <p class="booktitle" tabindex="0"><a href="#" class="div-container-image__title-book-link">Breitner: meisje in kimono</a>
                                 </p>
                                 <!--                                                <a href="#" class="info">Info </a>-->
 
@@ -401,7 +392,7 @@
                             <div class="div-container-image" data-filter="kunst">
                                 <img alt="dit is boek3" class="books-image"
                                      src="image/backup/aangepast/book-6.png">
-                                <p class="booktitle" tabindex="0"><a href="#" class="title-book-link">dear theo</a></p>
+                                <p class="booktitle" tabindex="0"><a href="#" class="div-container-image__title-book-link">dear theo</a></p>
                                 <!--                                                <a href="#" class="info">Info </a>-->
 
                             </div>

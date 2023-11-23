@@ -109,7 +109,7 @@ function searchfunction() {
     filter = input.value.toUpperCase();//controleren hoofdletters
 
 
-    booktitle = document.querySelectorAll('.title-book-link')
+    booktitle = document.querySelectorAll('.div-container-image__title-book-link')
 
 
 
