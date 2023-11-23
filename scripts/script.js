@@ -132,22 +132,42 @@ function searchfunction() {
         }
     });
 }
+listbooks = document.querySelectorAll('.hide-li-sign')
 
-let books = document.querySelectorAll('.div-container-image')/*hier staat ook de data-filter in*/
-let buttonfilter = document.querySelector('.filter__filterbutton')
-let checkbox = document.querySelectorAll('.filter__input-checkboxes')/*https://www.w3schools.com/jsref/prop_checkbox_checked.asp*/
-let datafilter_sport = document.querySelectorAll('[data-filter="sport"]')/*https://stackoverflow.com/questions/22699072/using-data-attribute-as-a-selector-to-filter-elements*/
-let listbooks = [];/*https://www.w3schools.com/jsref/jsref_push.asp*/
-buttonfilter.addEventListener('click',function (){
+let buttonfilter = document.querySelector('.filter__filterbutton');
+let checkbox_array = [];/*https://www.w3schools.com/jsref/jsref_push.asp*/
+let books = document.querySelectorAll('.div-container-image');/*hier staat ook de data-filter in*/
+let checkbox = document.querySelectorAll('.filter__input-checkboxes');/*https://www.w3schools.com/jsref/prop_checkbox_checked.asp*/
+let datafilter = document.querySelectorAll('[data-filter]');/*https://stackoverflow.com/questions/22699072/using-data-attribute-as-a-selector-to-filter-elements*/
+
+buttonfilter.addEventListener('click', function () {
 
     // books.forEach();
-    books.forEach((book) => console.log(book));
-        if(checkbox.checked){
-            listbooks.push(checkbox)
-        }
+    books.forEach((book) =>   /*functie 1 loop door de 12 boeken*/
+        checkbox.forEach(checkBoxElement => {/*loop door alle checkboxes*/
+            if (checkBoxElement.checked) {
+                //    controleer of het gecheckete element overeenkomt met het datafilter
+                checkbox_array.push(checkBoxElement)
 
-    console.log(listbooks);
+                // dit gaat niet werken omdat een array niet hetzelfde is als een node list voor datafilter moet nog iets bedacht worden
+                if (checkbox === datafilter) {
+                    book.style.display = 'block';
+                } else {
+                    book.style.display = 'none';
+                }
+            }
+        }));
 
+});
+
+
+let rest = document.querySelector('.reset');
+
+rest.addEventListener('click', function () {
+    // Selecteer alle li-elementen met hide lis sign ofwel listbooks
+    for (let i = 0; i < listbooks.length; i++) {
+        listbooks[i].style.display = "grid"; //laat de resultaten weer zien
+    }
 });
 // todo debuggen javascirpt code https://www.jetbrains.com/help/webstorm/debugging-javascript-in-chrome.html#debugging_js_on_built_in_server_example
 // je debug de html en zet daarvoor de breakpoints in de js file
