@@ -493,15 +493,15 @@ button:hover {
 form label {
     /*margin-right: 1rem;*/
     font-family: AvenirMedium, Verdana, Arial, Helvetica, sans-serif;
-}
+}/*filters*/
 
 .i--search { /*icoon zoeken*/
     margin-right: 1rem;
     font-size: 2em;
-}
+}/*zoek icon*/
 
-/*toepasen bem*/
-.input-searchbar-form {
+
+.input-searchbar-form {/*zoekvak zelf*/
     display: flex;
     align-items: center;
     width: 20rem;
@@ -526,7 +526,7 @@ form label {
     font-size: 1.2em;
 }
 
-.showresults { /*verbergen van showresults met boeken*/
+.showresults { /*verbergen van showresults met boeken een volledige div met daarin de 2 grid item-filters*/
     display: none;
     color: var(--text-color-zwart);
 }
@@ -561,7 +561,7 @@ a:hover {
     text-decoration: underline;
 }
 
-.div-container-image__title-book-link, .books-image {
+.div-container-image__title-book-link, .div-container-image__books-image {
     display: grid;
     justify-content: left;
 }
@@ -573,7 +573,7 @@ a:hover {
     flex-direction: column;
 }
 
-
+/*kleine ipad*/
 @media (min-width: 44em)  and (max-width: 60em) {
     /*mini ipad*/
     .grid-container, .grid-container-filter {
@@ -611,7 +611,7 @@ a:hover {
     }
 
 
-    /*    algemneen hier is bem toegepast*/
+
     .div-container-image { /*positioneren van de boeken en de tekst*/
         display: flex;
         justify-content: center;
@@ -627,7 +627,7 @@ a:hover {
 
 }
 
-
+/*medium ipad is*/
 @media (min-width: 60em)  and (max-width: 80em) {
     /*mini ipad*/
     .grid-container {
@@ -685,7 +685,7 @@ a:hover {
 
 }
 
-/* hier is grid blockcs het verschil en de relst is hetzelfde*/
+/*kleine laptop*/
 @media (min-width: 80em)and (max-width: 100em) {
     /*mini ipad*/
     /*volgorde boven naar beneden zoals in de html ook het geval is*/
@@ -745,7 +745,7 @@ a:hover {
 
 
 }
-
+/*grote laptop*/
 @media (min-width: 100em) {
     .grid-container {
         display: grid;
