@@ -54,11 +54,19 @@ function showdivresults() {/*carousel laten zien*/
     // }
 }
 
-function filtershow() {
+function filtershow(){
     let formresults = document.querySelector(".filter__collaps-open-function-boeken");
     formresults.style.transition = "opacity 0.1s ease-out";
-    // formresults.style.display = "none"; // verbeg formulier
+
+    let formresults_seconds = document.querySelector(".filter__collaps-open-funtion-boeken-second");
+    formresults_seconds.style.transition = "opacity 0.1s ease-out";
+    let button_seconds = document.querySelector(".filter__collapsible-boeken-second"); // selecteer de button
     let button = document.querySelector(".filter__collapsible-boeken"); // select the button
+
+    let formresults_third = document.querySelector(".filter__collaps-open-funtion-boeken-third");
+    formresults_third.style.transition = "opacity 0.1s ease-out";
+    let button_third = document.querySelector(".filter__collapsible-boeken-third"); // selecteer de button
+
     button.addEventListener('click',function(){
         if (formresults.style.display === "none") {
             formresults.style.display = "block"; // show the form
@@ -66,37 +74,26 @@ function filtershow() {
             formresults.style.display = "none"; // hide the form
         }
     });
+    button_seconds.addEventListener('click',function(){
+        if (formresults_seconds.style.display === "none") {
+            formresults_seconds.style.display = "block"; // show the form
+        } else {
+            formresults_seconds.style.display = "none"; // hide the form
+        }
+    });    
+    button_third.addEventListener('click',function(){
+        if (formresults_third.style.display === "none") {
+            formresults_third.style.display = "block"; // show the form
+        } else {
+            formresults_third.style.display = "none"; // hide the form
+        }
+    });
 
 
 
 }
 filtershow();
-function filtershowsecond() {
-    let formresults = document.querySelector(".filter__collaps-open-funtion-boeken-second");
-    formresults.style.transition = "opacity 0.1s ease-out";
-    let button = document.querySelector(".filter__collapsible-boeken-second"); // selecteer de button
-    button.addEventListener('click',function (){
-        if (formresults.style.display === "none") {
-            formresults.style.display = "block"; // show the form
-        } else {
-            formresults.style.display = "none"; // hide the form
-        }
-    });
-}
-filtershowsecond();
-function filtershowthird() {
-    let formresults = document.querySelector(".filter__collaps-open-funtion-boeken-third");
-    formresults.style.transition = "opacity 0.1s ease-out";
-    let button = document.querySelector(".filter__collapsible-boeken-third"); // selecteer de button
-    button.onclick = function () { // klik je op de button dat komt deze if else
-        if (formresults.style.display === "none") {
-            formresults.style.display = "block"; // laat het formulier zien of verbeg het
-        } else {
-            formresults.style.display = "none";
-        }
-    }
-}
-filtershowthird();
+
 // deze 3 functies moeten 1 functie worden
 
 
