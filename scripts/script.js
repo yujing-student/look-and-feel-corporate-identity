@@ -27,12 +27,12 @@ modeSwitch.addEventListener("click", () => {
 
 /*hierboven moet straks weer uitcommented zijn*/
 function boeken() {
-    // alert("druk op oké om naar de tabel te gaan emt daarin het boeteoverzicht.");
-    document.querySelector(".button-boeken").onclick = function openlink() {
-        location.href = "boete.index.html";
-        // https://www.w3schools.com/jsref/metwinalert.asp
-    }
+    let button = document.querySelector(".inleiding-text-boeken-overzicht__button-boeken");
+    button.addEventListener('click', function() {
+        window.location.href = "boete.index.html";
+    });
 }
+boeken();
 
 function showdivresults() {/*carousel laten zien*/
 
