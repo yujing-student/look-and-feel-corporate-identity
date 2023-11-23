@@ -67,7 +67,7 @@ body {
     min-height: 100vh;
     background-color: var(--body-color);
     transition: var(--tran-05);
-    font-family: AvenirMedium,Arial;
+    font-family: AvenirMedium, Arial;
 }
 
 /* SCROLLBAR */
@@ -466,14 +466,14 @@ details:nth-child(n+1):nth-child(-n+7) { /*nummer 1 tot en met 5 van meer info*/
 }
 
 /*dit zijn de buttons*/
-button, .reset-button, .filter__filterbutton {/*filterbutton staat lager in de forms*/
+button, .reset-button, .filter__filterbutton { /*filterbutton staat lager in de forms*/
     border: none;
     box-shadow: 10px 5px 5px var(--toggle-color-licht-grijs);
     background-color: var(--background-color-buttons-white);
     /*color: #202121;*/
     /*background-color: #DDFF00;*/
     font-size: 1em;
-    font-family: AvenirMedium,Arial;
+    font-family: AvenirMedium, Arial;
     border-radius: 6px;
     padding: 0.5rem;
     margin: var(--margin-1em) 0 0 0.2em;
@@ -485,19 +485,21 @@ button:hover {
 }
 
 .grid-item-filter:nth-child(1), .grid-item-filter:nth-child(2), .grid-item-filter:nth-child(3) {
-    margin-bottom: 2em;/*dit is de onderkant zoekvak en filters en boeken showresults */
+    margin-bottom: 2em; /*dit is de onderkant zoekvak en filters en boeken showresults */
 
 }
+
 /*zoekvak*/
 form label {
     /*margin-right: 1rem;*/
     font-family: AvenirMedium, Verdana, Arial, Helvetica, sans-serif;
 }
 
-.i--search {/*icoon zoeken*/
+.i--search { /*icoon zoeken*/
     margin-right: 1rem;
     font-size: 2em;
 }
+
 /*toepasen bem*/
 .input-searchbar-form {
     display: flex;
@@ -505,7 +507,7 @@ form label {
     width: 20rem;
 }
 
-#input-searchbar-form__input-searchfunciton {
+#form__input-searchfunciton {
     padding: 0.5rem 0.5rem;
     border-radius: 0.75rem;
     border: none;
@@ -516,16 +518,15 @@ form label {
 }
 
 
-
-.item-filter {/*afstand tussen de filter buttons*/
+.item-filter { /*afstand tussen de filter buttons*/
     margin-bottom: 2em;
 }
 
-.input-calender {/*de grootte van het input*/
+.input-calender { /*de grootte van het input*/
     font-size: 1.2em;
 }
 
-.showresults {/*verbergen van showresults met boeken*/
+.showresults { /*verbergen van showresults met boeken*/
     display: none;
     color: var(--text-color-zwart);
 }
@@ -541,6 +542,7 @@ form label {
     vertical-align: middle;
     margin: 0.5em;
 }
+
 /*einde forms*/
 
 /*verbergen li vanege books*/
@@ -548,6 +550,7 @@ form label {
     list-style-type: none;
     margin-bottom: var(--margin-bottom-1em);
 }
+
 /*dit zijn a href linkjes*/
 a:nth-child(1) {
     color: var(--text-color-zwart);
@@ -609,14 +612,14 @@ a:hover {
 
 
     /*    algemneen hier is bem toegepast*/
-    .div-container-image {/*positioneren van de boeken en de tekst*/
+    .div-container-image { /*positioneren van de boeken en de tekst*/
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
 
-    .div-container-image__title-book-link {/*kind van div*/
+    .div-container-image__title-book-link { /*kind van div*/
         display: grid;
         align-self: center;
     }
@@ -667,12 +670,12 @@ a:hover {
 
     }
 
-    .grid-books-blocks {/*dit zijn de boeken die getoond worden*/
+    .grid-books-blocks { /*dit zijn de boeken die getoond worden*/
         display: grid;
         grid-template-areas: "boek1 boek2";
     }
 
-    .div-container-image {/*positioneren van de boeken en de tekst*/
+    .div-container-image { /*positioneren van de boeken en de tekst*/
         display: flex;
         justify-content: center;
         align-items: center;
@@ -699,7 +702,7 @@ a:hover {
     }
 
     p:nth-child(3), .inleiding-text-boeken-overzicht { /*dit is Welkom op uw persoonlijke pagina van de website van de OBA. tekst */
-        max-width: 35em;/*dit staat ook in de volgende maar niet in de vorige*/
+        max-width: 35em; /*dit staat ook in de volgende maar niet in de vorige*/
     }
 
     /*contianer filter de onderste cotnaienr*/
@@ -733,7 +736,7 @@ a:hover {
         gap: 2em;
     }
 
-    .div-container-image {/*positioneren van de boeken en de tekst*/
+    .div-container-image { /*positioneren van de boeken en de tekst*/
         display: flex;
         justify-content: center;
         align-items: center;
@@ -786,7 +789,7 @@ a:hover {
         gap: 2em;
     }
 
-    .div-container-image {/*positioneren van de boeken en de tekst*/
+    .div-container-image { /*positioneren van de boeken en de tekst*/
         display: flex;
         justify-content: center;
         align-items: center;

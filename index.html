@@ -187,9 +187,11 @@
 
             <div class="grid-item" tabindex="0">
 
-                <p class="inleiding-text-boeken-overzicht" tabindex="0">Ga naar boeken overzicht voor een overzicht met de
+                <p class="inleiding-text-boeken-overzicht" tabindex="0">Ga naar boeken overzicht voor een overzicht met
+                    de
                     geleende boeken zodat u ziet <strong>welke boeken u moet inleveren</strong></p>
-                <button aria-pressed="false" class="inleiding-text-boeken-overzicht__button-boeken" onclick="boeken()" tabindex="0"
+                <button aria-pressed="false" class="inleiding-text-boeken-overzicht__button-boeken" onclick="boeken()"
+                        tabindex="0"
                         type="button"><strong>overzicht geleende boeken</strong>
                 </button>
             </div>
@@ -198,13 +200,14 @@
         </div>
         <div class="grid-container-filter">
             <div class="grid-item-filter" tabindex="0">
-                <h3  tabindex="0">Hier kunt u zoeken naar boeken</h3>
-                    <form class="input-searchbar-form"><!--bem toegepast-->
-                        <i class="bx bx-search icon i--search" onclick="showdivresults()" tabindex="0"></i>
-                        <input aria-label="zoeken naar boeken" id="input-searchbar-form__input-searchfunciton" onkeyup="searchfunction()"
-                               placeholder="typ hier uw boek in"
-                               type="search">
-                    </form>
+                <h3 tabindex="0">Hier kunt u zoeken naar boeken</h3>
+                <form class="input-searchbar-form"><!--bem toegepast-->
+                    <i class="bx bx-search icon i--search" onclick="showdivresults()" tabindex="0"></i>
+                    <input aria-label="zoeken naar boeken" id="form__input-searchfunciton"
+                           onkeyup="searchfunction()"
+                           placeholder="typ hier uw boek in"
+                           type="search">
+                </form>
 
 
                 <button class="reset" title="resetbutton" type="button">reset toon alle resultaten</button>
@@ -219,24 +222,27 @@
                             tabindex="0"
                             type="button"><i class='bx bx-filter-alt'></i>boeken filter onderwerpen
                     </button>
-                    
+
                     <form aria-label="dit is het form met daarin de filter funcites die je kan selecteren"
                           class="filter__collaps-open-function-boeken">
                         <p>onderwerpen</p>
                         <!-- de section class filter moet pas weergegeven worden nadat op de button geklikt is           -->
                         <label for="onderwerp-sport-genre"></label><input class="filter__input-checkboxes"
                                                                           data-filter="sport"
-                                                                          id="onderwerp-sport-genre" name="onderwerp-sport"
+                                                                          id="onderwerp-sport-genre"
+                                                                          name="onderwerp-sport"
                                                                           type="checkbox" value="sport">
                         <label class="lable-checkbox" for="onderwerp-sport"> sport</label><br>
                         <label for="onderwerp-cultuur-genre"></label><input class="filter__input-checkboxes"
                                                                             data-filter="cultuur"
-                                                                            id="onderwerp-cultuur-genre" name="onderwerp-cultuur"
+                                                                            id="onderwerp-cultuur-genre"
+                                                                            name="onderwerp-cultuur"
                                                                             type="checkbox" value="cultuur">
                         <label for="onderwerp-cultuur">cultuur</label><br>
                         <label for="onderwerp-kunst-genre"></label><input class="filter__input-checkboxes"
                                                                           data-filter="kunst"
-                                                                          id="onderwerp-kunst-genre" name="onderwerp-kunst"
+                                                                          id="onderwerp-kunst-genre"
+                                                                          name="onderwerp-kunst"
                                                                           type="checkbox" value="kunst">
                         <label for="onderwerp-kunst">kunst</label><br>
                         <label for="onderwerp-mode-genre"></label><input class="filter__input-checkboxes"
@@ -257,16 +263,20 @@
                           class="filter__collaps-open-funtion-boeken-second">
                         <p>genre</p>
                         <!-- de section class filter moet pas weergegeven worden nadat op de button geklikt is           -->
-                        <input class="filter__input-checkboxes" data-filter="sport" id="onderwerp-sport" name="onderwerp-sport"
+                        <input class="filter__input-checkboxes" data-filter="sport" id="onderwerp-sport"
+                               name="onderwerp-sport"
                                type="checkbox" value="sport">
                         <label class="lable-checkbox" for="onderwerp-sport"> thriller</label><br>
-                        <input class="filter__input-checkboxes" data-filter="cultuur" id="onderwerp-cultuur" name="onderwerp-cultuur"
+                        <input class="filter__input-checkboxes" data-filter="cultuur" id="onderwerp-cultuur"
+                               name="onderwerp-cultuur"
                                type="checkbox" value="cultuur">
                         <label for="onderwerp-cultuur">roman</label><br>
-                        <input class="filter__input-checkboxes" data-filter="kunst" id="onderwerp-kunst" name="onderwerp-kunst"
+                        <input class="filter__input-checkboxes" data-filter="kunst" id="onderwerp-kunst"
+                               name="onderwerp-kunst"
                                type="checkbox" value="kunst">
                         <label for="onderwerp-kunst">misdaad</label><br>
-                        <input class="filter__input-checkboxes" data-filter="fashion" id="onderwerp-mode" name="onderwerp-mode"
+                        <input class="filter__input-checkboxes" data-filter="fashion" id="onderwerp-mode"
+                               name="onderwerp-mode"
                                type="checkbox" value="fashion">
                         <label for="onderwerp-mode">voetbal</label><br>
                         <!--                        <input class="reset-button" type="reset" value="reset!">-->
@@ -296,11 +306,13 @@
                                                               id="Menno-Pot" name="onderwerp-cultuur"
                                                               type="checkbox" value="Menno Pot">
                         <label for="onderwerp-cultuur">Menno Pot</label><br>
-                        <label for="Jaap-visser"></label><input class="filter__input-checkboxes" data-filter="Jaap-visser"
+                        <label for="Jaap-visser"></label><input class="filter__input-checkboxes"
+                                                                data-filter="Jaap-visser"
                                                                 id="Jaap-visser" name="onderwerp-kunst"
                                                                 type="checkbox" value="Jaap visser">
                         <label for="Jaap-visser">Jaap visser</label><br>
-                        <label for="Michel-van-egmond"></label><input class="filter__input-checkboxes" data-filter="Michel-van-egmond"
+                        <label for="Michel-van-egmond"></label><input class="filter__input-checkboxes"
+                                                                      data-filter="Michel-van-egmond"
                                                                       id="Michel-van-egmond" name="onderwerp-mode"
                                                                       type="checkbox"
                                                                       value="Michel van egmond">
@@ -314,7 +326,8 @@
                 <div class="item-filter">
 
                     <label>filter datum tussen 2001 en 2022:
-                        <input class="input-calender" max="2023-11-23" min="2000-01-01" name="trip-start" type="date" value=""/>
+                        <input class="input-calender" max="2023-11-23" min="2000-01-01" name="trip-start" type="date"
+                               value=""/>
                     </label>
                 </div>
 
@@ -330,7 +343,7 @@
                                 <img alt="dit is boek1" class="books-image"
                                      src="image/backup/aangepast/book-1.png">
                                 <p class="div-container-image__booktitle" tabindex="0">
-                                    <a href="#" class="div-container-image__title-book-link">ajax jaarboek</a></p>
+                                    <a class="div-container-image__title-book-link" href="#">ajax jaarboek</a></p>
                                 <!--                                                <a href="#" class="info">Info </a>-->
 
 
@@ -341,7 +354,9 @@
                             <div class="div-container-image" data-filter="sport">
                                 <img alt="dit is boek2" class="books-image"
                                      src="image/backup/aangepast/book-2.png">
-                                <p class="booktitle" tabindex="0"><a href="#" class="div-container-image__title-book-link">psv jaarboek</a></p>
+                                <p class="booktitle" tabindex="0"><a class="div-container-image__title-book-link"
+                                                                     href="#">psv
+                                    jaarboek</a></p>
                                 <!--                                                <a href="#" class="info">Info </a>-->
 
                             </div>
@@ -352,7 +367,9 @@
                             <div class="div-container-image" data-filter="fashion">
                                 <img alt="dit is boek3" class="books-image"
                                      src="image/backup/aangepast/book-3.png">
-                                <p class="booktitle" tabindex="0"><a href="#" class="div-container-image__title-book-link">karl lagerfield</a></p>
+                                <p class="booktitle" tabindex="0"><a class="div-container-image__title-book-link"
+                                                                     href="#">karl
+                                    lagerfield</a></p>
                                 <!--                                                <a href="#" class="info">Info </a>-->
 
                             </div>
@@ -363,7 +380,9 @@
                             <div class="div-container-image" data-filter="fashion">
                                 <img alt="dit is boek3" class="books-image"
                                      src="image/backup/aangepast/book-4.png">
-                                <p class="booktitle" tabindex="0"><a href="#" class="div-container-image__title-book-link">Little Book of Dior: The
+                                <p class="booktitle" tabindex="0"><a class="div-container-image__title-book-link"
+                                                                     href="#">Little
+                                    Book of Dior: The
                                     Story of the Iconic Fashion House</a></p>
                                 <!--             <a href="#" class="info">Info </a>-->
                                 <!--   dit is met flexbox en dat moet grid worden en bij javascript is het display grid in plaats van block-->
@@ -376,7 +395,9 @@
                             <div class="div-container-image" data-filter="kunst">
                                 <img alt="dit is boek3" class="books-image"
                                      src="image/backup/aangepast/book-5.png">
-                                <p class="booktitle" tabindex="0"><a href="#" class="div-container-image__title-book-link">Breitner: meisje in kimono</a>
+                                <p class="booktitle" tabindex="0"><a class="div-container-image__title-book-link"
+                                                                     href="#">Breitner:
+                                    meisje in kimono</a>
                                 </p>
                                 <!--                                                <a href="#" class="info">Info </a>-->
 
@@ -388,7 +409,9 @@
                             <div class="div-container-image" data-filter="kunst">
                                 <img alt="dit is boek3" class="books-image"
                                      src="image/backup/aangepast/book-6.png">
-                                <p class="booktitle" tabindex="0"><a href="#" class="div-container-image__title-book-link">dear theo</a></p>
+                                <p class="booktitle" tabindex="0"><a class="div-container-image__title-book-link"
+                                                                     href="#">dear
+                                    theo</a></p>
                                 <!--                                                <a href="#" class="info">Info </a>-->
 
                             </div>
@@ -462,6 +485,5 @@
 
 </main>
 
-<a href=" https://github.com/yujing-student/look-and-feel-corporate-identity/issues?q=is%3Aissue+is%3Aclosed"></a>
 </body>
 </html>

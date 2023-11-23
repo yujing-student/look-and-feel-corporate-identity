@@ -54,34 +54,35 @@ function showdivresults() {/*carousel laten zien*/
     // }
 }
 
-function filtershow(){
+function filtershow() {
     let formresults = document.querySelector(".filter__collaps-open-function-boeken");
     formresults.style.transition = "opacity 0.1s ease-out";
+    let button = document.querySelector(".filter__collapsible-boeken"); // select the button
 
     let formresults_seconds = document.querySelector(".filter__collaps-open-funtion-boeken-second");
     formresults_seconds.style.transition = "opacity 0.1s ease-out";
     let button_seconds = document.querySelector(".filter__collapsible-boeken-second"); // selecteer de button
-    let button = document.querySelector(".filter__collapsible-boeken"); // select the button
+
 
     let formresults_third = document.querySelector(".filter__collaps-open-funtion-boeken-third");
     formresults_third.style.transition = "opacity 0.1s ease-out";
     let button_third = document.querySelector(".filter__collapsible-boeken-third"); // selecteer de button
 
-    button.addEventListener('click',function(){
+    button.addEventListener('click', function () {
         if (formresults.style.display === "none") {
             formresults.style.display = "block"; // show the form
         } else {
             formresults.style.display = "none"; // hide the form
         }
     });
-    button_seconds.addEventListener('click',function(){
+    button_seconds.addEventListener('click', function () {
         if (formresults_seconds.style.display === "none") {
             formresults_seconds.style.display = "block"; // show the form
         } else {
             formresults_seconds.style.display = "none"; // hide the form
         }
-    });    
-    button_third.addEventListener('click',function(){
+    });
+    button_third.addEventListener('click', function () {
         if (formresults_third.style.display === "none") {
             formresults_third.style.display = "block"; // show the form
         } else {
@@ -90,33 +91,28 @@ function filtershow(){
     });
 
 
-
 }
+
 filtershow();
 
-// deze 3 functies moeten 1 functie worden
 
 
 function searchfunction() {
-    // https://www.w3schools.com/howto/howtojsfilterlists.asp bron waar ik code gekopieerd heb
-    let input, filter, ul, li,booktitle,listbooks, a, i, txtValue;
+    // https://www.w3schools.com/howto/howto_js_filter_lists.asp bron waar ik code gekopieerd heb
+    let input, filter, listbooks, a, i, txtValue;
     input = document.getElementById('input--searchfunciton');
-    // ul = document.getElementsByClassName("myUL");
     listbooks = document.querySelectorAll('.hide-li-sign')
     filter = input.value.toUpperCase();//controleren hoofdletters
 
 
-    booktitle = document.querySelectorAll('.div-container-image__title-book-link')
 
-
-
-    // Loop through all list items, and hide those who don't match the search query
+    // forloop waar i het boeknummer is en alle boeken nagelopen worden
     for (i = 0; i < listbooks.length; i++) {
-        a = listbooks[i].getElementsByTagName("a")[0];
+        a = listbooks[i].document.querySelector("a")[0];/*begin bij de1ste a href*/
 
-        txtValue = a.textContent || a.innerText;
+        txtValue = a.textContent || a.innerText;/*checken of een letter of woord erin zit*/
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            listbooks[i].style.display = "";
+            listbooks[i].style.display = "";/*indien gevonden laat het resultaat zien*/
         } else {
             listbooks[i].style.display = "none";
         }
@@ -125,7 +121,7 @@ function searchfunction() {
     let rest = document.querySelector('.reset');
 
     rest.addEventListener('click', function () {
-        // Selecteer alle li-elementen
+        // Selecteer alle li-elementen met hide lis sign ofwel listbooks
         for (let i = 0; i < listbooks.length; i++) {
             listbooks[i].style.display = "grid"; //laat de resultaten weer zien
         }
