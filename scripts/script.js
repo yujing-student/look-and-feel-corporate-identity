@@ -27,10 +27,11 @@ modeSwitch.addEventListener("click", () => {
 
 /*hierboven moet straks weer uitcommented zijn*/
 function boeken() {
-    let button = document.querySelector(".inleiding-text-boeken-overzicht__button-boeken");
+    let button = document.querySelector(".button-boeken");
     button.addEventListener('click', function() {
         window.location.href = "boete.index.html";
     });
+
 }
 boeken();
 
@@ -38,22 +39,22 @@ function showdivresults() {/*carousel laten zien*/
 
     let divresults = document.querySelector(".showresults");
     // seleteer de .showresylts div
+    let button = document.querySelector(".i--search");
+    button.addEventListener('click', function() {
+        let displaydivresults = window.getComputedStyle(divresults).display;
+        //     https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle
+        //     https://www.w3schools.com/jsref/jsrefgetcomputedstyle.asp
+        //met deze code wordt alle css proporties of een element en de inhoud ervan weergegeven
+        if (displaydivresults === "none") {
+            divresults.style.display = "grid";
+        }
+    });
+    // //     https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle
+    // //     https://www.w3schools.com/jsref/jsrefgetcomputedstyle.asp
+    // //met deze code wordt alle css proporties of een element en de inhoud ervan weergegeven
 
-    let displaydivresults = window.getComputedStyle(divresults).display;
-    //     https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle
-    //     https://www.w3schools.com/jsref/jsrefgetcomputedstyle.asp
-    //met deze code wordt alle css proporties of een element en de inhoud ervan weergegeven
-
-    //
-    if (displaydivresults === "none") {
-        divresults.style.display = "grid";
-        //     laat re
-    }
-    // else {
-    //     divresults.style.display = "none";
-    // }
 }
-
+ showdivresults();
 function filtershow() {
     let formresults = document.querySelector(".filter__collaps-open-function-boeken");
     formresults.style.transition = "opacity 0.1s ease-out";
@@ -132,6 +133,20 @@ function searchfunction() {
     });
 }
 
+let books = document.querySelectorAll('.div-container-image')/*hier staat ook de data-filter in*/
+let buttonfilter = document.querySelector('.filter__filterbutton')
+let checkbox = document.querySelectorAll('.filter__input-checkboxes')/*https://www.w3schools.com/jsref/prop_checkbox_checked.asp*/
+let datafilter_sport = document.querySelectorAll('[data-filter="sport"]')/*https://stackoverflow.com/questions/22699072/using-data-attribute-as-a-selector-to-filter-elements*/
+let listbooks = [];/*https://www.w3schools.com/jsref/jsref_push.asp*/
+buttonfilter.addEventListener('click',function (){
 
+    // books.forEach();
+    books.forEach((book) => console.log(book));
+        if(checkbox.checked){
+            listbooks.push(checkbox)
+        }
 
+    console.log(listbooks);
+
+});
 
