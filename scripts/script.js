@@ -149,4 +149,5 @@ buttonfilter.addEventListener('click',function (){
     console.log(listbooks);
 
 });
-
+// todo debuggen javascirpt code https://www.jetbrains.com/help/webstorm/debugging-javascript-in-chrome.html#debugging_js_on_built_in_server_example
+// je debug de html en zet daarvoor de breakpoints in de js file
