@@ -561,7 +561,7 @@ a:hover {
     text-decoration: underline;
 }
 
-.div-container-image__title-book-link, .div-container-image__books-image {
+.div-container-image__title-book-link, .div-container-image__books-image {/*bem toegepast*/
     display: grid;
     justify-content: left;
 }

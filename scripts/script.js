@@ -139,7 +139,7 @@ let checkbox_array = [];/*https://www.w3schools.com/jsref/jsref_push.asp*/
 let books = document.querySelectorAll('.div-container-image');/*hier staat ook de data-filter in*/
 let checkbox = document.querySelectorAll('.filter__input-checkboxes');/*https://www.w3schools.com/jsref/prop_checkbox_checked.asp*/
 let datafilter = document.querySelectorAll('[data-filter]');/*https://stackoverflow.com/questions/22699072/using-data-attribute-as-a-selector-to-filter-elements*/
-
+let dataid = document.querySelector('#onderwerp-sport,#onderwerp-cultuur,#onderwerp-kunst,#onderwerp-mode')
 buttonfilter.addEventListener('click', function () {
 
     // books.forEach();
@@ -150,7 +150,7 @@ buttonfilter.addEventListener('click', function () {
                 checkbox_array.push(checkBoxElement)
 
                 // dit gaat niet werken omdat een array niet hetzelfde is als een node list voor datafilter moet nog iets bedacht worden
-                if (checkbox === datafilter) {
+                if (checkBoxElement === dataid) {
                     book.style.display = 'block';
                 } else {
                     book.style.display = 'none';
