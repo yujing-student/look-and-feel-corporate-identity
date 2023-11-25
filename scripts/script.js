@@ -136,27 +136,43 @@ listbooks = document.querySelectorAll('.hide-li-sign')
 
 let buttonfilter = document.querySelector('.filter__filterbutton');
 let checkbox_array = [];/*https://www.w3schools.com/jsref/jsref_push.asp*/
+let books_array = [];/*https://www.w3schools.com/jsref/jsref_push.asp*/
 let books = document.querySelectorAll('.div-container-image');/*hier staat ook de data-filter in*/
 let checkbox = document.querySelectorAll('.filter__input-checkboxes');/*https://www.w3schools.com/jsref/prop_checkbox_checked.asp*/
-let datafilter = document.querySelectorAll('[data-filter]');/*https://stackoverflow.com/questions/22699072/using-data-attribute-as-a-selector-to-filter-elements*/
+let datafiltersport = document.querySelectorAll('[data-filter="sport"]');/*https://stackoverflow.com/questions/22699072/using-data-attribute-as-a-selector-to-filter-elements*/
 let dataid = document.querySelector('#onderwerp-sport,#onderwerp-cultuur,#onderwerp-kunst,#onderwerp-mode')
 buttonfilter.addEventListener('click', function () {
 
     // books.forEach();
-    books.forEach((book) =>   /*functie 1 loop door de 12 boeken*/
-        checkbox.forEach(checkBoxElement => {/*loop door alle checkboxes*/
-            if (checkBoxElement.checked) {
-                //    controleer of het gecheckete element overeenkomt met het datafilter
-                checkbox_array.push(checkBoxElement)
 
-                // dit gaat niet werken omdat een array niet hetzelfde is als een node list voor datafilter moet nog iets bedacht worden
-                if (checkBoxElement === dataid) {
+    books.forEach((book) => {
+
+
+        checkbox.forEach(checkBoxElement => {
+
+
+            if (checkBoxElement.checked) {
+
+
+                checkbox_array.push(checkBoxElement);
+                books_array.push(book);
+
+
+                if (checkBoxElement === datafiltersport) {
+
+                    console.log(books_array);
+                    console.log(checkbox_array);
                     book.style.display = 'block';
+
                 } else {
+
+                    // If it's not, hide the book
                     book.style.display = 'none';
                 }
             }
-        }));
+        });
+    });
+
 
 });
 
