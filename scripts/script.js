@@ -128,7 +128,7 @@ function searchfunction() {
     rest.addEventListener('click', function () {
         // Selecteer alle li-elementen met hide lis sign ofwel listbooks
         for (let i = 0; i < listbooks.length; i++) {
-            listbooks[i].style.display = "grid"; //laat de resultaten weer zien
+            listbooks[i].style.display = "block"; //laat de resultaten weer zien
         }
     });
 }
