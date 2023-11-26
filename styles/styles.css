@@ -475,20 +475,11 @@ button, .reset-button, .filter__filterbutton { /*filterbutton staat lager in de 
     font-size: 1em;
     font-family: AvenirMedium, Arial,sans-serif;
     border-radius: 6px;
-    padding: 0.5rem;
     margin: var(--margin-1em) 0 0 0.2em;
-
-    /*overgenomen van oba zelf dit is de pijljte en underscore*/
-    /*margin: 0 0 5px 0;*/
-    /*padding: 2px 12px 3px 0;*/
     color: #000;
-    text-decoration: underline;
-    /*background-color: transparent;*/
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAYElEQVQoz2OQl5f/v3//fof///8z4MMgACL/x8fHL3z//r0AQYUgzM/P/3H+/PkJBBXCsL29/cH79+8rEFQIw/X19Y3UUQiy+syZMyZ4PdPf31+A1zP+/v4b8QYPsQEOANyS1Pq5h542AAAAAElFTkSuQmCC);
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-size: auto auto;
-    padding-right: 14px;
+    text-decoration: none; /*dit is de streep onder de tekst*/
+
+    padding: 0.5rem 14px 0.5rem 0.5rem;
 }
 
 button:hover {
@@ -565,12 +556,10 @@ form label {
 /*dit zijn a href linkjes*/
 a:nth-child(1) {
     color: var(--text-color-zwart);
-    text-decoration: none;
+    text-decoration: underline;
+
 }
 
-a:hover {
-    text-decoration: underline;
-}
 
 .div-container-image__title-book-link, .div-container-image__books-image {/*bem toegepast*/
     display: grid;
