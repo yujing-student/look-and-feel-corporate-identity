@@ -67,7 +67,7 @@ body {
     min-height: 100vh;
     background-color: var(--body-color);
     transition: var(--tran-05);
-    font-family: AvenirMedium, Arial;
+    font-family: AvenirMedium, Arial,sans-serif,sans-serif;
 }
 
 /* SCROLLBAR */
@@ -473,11 +473,22 @@ button, .reset-button, .filter__filterbutton { /*filterbutton staat lager in de 
     /*color: #202121;*/
     /*background-color: #DDFF00;*/
     font-size: 1em;
-    font-family: AvenirMedium, Arial;
+    font-family: AvenirMedium, Arial,sans-serif;
     border-radius: 6px;
     padding: 0.5rem;
     margin: var(--margin-1em) 0 0 0.2em;
 
+    /*overgenomen van oba zelf dit is de pijljte en underscore*/
+    /*margin: 0 0 5px 0;*/
+    /*padding: 2px 12px 3px 0;*/
+    color: #000;
+    text-decoration: underline;
+    /*background-color: transparent;*/
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAYElEQVQoz2OQl5f/v3//fof///8z4MMgACL/x8fHL3z//r0AQYUgzM/P/3H+/PkJBBXCsL29/cH79+8rEFQIw/X19Y3UUQiy+syZMyZ4PdPf31+A1zP+/v4b8QYPsQEOANyS1Pq5h542AAAAAElFTkSuQmCC);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    padding-right: 14px;
 }
 
 button:hover {
@@ -512,7 +523,7 @@ form label {
     border-radius: 0.75rem;
     border: none;
     outline: 0;
-    font-family: AvenirMedium, Arial;
+    font-family: AvenirMedium, Arial,sans-serif;
     font-size: 1rem;
     height: 2.5rem;
 }
