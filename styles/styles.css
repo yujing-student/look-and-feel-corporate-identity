@@ -473,6 +473,10 @@ p:nth-child(2) { /*dit is Welkom op uw persoonlijke pagina van de website van de
 details:nth-child(n+1):nth-child(-n+7) { /*nummer 1 tot en met 5 van meer info*/
     /*margin-bottom: var(--margin-bottom-1em);*/
     margin-bottom: 2em;
+    cursor: pointer;
+}
+details:hover{
+    color: red;
 }
 
 /*dit zijn de buttons*/
@@ -494,6 +498,7 @@ button, .filter__filterbutton { /*filterbutton staat lager in de forms*/
 
 button:hover {
     color: red;
+    cursor: pointer;
 }
 
 
