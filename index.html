@@ -1,4 +1,4 @@
-<!--<!DOCTYPE html>-->
+<!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
@@ -149,10 +149,10 @@
 </nav>
 <!--https://www.jetbrains.com/help/webstorm/mastering-keyboard-shortcuts.html#choose-keymap-->
 <main class="home">
-    <section tabindex="0"><!--tabindex word gebruikt zodat dit element gevonden kan worden door de tab toets-->
+    <div tabindex="0"><!--tabindex word gebruikt zodat dit element gevonden kan worden door de tab toets-->
         <figure class="text"><img alt="logo" height="44" src="image/oba-20.png" width="84"></figure>
 
-        <section class="grid-container" tabindex="0">
+        <div class="grid-container" tabindex="0">
             <section class="grid-item" tabindex="0">
                 <!--                <h1 tabindex="0">Homepagina</h1>-->
                 <h2 tabindex="0">Welkom Amber</h2>
@@ -193,7 +193,7 @@
 
             </section>
 
-            <section class="grid-item" tabindex="0">
+            <div class="grid-item" tabindex="0">
 
                 <p class="inleiding-text-boeken-overzicht" tabindex="0">Ga naar boeken overzicht voor een overzicht met
                     de
@@ -202,12 +202,12 @@
                         tabindex="0"
                         type="button"><strong>Overzicht geleende boeken</strong>
                 </button>
-            </section>
+            </div>
 
 
-        </section>
-        <section class="grid-container-filter">
-            <section class="grid-item-filter" tabindex="0">
+        </div>
+        <div class="grid-container-filter">
+            <div class="grid-item-filter" tabindex="0">
                 <h3 tabindex="0">Hier kunt u zoeken naar boeken</h3>
                 <form class="input-searchbar-form">
                     <i class="bx bx-search icon i--search" onclick="showdivresults()" tabindex="0"></i>
@@ -219,11 +219,11 @@
 
 
                 <button class="reset" title="resetbutton" type="button">Reset toon alle resultaten</button>
-            </section>
-            <section class="grid-item-filter" tabindex="0">
+            </div>
+            <div class="grid-item-filter" tabindex="0">
                 <!--                <div class="grid-filters-functions" tabindex="0">-->
                 <p><strong>Filters</strong></p>
-                <section class="item-filter filter">
+                <div class="item-filter filter">
 
                     <!--                    <box-icon name='filter-alt' ></box-icon>-->
                     <button aria-pressed="false" class="filter__collapsible-boeken"
@@ -263,8 +263,8 @@
                         <!--                        <input class="reset-button" type="reset" value="reset!">-->
                         <input class="filter__filterbutton" type="button" value="Filter!">
                     </form>
-                </section>
-                <section class="item-filter filter">
+                </div>
+                <div class="item-filter filter">
                     <button aria-pressed="false" class="filter__collapsible-boeken-second"
                             tabindex="0"
                             type="button"><i class='bx bx-filter-alt'></i>Genre filter
@@ -297,8 +297,8 @@
                         <!--                        <input class="reset-button" type="reset" value="reset!">-->
                         <input class="filter__filterbutton" type="button" value="Filter!">
                     </form>
-                </section>
-                <section class="item-filter filter">
+                </div>
+                <div class="item-filter filter">
                     <button aria-pressed="false" class="filter__collapsible-boeken-third"
                             tabindex="0"
                             type="button"><i class='bx bx-filter-alt'></i> Auteur filteren
@@ -338,21 +338,21 @@
                     </form>
 
 
-                </section>
-                <section class="item-filter">
+                </div>
+                <div class="item-filter">
 
                     <label>Filter datum tussen 2001 en 2022:
                         <input class="input-calender" max="2023-11-23" min="2000-01-01" name="trip-start" type="date"
-                               value=""/>
+                               value="dd-mm-jjjj"/>
                     </label>
-                </section>
+                </div>
 
 
-            </section>
+            </div>
 
 
-            <section class="grid-item-filter">
-                <section class="showresults" content="dit is een div" tabindex="0">
+            <div class="grid-item-filter">
+                <div class="showresults" content="dit is een div" tabindex="0">
                     <ul class=" grid-books-blocks myUL" tabindex="0">
                         <li class="hide-li-sign">
                             <figure class="figure-image-title-book" data-filter="sport">
@@ -381,7 +381,7 @@
                         </li>
                         <li class="hide-li-sign">
 
-                            <section class="figure-image-title-book" data-filter="fashion">
+                            <figure class="figure-image-title-book" data-filter="fashion">
                                 <img alt="dit is boek3" class="figure-image-title-book__books-image"
                                      src="image/backup/aangepast/book-3.png">
                                 <p class="" tabindex="0"><a class="figure-image-title-book__title-book-link"
@@ -389,12 +389,12 @@
                                     Lagerfield</a></p>
                                 <!--                                                <a href="#" class="info">Info </a>-->
 
-                            </section>
+                            </figure>
 
                         </li>
                         <li class="hide-li-sign">
 
-                            <section class="figure-image-title-book" data-filter="fashion">
+                            <figure class="figure-image-title-book" data-filter="fashion">
                                 <img alt="dit is boek3" class="figure-image-title-book__books-image"
                                      src="image/backup/aangepast/book-4.png">
                                 <p class="" tabindex="0"><a class="figure-image-title-book__title-book-link"
@@ -404,7 +404,7 @@
                                 <!--             <a href="#" class="info">Info </a>-->
                                 <!--   dit is met flexbox en dat moet grid worden en bij javascript is het display grid in plaats van block-->
 
-                            </section>
+                            </figure>
 
                         </li>
                         <li class="hide-li-sign">
@@ -490,11 +490,11 @@
 
                     <!--                <p class="content-book-under-name-book"> ajax is een voetbalclub uit amsterdam</p>-->
                     <!--                <button>voeg toe aan leeslijst</button>-->
-                </section>
-            </section>
-        </section>
+                </div>
+            </div>
+        </div>
 
-    </section>
+    </div>
 
 </main>
 
