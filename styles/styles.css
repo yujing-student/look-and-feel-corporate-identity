@@ -433,29 +433,38 @@ td {
             "meer-info-filters"
             "boeken-overzicht-boeken";
     /*grid-template-columns: 1fr;*/
+
+    .grid-item, .grid-item-filter { /*dit zijn de 3 kinderen met daarin de inhoud ide steeds meebeweegt*/
+        padding: 1em;
+
+
+        .grid-item:nth-child(1) { /*inleiding-zoekvak*/
+            grid-area: inleiding-zoekvak;
+            /*margin-bottom: var(--margin-bottom-1em);*/
+            margin: 0 1em 0 0;
+
+        }
+
+
+        .grid-item:nth-child(2) { /*meer info*/
+            grid-area: meer-info-filters;
+
+
+        }
+
+        .grid-item:nth-child(3) { /*boete*/
+            grid-area: boeken-overzicht-boeken;
+        }
+
+        .grid-item-filter:nth-child(1), .grid-item-filter:nth-child(2), .grid-item-filter:nth-child(3) {
+            margin-bottom: 2em; /*dit is de onderkant zoekvak en filters en boeken showresults */
+
+        }
+    }
 }
 
-.grid-item, .grid-item-filter { /*dit zijn de 3 kinderen met daarin de inhoud ide steeds meebeweegt*/
-    padding: 1em;
-}
-
-.grid-item:nth-child(1) { /*inleiding-zoekvak*/
-    grid-area: inleiding-zoekvak;
-    /*margin-bottom: var(--margin-bottom-1em);*/
-    margin: 0 1em 0 0;
-
-}
 
 
-.grid-item:nth-child(2) { /*meer info*/
-    grid-area: meer-info-filters;
-
-
-}
-
-.grid-item:nth-child(3) { /*boete*/
-    grid-area: boeken-overzicht-boeken;
-}
 
 p:nth-child(2) { /*dit is Welkom op uw persoonlijke pagina van de website van de OBA. p */
     margin-bottom: var(--margin-bottom-1em);
@@ -486,10 +495,7 @@ button:hover {
     color: red;
 }
 
-.grid-item-filter:nth-child(1), .grid-item-filter:nth-child(2), .grid-item-filter:nth-child(3) {
-    margin-bottom: 2em; /*dit is de onderkant zoekvak en filters en boeken showresults */
 
-}
 
 /*zoekvak*/
 form label {
@@ -660,6 +666,7 @@ a:nth-child(1) {
     .grid-item-filter, .grid-item-filter:nth-child(2) { /*meer info*/
         grid-area: meer-info-filters;
         margin-bottom: var(--margin-bottom-1em);
+
 
 
     }
