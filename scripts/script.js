@@ -137,7 +137,7 @@ listbooks = document.querySelectorAll('.hide-li-sign')
 let buttonfilter = document.querySelector('.filter__filterbutton');
 let checkbox_array = [];/*https://www.w3schools.com/jsref/jsref_push.asp*/
 let books_array = [];/*https://www.w3schools.com/jsref/jsref_push.asp*/
-let books = document.querySelectorAll('.div-container-image');/*hier staat ook de data-filter in*/
+let books = document.querySelectorAll('.figure-image-title-book');/*hier staat ook de data-filter in*/
 let checkbox = document.querySelectorAll('.filter__input-checkboxes');/*https://www.w3schools.com/jsref/prop_checkbox_checked.asp*/
 let datafiltersport = document.querySelectorAll('[data-filter="sport"]');/*https://stackoverflow.com/questions/22699072/using-data-attribute-as-a-selector-to-filter-elements*/
 let dataid = document.querySelector('#onderwerp-sport,#onderwerp-cultuur,#onderwerp-kunst,#onderwerp-mode')

@@ -475,7 +475,7 @@ details:nth-child(n+1):nth-child(-n+7) { /*nummer 1 tot en met 5 van meer info*/
 }
 
 details:hover {
-    color: red;
+    color: var(--primary-color-red);
 }
 
 /*dit zijn de buttons*/
@@ -496,7 +496,7 @@ button, .filter__filterbutton { /*filterbutton staat lager in de forms*/
 }
 
 button:hover {
-    color: red;
+    color: var(--primary-color-red);
     cursor: pointer;
 }
 
@@ -574,15 +574,19 @@ a:nth-child(1) {
     text-decoration: underline;
 
 }
+a:hover{
+    color: var(--primary-color-red);
+    cursor: pointer;
+}
 
 
-.div-container-image {
+.figure-image-title-book {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
-    .div-container-image__title-book-link, .div-container-image__books-image { /*bem toegepast*/
+    .figure-image-title-book__title-book-link, .figure-image-title-book__books-image { /*bem toegepast*/
         display: grid;
         justify-content: left;
     }
@@ -628,13 +632,13 @@ a:nth-child(1) {
     }
 
 
-    .div-container-image { /*positioneren van de boeken en de tekst*/
+    .figure-image-title-book { /*positioneren van de boeken en de tekst*/
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
 
-        .div-container-image__title-book-link { /*kind van div*/
+        .figure-image-title-book__title-book-link { /*kind van div*/
             display: grid;
             align-self: center;
         }
@@ -693,7 +697,7 @@ a:nth-child(1) {
         grid-template-areas: "boek1 boek2";
     }
 
-    .div-container-image { /*positioneren van de boeken en de tekst*/
+    .figure-image-title-book { /*positioneren van de boeken en de tekst*/
         display: flex;
         justify-content: center;
         align-items: center;
@@ -758,7 +762,7 @@ a:nth-child(1) {
         gap: 2em;
     }
 
-    .div-container-image { /*positioneren van de boeken en de tekst*/
+    .figure-image-title-book { /*positioneren van de boeken en de tekst*/
         display: flex;
         justify-content: center;
         align-items: center;
@@ -814,7 +818,7 @@ a:nth-child(1) {
         gap: 2em;
     }
 
-    .div-container-image { /*positioneren van de boeken en de tekst*/
+    .figure-image-title-book { /*positioneren van de boeken en de tekst*/
         display: flex;
         justify-content: center;
         align-items: center;
