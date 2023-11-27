@@ -12,22 +12,25 @@ De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 voor de oba maak ik een welkompagina gemaakt op basis van een ebstaande huisstijl
 mobiele formaat
 <hr>
-<img width="375" alt="image" src="https://github.com/yujing-student/look-and-feel-corporate-identity/assets/100352887/6591b660-caef-4f3d-a6de-568e514a29b4">
+<img width="375" alt="image" src="https://github.com/yujing-student/look-and-feel-corporate-identity/assets/100352887/e15304f5-82c3-4d62-9dae-d5f12493338e">
 <br>
-<img width="410" alt="image" src="https://github.com/yujing-student/look-and-feel-corporate-identity/assets/100352887/2c7cf00b-1415-4c7c-a388-18b83f4a9030">
+
+<img width="410" alt="image" src="">
 
 <hr>
 <br>
 voor tablet
 <br>
-<img width="644" alt="image" src="https://github.com/yujing-student/look-and-feel-corporate-identity/assets/100352887/c19c680f-c24d-4d69-97f4-5570b13b24ef">
-<img width="556" alt="image" src="https://github.com/yujing-student/look-and-feel-corporate-identity/assets/100352887/0f4170ee-7d7d-4dba-a7ad-f94397523876">
+<img width="1080" alt="20231127_154447569_iOS" src="https://github.com/yujing-student/look-and-feel-corporate-identity/assets/100352887/a0082540-e738-4237-88dc-c75309f70e2c">
+
+
 
 <hr>
 <br>
 voor desktop
 <br>
-<img width="811" alt="image" src="https://github.com/yujing-student/look-and-feel-corporate-identity/assets/100352887/6ef4650b-e0ef-49f2-9f63-a66d9bdb5c89">
+<img width="951" alt="image" src="https://github.com/yujing-student/look-and-feel-corporate-identity/assets/100352887/dd2ebb09-f444-41dc-b00c-e83f3047e3bb">
+<img width="942" alt="image" src="https://github.com/yujing-student/look-and-feel-corporate-identity/assets/100352887/47048260-937c-4e5f-aa22-e8af89aa47fd">
 
 
 ## programmeertalen
