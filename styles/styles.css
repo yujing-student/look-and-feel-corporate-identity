@@ -529,7 +529,7 @@ form label {
 
 
 }
-
+/*bem toegepast*/
 #form__input-searchfunciton {
     padding: 0.5rem 0.5rem;
     border-radius: 0.75rem;
@@ -554,7 +554,7 @@ form label {
     color: var(--text-color-zwart);
 }
 
-/*forms*/
+/*forms met daarin bem toegepast*/
 .filter__collaps-open-function-boeken, .filter__collaps-open-funtion-boeken-second, .filter__collaps-open-funtion-boeken-third { /*dit zijn de buttons in de lijst en op deze pagina voor meer info*/
     display: none;
 }
@@ -595,7 +595,7 @@ a:hover {
 
 
 }
-
+/*bem toegepast*/
 .figure-image-title-book__title-book-link, .figure-image-title-book__books-image { /*bem toegepast*/
     display: grid;
     justify-content: left;
