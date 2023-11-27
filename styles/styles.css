@@ -471,11 +471,12 @@ p:nth-child(2) { /*dit is Welkom op uw persoonlijke pagina van de website van de
 }
 
 details:nth-child(n+1):nth-child(-n+7) { /*nummer 1 tot en met 5 van meer info*/
-    margin-bottom: var(--margin-bottom-1em);
+    /*margin-bottom: var(--margin-bottom-1em);*/
+    margin-bottom: 2em;
 }
 
 /*dit zijn de buttons*/
-button, .reset-button, .filter__filterbutton { /*filterbutton staat lager in de forms*/
+button, .filter__filterbutton { /*filterbutton staat lager in de forms*/
     border: none;
     box-shadow: 10px 5px 5px var(--toggle-color-licht-grijs);
     background-color: var(--background-color-buttons-white);
@@ -513,6 +514,7 @@ form label {
     display: flex;
     align-items: center;
     width: 20rem;
+    margin-bottom: 1em;
 }
 
 #form__input-searchfunciton {
@@ -588,33 +590,35 @@ a:nth-child(1) {
         display: grid;
         grid-template-areas:   var(--grid-template-areas-indeling);
         grid-template-columns: var(--grid-template-columns-indeling);
-    }
-
-    .grid-container-filter {
-        margin-top: 5em;
-    }
-
-    .grid-item:nth-child(1) {
-        margin: 0 1em 0 0;
-    }
-
-    .grid-item-filter:nth-child(1) { /*meer info*/
-        grid-area: inleiding-zoekvak;
-    }
-
-    .grid-item-filter, .grid-item-filter:nth-child(2) { /*meer info*/
-        grid-area: meer-info-filters;
-        margin-bottom: var(--margin-bottom-1em);
 
 
-    }
+        .grid-container-filter {
+            margin-top: 5em;
+        }
 
-    .grid-item:nth-child(3) {
-        margin-right: 5em;
-    }
+        .grid-item:nth-child(1) {
+            margin: 0 1em 0 0;
+        }
 
-    .grid-item-filter, .grid-item-filter:nth-child(3) { /*meer info*/
-        grid-area: boeken-overzicht-boeken;
+        .grid-item-filter:nth-child(1) { /*meer info*/
+            grid-area: inleiding-zoekvak;
+        }
+
+        .grid-item-filter, .grid-item-filter:nth-child(2) { /*meer info*/
+            grid-area: meer-info-filters;
+            margin-bottom: var(--margin-bottom-1em);
+
+
+        }
+
+        .grid-item:nth-child(3) {
+            margin-right: 5em;
+        }
+
+        .grid-item-filter, .grid-item-filter:nth-child(3) { /*meer info*/
+            grid-area: boeken-overzicht-boeken;
+
+        }
 
     }
 
