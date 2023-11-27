@@ -434,33 +434,37 @@ td {
             "boeken-overzicht-boeken";
     /*grid-template-columns: 1fr;*/
 
+
     .grid-item, .grid-item-filter { /*dit zijn de 3 kinderen met daarin de inhoud ide steeds meebeweegt*/
         padding: 1em;
 
 
-        .grid-item:nth-child(1) { /*inleiding-zoekvak*/
-            grid-area: inleiding-zoekvak;
-            /*margin-bottom: var(--margin-bottom-1em);*/
-            margin: 0 1em 0 0;
-
-        }
-
-
-        .grid-item:nth-child(2) { /*meer info*/
-            grid-area: meer-info-filters;
-
-
-        }
-
-        .grid-item:nth-child(3) { /*boete*/
-            grid-area: boeken-overzicht-boeken;
-        }
-
-        .grid-item-filter:nth-child(1), .grid-item-filter:nth-child(2), .grid-item-filter:nth-child(3) {
-            margin-bottom: 2em; /*dit is de onderkant zoekvak en filters en boeken showresults */
-
-        }
     }
+
+    .grid-item:nth-child(1) { /*inleiding-zoekvak*/
+        grid-area: inleiding-zoekvak;
+        /*margin-bottom: var(--margin-bottom-1em);*/
+        margin: 0 1em 0 0;
+
+    }
+
+
+    .grid-item:nth-child(2) { /*meer info*/
+        grid-area: meer-info-filters;
+
+
+    }
+
+    .grid-item:nth-child(3) { /*boete*/
+        grid-area: boeken-overzicht-boeken;
+    }
+
+    .grid-item-filter:nth-child(1), .grid-item-filter:nth-child(2), .grid-item-filter:nth-child(3) {
+        margin-bottom: 2em; /*dit is de onderkant zoekvak en filters en boeken showresults */
+
+    }
+
+
 }
 
 
@@ -522,6 +526,8 @@ form label {
     align-items: center;
     width: 20rem;
     margin-bottom: 1em;
+
+
 }
 
 #form__input-searchfunciton {
@@ -574,7 +580,8 @@ a:nth-child(1) {
     text-decoration: underline;
 
 }
-a:hover{
+
+a:hover {
     color: var(--primary-color-red);
     cursor: pointer;
 }
@@ -586,10 +593,12 @@ a:hover{
     align-items: center;
     flex-direction: column;
 
-    .figure-image-title-book__title-book-link, .figure-image-title-book__books-image { /*bem toegepast*/
-        display: grid;
-        justify-content: left;
-    }
+
+}
+
+.figure-image-title-book__title-book-link, .figure-image-title-book__books-image { /*bem toegepast*/
+    display: grid;
+    justify-content: left;
 }
 
 /*kleine ipad*/
@@ -601,36 +610,35 @@ a:hover{
         grid-template-columns: var(--grid-template-columns-indeling);
 
 
-        .grid-container-filter {
-            margin-top: 5em;
-        }
+    }
 
-        .grid-item:nth-child(1) {
-            margin: 0 1em 0 0;
-        }
+    .grid-container-filter {
+        margin-top: 5em;
+    }
 
-        .grid-item-filter:nth-child(1) { /*meer info*/
-            grid-area: inleiding-zoekvak;
-        }
+    .grid-item:nth-child(1) {
+        margin: 0 1em 0 0;
+    }
 
-        .grid-item-filter, .grid-item-filter:nth-child(2) { /*meer info*/
-            grid-area: meer-info-filters;
-            margin-bottom: var(--margin-bottom-1em);
+    .grid-item-filter:nth-child(1) { /*meer info*/
+        grid-area: inleiding-zoekvak;
+    }
 
+    .grid-item-filter, .grid-item-filter:nth-child(2) { /*meer info*/
+        grid-area: meer-info-filters;
+        margin-bottom: var(--margin-bottom-1em);
 
-        }
-
-        .grid-item:nth-child(3) {
-            margin-right: 5em;
-        }
-
-        .grid-item-filter, .grid-item-filter:nth-child(3) { /*meer info*/
-            grid-area: boeken-overzicht-boeken;
-
-        }
 
     }
 
+    .grid-item:nth-child(3) {
+        margin-right: 5em;
+    }
+
+    .grid-item-filter, .grid-item-filter:nth-child(3) { /*meer info*/
+        grid-area: boeken-overzicht-boeken;
+
+    }
 
     .figure-image-title-book { /*positioneren van de boeken en de tekst*/
         display: flex;
@@ -638,13 +646,13 @@ a:hover{
         align-items: center;
         flex-direction: column;
 
-        .figure-image-title-book__title-book-link { /*kind van div*/
-            display: grid;
-            align-self: center;
-        }
+
     }
 
-
+    .figure-image-title-book__title-book-link { /*kind van div*/
+        display: grid;
+        align-self: center;
+    }
 }
 
 /*medium ipad is*/
@@ -655,11 +663,12 @@ a:hover{
         grid-template-areas:   var(--grid-template-areas-indeling);
         grid-template-columns: var(--grid-template-columns-indeling);
 
-        .grid-item:nth-child(1) {
-            margin: 0 1em 0 0;
-        }
+
     }
 
+    .grid-item:nth-child(1) {
+        margin: 0 1em 0 0;
+    }
 
     p:nth-child(3), .inleiding-text-boeken-overzicht { /*dit is Welkom op uw persoonlijke pagina van de website van de OBA. p */
         max-width: 30em;
@@ -671,13 +680,14 @@ a:hover{
         grid-template-columns: var(--grid-template-columns-indeling);
         margin-top: 5em;
 
-        .grid-item-filter:nth-child(1) { /*meer info*/
-            grid-area: inleiding-zoekvak;
 
-
-        }
     }
 
+    .grid-item-filter:nth-child(1) { /*meer info*/
+        grid-area: inleiding-zoekvak;
+
+
+    }
 
     .grid-item-filter, .grid-item-filter:nth-child(2) { /*meer info*/
         grid-area: meer-info-filters;
@@ -718,12 +728,12 @@ a:hover{
         grid-template-columns: var(--grid-template-columns-indeling);
         /*1specifiek item container*/
 
-        .grid-item:nth-child(1) {
-            margin: 0 1em 0 0;
-        }
 
     }
 
+    .grid-item:nth-child(1) {
+        margin: 0 1em 0 0;
+    }
 
     p:nth-child(3), .inleiding-text-boeken-overzicht { /*dit is Welkom op uw persoonlijke pagina van de website van de OBA. tekst */
         max-width: 35em; /*dit staat ook in de volgende maar niet in de vorige*/
@@ -737,11 +747,11 @@ a:hover{
         margin-top: 5em;
 
 
-        .grid-item-filter:nth-child(1) { /*linksboven*/
-            grid-area: inleiding-zoekvak;
-        }
     }
 
+    .grid-item-filter:nth-child(1) { /*linksboven*/
+        grid-area: inleiding-zoekvak;
+    }
 
     .grid-item-filter, .grid-item-filter:nth-child(2) { /*meer info recthsboven*/
         grid-area: meer-info-filters;
@@ -790,12 +800,12 @@ a:hover{
         grid-template-columns:  repeat(2, minmax(50em, 10fr));;
         margin-top: 5em;
 
-        .grid-item-filter:nth-child(1) { /*meer info*/
-            grid-area: inleiding-zoekvak;
-        }
 
     }
 
+    .grid-item-filter:nth-child(1) { /*meer info*/
+        grid-area: inleiding-zoekvak;
+    }
 
     .grid-item-filter, .grid-item-filter:nth-child(2) { /*meer info*/
         grid-area: meer-info-filters;
