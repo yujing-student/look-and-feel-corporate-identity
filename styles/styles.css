@@ -103,7 +103,7 @@ body.dark {
 
 /* ===== Sidebar ===== */
 .sidebar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
@@ -337,7 +337,7 @@ body.dark .mode .sun-moon i.moon {
 }
 
 .menu-bar .bottom-content .toggle-switch {
-    position: absolute;/*dit was oorspronkelijk fiexd*/
+    position: absolute;
     right: 0;
     height: 100%;
     min-width: 60px;
@@ -346,11 +346,6 @@ body.dark .mode .sun-moon i.moon {
     justify-content: center;
     border-radius: 6px;
     cursor: pointer;
-}
-.bottom-content{/*dit was er 1st niet nu wel vanwege de navbar*/
-    position: absolute;
-    top: 64em;
-    width: 4em;
 }
 
 .toggle-switch .switch {
