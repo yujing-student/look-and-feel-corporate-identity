@@ -103,7 +103,7 @@ body.dark {
 
 /* ===== Sidebar ===== */
 .sidebar {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     height: 100%;
@@ -337,7 +337,7 @@ body.dark .mode .sun-moon i.moon {
 }
 
 .menu-bar .bottom-content .toggle-switch {
-    position: absolute;
+    position: absolute;/*dit was oorspronkelijk fiexd*/
     right: 0;
     height: 100%;
     min-width: 60px;
@@ -346,6 +346,11 @@ body.dark .mode .sun-moon i.moon {
     justify-content: center;
     border-radius: 6px;
     cursor: pointer;
+}
+.bottom-content{/*dit was er 1st niet nu wel vanwege de navbar*/
+    position: absolute;
+    top: 64em;
+    width: 4em;
 }
 
 .toggle-switch .switch {
@@ -448,6 +453,15 @@ td {
         /*margin: 0 1em 0 0;*/
 
     }
+    @media (min-width: 0em)  and (max-width: 85em) {/*media query voor tekst in de inleiding grit item1 linksboven*/
+        .to-long-text-margin{
+            margin-bottom: 1em;
+
+        }
+    }
+
+
+
 
 
     .grid-item:nth-child(2) { /*meer info*/
