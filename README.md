@@ -42,11 +42,76 @@ wilt u het proces zien hoe ik tot deze pagina gekomen bent kunt u naar deze link
 
 </details>
 
+<p>ik heb als indeling grid gebruikt waarin ik 2 grid containers heb gebruikt de 1ste foto met de inleiding is deeerste container en de 2de container is voor het filteren en zoeken 
+    uitleg over de code :</p>
+<details>
+    <summary>
+        uitleg over de html code deels zie programmeertalen voor de volledige code
+    </summary>
+    ```
+
+    <div class="grid-container" tabindex="0">
+        <section class="grid-item" tabindex="0">
+            <!--                <h1 tabindex="0">Homepagina</h1>-->
+            <h2 tabindex="0">Welkom Amber</h2>
+            <p>Welkom op uw persoonlijke pagina van de website van de OBA.</p>
+            <p> Op deze pagina kunt u: uw materialen verlengen,
+                zoals een boek of dvd. Verder kunt u uw reserveringen bekijken en uw uitleengeschiedenis zien.</p>
+        </section>
+        <section class="grid-item">
+            <h3>Meer info</h3>
+            <p>Klik op het icoontje om de tekst uit te klappen.</p>
+            <details>
+                <summary>Waar vind ik openstaande bedragen?</summary>
+                <p> Openstaande bedragen zijn via ideal te zien.</p>
+
+            </details>
+
+
+            <details>
+                <summary>Wat kan ik op de deposito's pagina?</summary>
+                <p>Een tegoed op uw pas zetten via ideal waarmee u toekomstige boetes, leengeld, etc. kunt
+                    afrekenen.</p>
+
+            </details>
+
+
+            <details>
+                <summary>Waar kan ik mijn persoonlijke gegevens wijzigen</summary>
+                <p>Dat kunt u bij mijn profiel kunt u dat zien.</p>
+
+            </details>
+
+
+            <details>
+                <summary>Waar vind ik een overzicht met mijn geleende boeken</summary>
+                <p> Dat kunt u op de knop overzicht geleende boeken.</p>
+
+            </details>
+
+        </section>
+
+        <div class="grid-item" tabindex="0">
+
+            <p class="inleiding-text-boeken-overzicht" tabindex="0">Ga naar boeken overzicht voor een overzicht met
+                de
+                geleende boeken, zodat u ziet <strong>welke boeken u moet inleveren.</strong></p>
+            <button aria-pressed="false" class="button-boeken"
+                    tabindex="0"
+                    type="button"><strong>Overzicht geleende boeken</strong>
+            </button>
+        </div>
+
+
+    </div>
+    ```
+
+</details>
 
 ## programmeertalen
-<li>html</li>
-<li>css</li>
-<li>javascript</li>
+<li><a href="https://github.com/yujing-student/look-and-feel-corporate-identity/blob/main/index.html">Html</a></li>
+<li><a href="https://github.com/yujing-student/look-and-feel-corporate-identity/blob/main/styles/styles.css">Css</a></li>
+<li><a href="https://github.com/yujing-student/look-and-feel-corporate-identity/blob/main/scripts/script.js">Javascript</a></li>
 
 In de code kunt u zien hoe ik dit heb gerealiseerd de navbar heb ik niet gemaakt die erin staat die is door
 Amber gemaakt <a href ="https://github.com/Amberhva/fix-the-flow-interactive-website">link naar haar repository</a>
