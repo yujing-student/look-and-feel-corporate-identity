@@ -15,22 +15,32 @@ voor de oba maak ik een welkompagina gemaakt op basis van een bestaande huisstij
 wilt u het proces zien hoe ik tot deze pagina gekomen bent kunt u naar deze link:https://github.com/yujing-student/look-and-feel-corporate-identity/wiki
 <br>
 <h2>foto's van de pagina per apperaat</h2>
-mobiele formaat
-<hr>
-<img width="375" alt="image" src="https://github.com/yujing-student/look-and-feel-corporate-identity/assets/100352887/e15304f5-82c3-4d62-9dae-d5f12493338e">
-<br>
-<img width="375" alt="image" src="https://github.com/yujing-student/look-and-feel-corporate-identity/assets/100352887/e90627a6-c830-48ba-a283-0d0631b8c5b0">
+<details><summary>
+   mobiel
+</summary>
+    <img width="375" alt="image" src="https://github.com/yujing-student/look-and-feel-corporate-identity/assets/100352887/e15304f5-82c3-4d62-9dae-d5f12493338e">
+    <br>
+    <img width="375" alt="image" src="https://github.com/yujing-student/look-and-feel-corporate-identity/assets/100352887/e90627a6-c830-48ba-a283-0d0631b8c5b0">
+</details>
 
-<hr>
-<br>
-voor tablet
-<img width="1069" alt="20231128_083615175_iOS" src="https://github.com/yujing-student/look-and-feel-corporate-identity/assets/100352887/05407d0f-df67-4612-a1ca-dbaf20a017c4">
-<img width="1080" alt="20231128_083512790_iOS" src="https://github.com/yujing-student/look-and-feel-corporate-identity/assets/100352887/34f11b73-07c1-49ea-ba22-b17228d47d60">
+<details>
+    <summary>
+        tablet
+    </summary>
+    <img alt="20231128_083615175_iOS" src="https://github.com/yujing-student/look-and-feel-corporate-identity/assets/100352887/05407d0f-df67-4612-a1ca-dbaf20a017c4"
+         width="1069">
+    <img alt="20231128_083512790_iOS" src="https://github.com/yujing-student/look-and-feel-corporate-identity/assets/100352887/34f11b73-07c1-49ea-ba22-b17228d47d60"
+         width="1080">
 
-voor desktop
-<br>
-<img width="951" alt="image" src="https://github.com/yujing-student/look-and-feel-corporate-identity/assets/100352887/dd2ebb09-f444-41dc-b00c-e83f3047e3bb">
-<img width="942" alt="image" src="https://github.com/yujing-student/look-and-feel-corporate-identity/assets/100352887/47048260-937c-4e5f-aa22-e8af89aa47fd">
+</details>
+<details>
+    <summary>
+        Desktop
+    </summary>
+    <img width="951" alt="image" src="https://github.com/yujing-student/look-and-feel-corporate-identity/assets/100352887/dd2ebb09-f444-41dc-b00c-e83f3047e3bb">
+    <img width="942" alt="image" src="https://github.com/yujing-student/look-and-feel-corporate-identity/assets/100352887/47048260-937c-4e5f-aa22-e8af89aa47fd">
+
+</details>
 
 
 ## programmeertalen
