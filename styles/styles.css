@@ -445,7 +445,7 @@ td {
     .grid-item:nth-child(1) { /*inleiding-zoekvak*/
         grid-area: inleiding-zoekvak;
         /*margin-bottom: var(--margin-bottom-1em);*/
-        margin: 0 1em 0 0;
+        /*margin: 0 1em 0 0;*/
 
     }
 
