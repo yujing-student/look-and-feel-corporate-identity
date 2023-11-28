@@ -478,7 +478,7 @@ details:nth-child(n+1):nth-child(-n+7) { /*nummer 1 tot en met 5 van meer info*/
     cursor: pointer;
 }
 
-details:hover {
+details:hover {/*hover over de details van meer info*/
     color: var(--primary-color-red);
 }
 
@@ -529,6 +529,7 @@ form label {
 
 
 }
+
 /*bem toegepast*/
 #form__input-searchfunciton {
     padding: 0.5rem 0.5rem;
@@ -559,7 +560,7 @@ form label {
     display: none;
 }
 
-.filter__input-checkboxes {
+.filter__input-checkboxes {/*checkboxes grootte*/
     width: 1.4em;
     height: 1.5em;
     vertical-align: middle;
@@ -581,20 +582,19 @@ a:nth-child(1) {
 
 }
 
-a:hover {
+a:hover {/*hover over de linkjes*/
     color: var(--primary-color-red);
     cursor: pointer;
 }
 
 
-.figure-image-title-book {
+.figure-image-title-book {/*de boeken grote en title*/
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-
 }
+
 /*bem toegepast*/
 .figure-image-title-book__title-book-link, .figure-image-title-book__books-image { /*bem toegepast*/
     display: grid;
@@ -836,5 +836,3 @@ a:hover {
     }
 }
 
-
-/*todo bij javascript de 2de en 3de fitlerfuncite toegevoen*/
