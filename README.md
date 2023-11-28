@@ -5,6 +5,8 @@ De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 # welkompagina voor de oba
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 Ik heb voor de oba een welkompagina gemaakt zodat de gebruiker direct ziet wat diegene kan doen op de oba mijn omgeving
+<img width="10271" alt="image" src="https://github.com/yujing-student/look-and-feel-corporate-identity/assets/100352887/7726cf96-3bfa-4f73-bbf7-6f78492eb70e">
+
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
