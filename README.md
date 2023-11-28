@@ -4,15 +4,18 @@ De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 # welkompagina voor de oba
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
+Ik heb voor de oba een welkompagina gemaakt zodat de gebruiker direct ziet wat diegene kan doen op de oba mijn omgeving
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
-voor de oba maak ik een welkompagina gemaakt op basis van een bestaande huisstijl de foto's zijn niet zo goed gelukt daarom kunt u het beste naar de pagina zelf gaan klik op de link :https://yujing-student.github.io/look-and-feel-corporate-identity/
+voor de oba maak ik een welkompagina gemaakt op basis van een bestaande huisstijl de user story die ik heb uitgekozen is :<a href="https://github.com/fdnd-agency/oba/issues/21">Als OBA lid wil ik de zoekresultaten kunnen filteren of sorteren, zodat ik gericht kan zoeken naar interessante boeken.</a>
+
+de foto's zijn niet zo goed gelukt daarom kunt u het beste naar de pagina zelf gaan klik hier: <a href="https://yujing-student.github.io/look-and-feel-corporate-identity/">https://yujing-student.github.io/look-and-feel-corporate-identity/</a>
 
 <br>
-wilt u het proces zien hoe ik tot deze pagina gekomen bent kunt u naar deze link:https://github.com/yujing-student/look-and-feel-corporate-identity/wiki
+wilt u het proces zien hoe ik tot deze pagina gekomen bent kunt u naar deze link: https://github.com/yujing-student/look-and-feel-corporate-identity/wiki
 <br>
 <h2>foto's van de pagina per apperaat</h2>
 <details><summary>
@@ -41,9 +44,17 @@ wilt u het proces zien hoe ik tot deze pagina gekomen bent kunt u naar deze link
     <img width="942" alt="image" src="https://github.com/yujing-student/look-and-feel-corporate-identity/assets/100352887/47048260-937c-4e5f-aa22-e8af89aa47fd">
 
 </details>
-
-<p>ik heb als indeling grid gebruikt waarin ik 2 grid containers heb gebruikt de 1ste foto met de inleiding is deeerste container en de 2de container is voor het filteren en zoeken 
-    uitleg over de code :</p>
+<h2>uitleg over code</h2>
+<ul>
+   <li>
+    html en css: ik heb als indeling grid gebruikt waarin ik 2 grid containers heb gebruikt de 1ste foto met de inleiding is de eerste container en de 2de container 
+    is voor het filteren en zoeken verder heb ik ook de media query gebruikt zodat de pagina responsive is
+   </li>
+    <li>
+        Javascript: ik heb voor het klikken op de buttons javascript gebruik zodat de form met de checkboxes verborgen zijn en getoond worden 
+        verder is de zoekfunctie ook met javascript gemaakt
+    </li>
+</ul>
 <details>
     <summary>
         uitleg over de html code deels zie programmeertalen voor de volledige code
@@ -108,7 +119,122 @@ wilt u het proces zien hoe ik tot deze pagina gekomen bent kunt u naar deze link
 
 </details>
 
+<details>
+    <summary>
+        uitleg over de css code voor ipad formaat
+    </summary>
+    ```
+   
+    @media (min-width: 60em)  and (max-width: 80em) {
+    /*mini ipad*/
+    .grid-container {
+    display: grid;
+    grid-template-areas:   var(--grid-template-areas-indeling);
+    grid-template-columns: var(--grid-template-columns-indeling);
+
+
+    }
+
+    .grid-item:nth-child(1) {
+    margin: 0 1em 0 0;
+    }
+
+    p:nth-child(3), .inleiding-text-boeken-overzicht { /*dit is Welkom op uw persoonlijke pagina van de website van de OBA. p */
+    max-width: 30em;
+    }
+
+    .grid-container-filter {
+    display: grid;
+    grid-template-areas:   var(--grid-template-areas-indeling);
+    grid-template-columns: var(--grid-template-columns-indeling);
+    margin-top: 5em;
+
+
+    }
+
+    .grid-item-filter:nth-child(1) { /*meer info*/
+    grid-area: inleiding-zoekvak;
+
+
+    }
+
+    .grid-item-filter, .grid-item-filter:nth-child(2) { /*meer info*/
+    grid-area: meer-info-filters;
+    margin-bottom: var(--margin-bottom-1em);
+
+
+    }
+
+    .grid-item-filter, .grid-item-filter:nth-child(3) { /*meer info*/
+    grid-area: boeken-overzicht-boeken;
+
+
+    }
+
+    .grid-books-blocks { /*dit zijn de boeken die getoond worden*/
+    display: grid;
+    grid-template-areas: "boek1 boek2";
+    }
+
+    .figure-image-title-book { /*positioneren van de boeken en de tekst*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+
+
+    }
+    ```
+
+</details>
+<details>
+    <summary>
+        uitleg over de javascript code zoekfunctie
+    </summary>
+    ```
+
+
+    function searchfunction() {
+    // https://www.w3schools.com/howto/howto_js_filter_lists.asp bron waar ik code gekopieerd heb
+    let input, filter, listbooks, a, i, txtValue;
+    input = document.getElementById('form__input-searchfunciton');
+    listbooks = document.querySelectorAll('.hide-li-sign')
+    filter = input.value.toUpperCase();//controleren hoofdletters
+    let button = document.querySelector('.i--search');
+
+
+    // forloop waar i het boeknummer is en alle boeken nagelopen worden
+    button.addEventListener('click', function (){
+    for (i = 0; i < listbooks.length; i++) {
+    a = listbooks[i].getElementsByTagName("a")[0];/*begin bij de1ste a href*/
+
+    txtValue = a.textContent || a.innerText;/*checken of een letter of woord erin zit*/
+
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+    listbooks[i].style.display = "";/*indien gevonden laat het resultaat zien*/
+    } else {
+    listbooks[i].style.display = "none";
+    }
+    }
+    });
+
+
+    let rest = document.querySelector('.reset');
+
+    rest.addEventListener('click', function () {
+    // Selecteer alle li-elementen met hide lis sign ofwel listbooks
+    for (let i = 0; i < listbooks.length; i++) {
+    listbooks[i].style.display = "block"; //laat de resultaten weer zien
+    }
+    });
+    }
+    ```
+
+</details>
+
 ## programmeertalen
+klik op de link om de volledige code te zien
 <li><a href="https://github.com/yujing-student/look-and-feel-corporate-identity/blob/main/index.html">Html</a></li>
 <li><a href="https://github.com/yujing-student/look-and-feel-corporate-identity/blob/main/styles/styles.css">Css</a></li>
 <li><a href="https://github.com/yujing-student/look-and-feel-corporate-identity/blob/main/scripts/script.js">Javascript</a></li>
