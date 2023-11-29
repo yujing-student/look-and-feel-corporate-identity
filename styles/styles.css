@@ -377,7 +377,7 @@ body.dark .switch::before {
 .home {
     position: absolute;
     top: 0;
-    left: 300px;
+    left: 315px;
     height: 100vh;
     width: calc(100% - 250px);
     transition: var(--tran-05);
