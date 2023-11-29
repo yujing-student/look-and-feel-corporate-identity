@@ -448,7 +448,7 @@ td {
         /*margin: 0 1em 0 0;*/
 
     }
-    &@media (min-width: 0em)  and (max-width: 60em) {/*media query voor tekst in de inleiding grit item1 linksboven*/
+    @media (min-width: 1em)  and (max-width: 60em) {/*media query voor tekst in de inleiding grit item1 linksboven*/
         .to-long-text-margin{
             margin-bottom: 1em;
 
@@ -622,7 +622,7 @@ a:hover {/*hover over de linkjes*/
 }
 
 /*kleine ipad*/
-@media (min-width: 44em)  and (max-width: 60em) {
+@media (min-width: 48em)  and (max-width: 60em) {
     /*mini ipad*/
     .grid-container, .grid-container-filter {
         display: grid;
