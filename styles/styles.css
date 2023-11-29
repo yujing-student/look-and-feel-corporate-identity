@@ -542,7 +542,7 @@ form label {
 .input-searchbar-form { /*zoekvak zelf*/
     display: flex;
     align-items: center;
-    width: 20rem;
+    width: 16rem;
     margin-bottom: 1em;
     background-color: white;
     padding: 0.5rem 0.5rem;
