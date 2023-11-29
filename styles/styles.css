@@ -436,19 +436,19 @@ td {
     /*grid-template-columns: 1fr;*/
 
 
-    .grid-item, .grid-item-filter { /*dit zijn de 3 kinderen met daarin de inhoud ide steeds meebeweegt*/
+    & .grid-item, &.grid-item-filter { /*dit zijn de 3 kinderen met daarin de inhoud ide steeds meebeweegt*/
         padding: 1em;
 
 
     }
 
-    .grid-item:nth-child(1) { /*inleiding-zoekvak*/
+    &.grid-item:nth-child(1) { /*inleiding-zoekvak*/
         grid-area: inleiding-zoekvak;
         /*margin-bottom: var(--margin-bottom-1em);*/
         /*margin: 0 1em 0 0;*/
 
     }
-    @media (min-width: 0em)  and (max-width: 60em) {/*media query voor tekst in de inleiding grit item1 linksboven*/
+    &@media (min-width: 0em)  and (max-width: 60em) {/*media query voor tekst in de inleiding grit item1 linksboven*/
         .to-long-text-margin{
             margin-bottom: 1em;
 
@@ -465,17 +465,17 @@ td {
 
 
 
-    .grid-item:nth-child(2) { /*meer info*/
+    &.grid-item:nth-child(2) { /*meer info*/
         grid-area: meer-info-filters;
 
 
     }
 
-    .grid-item:nth-child(3) { /*boete*/
+    &.grid-item:nth-child(3) { /*boete*/
         grid-area: boeken-overzicht-boeken;
     }
 
-    .grid-item-filter:nth-child(1), .grid-item-filter:nth-child(2), .grid-item-filter:nth-child(3) {
+    &.grid-item-filter:nth-child(1), &.grid-item-filter:nth-child(2), &.grid-item-filter:nth-child(3) {
         margin-bottom: 2em; /*dit is de onderkant zoekvak en filters en boeken showresults */
 
     }
@@ -516,8 +516,10 @@ button, .filter__filterbutton { /*filterbutton staat lager in de forms*/
 }
 
 button:hover {
-    color: var(--primary-color-red);
+    background-color: var(--primary-color-red);
     cursor: pointer;
+    /*text-decoration-color: white;*/
+    color: white;
 }
 
 
@@ -548,6 +550,8 @@ form label {
 
 /*bem toegepast*/
 #form__input-searchfunciton {
+    display: flex;
+    align-items: center;
     padding: 0.5rem 0.5rem;
     border-radius: 0.75rem;
     border: none;
