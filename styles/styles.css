@@ -407,7 +407,7 @@ th {
     /*color: #FFFFFF;*/
     background-color: var(--sidebar-color-white);
     border: var(--border-color-line);
-    font-family: AvenirMedium;
+    /*font-family: AvenirMedium;*/
     /*border: 1px solid #dddddd; !*  hier word een randje meegegeven aan de th  *!*/
     font-size: 1em;
     line-height: 1.5;
@@ -419,7 +419,7 @@ th {
 td {
     background-color: var(--sidebar-color-white);
     border: var(--border-color-line);
-    font-family: AvenirMedium;
+    /*font-family: AvenirMedium;*/
     font-size: 1em;
     line-height: 1.5;
     margin: var(--margin-1em);
