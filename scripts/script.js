@@ -28,11 +28,12 @@ modeSwitch.addEventListener("click", () => {
 /*hierboven moet straks weer uitcommented zijn*/
 function boeken() {
     let button = document.querySelector(".button-boeken");
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
         window.location.href = "boete.index.html";
     });
 
 }
+
 boeken();
 
 function showdivresults() {/*carousel laten zien*/
@@ -40,7 +41,7 @@ function showdivresults() {/*carousel laten zien*/
     let divresults = document.querySelector(".showresults");
     // seleteer de .showresylts div
     let button = document.querySelector(".i--search");
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
         let displaydivresults = window.getComputedStyle(divresults).display;
         //     https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle
         //     https://www.w3schools.com/jsref/jsrefgetcomputedstyle.asp
@@ -54,7 +55,9 @@ function showdivresults() {/*carousel laten zien*/
     // //met deze code wordt alle css proporties of een element en de inhoud ervan weergegeven
 
 }
- showdivresults();
+
+showdivresults();
+
 function filtershow() {
     let formresults = document.querySelector(".filter__collaps-open-function-boeken");
     formresults.style.transition = "opacity 0.1s ease-out";
@@ -97,7 +100,6 @@ function filtershow() {
 filtershow();
 
 
-
 function searchfunction() {
     // https://www.w3schools.com/howto/howto_js_filter_lists.asp bron waar ik code gekopieerd heb
     let input, filter, listbooks, a, i, txtValue;
@@ -108,7 +110,7 @@ function searchfunction() {
 
 
     // forloop waar i het boeknummer is en alle boeken nagelopen worden
-    button.addEventListener('click', function (){
+    button.addEventListener('click', function () {
         for (i = 0; i < listbooks.length; i++) {
             a = listbooks[i].getElementsByTagName("a")[0];/*begin bij de1ste a href*/
 
@@ -132,6 +134,7 @@ function searchfunction() {
         }
     });
 }
+
 listbooks = document.querySelectorAll('.hide-li-sign')
 
 let buttonfilter = document.querySelector('.filter__filterbutton');

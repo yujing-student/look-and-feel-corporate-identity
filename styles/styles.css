@@ -448,21 +448,22 @@ td {
         /*margin: 0 1em 0 0;*/
 
     }
-    @media (min-width: 1em)  and (max-width: 60em) {/*media query voor tekst in de inleiding grit item1 linksboven*/
-        .to-long-text-margin{
+
+    @media (min-width: 1em)  and (max-width: 60em) {
+        /*media query voor tekst in de inleiding grit item1 linksboven*/
+        .to-long-text-margin {
             margin-bottom: 1em;
 
         }
+
     }
+
     & ul:nth-child(1) {
         /*background-color: red;*/
         /*margin-top: 1em;*/
         /*margin-left: 1em;*/
         margin: 1em 1em 1em 1em;
     }
-
-
-
 
 
     &.grid-item:nth-child(2) { /*meer info*/
@@ -494,7 +495,7 @@ details:nth-child(n+1):nth-child(-n+7) { /*nummer 1 tot en met 5 van meer info*/
     cursor: pointer;
 }
 
-details:hover {/*hover over de details van meer info*/
+details:hover { /*hover over de details van meer info*/
     color: var(--primary-color-red);
 }
 
@@ -516,6 +517,12 @@ button, .filter__filterbutton { /*filterbutton staat lager in de forms*/
 }
 
 button:hover {
+    background-color: var(--primary-color-red);
+    cursor: pointer;
+    /*text-decoration-color: white;*/
+    color: white;
+}
+.filter__input-checkboxes:hover{
     background-color: var(--primary-color-red);
     cursor: pointer;
     /*text-decoration-color: white;*/
@@ -583,7 +590,7 @@ form label {
     display: none;
 }
 
-.filter__input-checkboxes {/*checkboxes grootte*/
+.filter__input-checkboxes { /*checkboxes grootte*/
     width: 1.4em;
     height: 1.5em;
     vertical-align: middle;
@@ -605,13 +612,13 @@ a:nth-child(1) {
 
 }
 
-a:hover {/*hover over de linkjes*/
+a:hover { /*hover over de linkjes*/
     color: var(--primary-color-red);
     cursor: pointer;
 }
 
 
-.figure-image-title-book {/*de boeken grote en title*/
+.figure-image-title-book { /*de boeken grote en title*/
     display: flex;
     justify-content: center;
     align-items: center;
